@@ -1,0 +1,7 @@
+*.cpp linguist-language=C++
+*.h linguist-language=C++
+
+*.html linguist-documentation
+
+*.png linguist-documentation
+*.jpg linguist-documentation
