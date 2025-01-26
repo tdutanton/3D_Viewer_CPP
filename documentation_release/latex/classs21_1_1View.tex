@@ -1,0 +1,127 @@
+\hypertarget{classs21_1_1View}{}\doxysection{s21\+::View Class Reference}
+\label{classs21_1_1View}\index{s21::View@{s21::View}}
+
+
+The \mbox{\hyperlink{classs21_1_1View}{View}} class is responsible for the GUI of the 3D viewer application and handling user interactions, such as opening and saving files, adjusting the 3D object\textquotesingle{}s scale, position, and rotation, switching between parallel and central projection modes. It also includes a \mbox{\hyperlink{classs21_1_1QtSceneDrawer}{Qt\+Scene\+Drawer}} object to render the 3D scene and a \mbox{\hyperlink{classs21_1_1SettingsWidget}{Settings\+Widget}} object to manage the application\textquotesingle{}s settings.  
+
+
+
+
+{\ttfamily \#include $<$view.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{classs21_1_1View__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for s21\+::View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{classs21_1_1View__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structs21_1_1View_1_1PrevPositions}{Prev\+Positions}}
+\begin{DoxyCompactList}\small\item\em Keeps track of the previous positions of the scale, move, and rotate 3D object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classs21_1_1View_a07347a8243ea59a4e1932b727839e035}{Control\+Ranges}} \{ \newline
+\mbox{\hyperlink{classs21_1_1View_a07347a8243ea59a4e1932b727839e035a260f96398039b5f4f97c271e4cd2e410}{SCALE\+\_\+\+MIN}} = 1
+, \mbox{\hyperlink{classs21_1_1View_a07347a8243ea59a4e1932b727839e035a1dc6be1238c80c54e8c8730d60f3160c}{SCALE\+\_\+\+MAX}} = 500
+, \mbox{\hyperlink{classs21_1_1View_a07347a8243ea59a4e1932b727839e035afe28acb766950086b1acc346ab05fe09}{MOVE\+\_\+\+MIN}} = -\/200
+, \mbox{\hyperlink{classs21_1_1View_a07347a8243ea59a4e1932b727839e035ad5da6c77f5321219ce676795b8a94015}{MOVE\+\_\+\+MAX}} = 200
+, \newline
+\mbox{\hyperlink{classs21_1_1View_a07347a8243ea59a4e1932b727839e035a6d64871ec9c962ae66143b458f7138d0}{ROTATE\+\_\+\+MIN}} = -\/180
+, \mbox{\hyperlink{classs21_1_1View_a07347a8243ea59a4e1932b727839e035aefe76241e70c00640539383f5da4f2f2}{ROTATE\+\_\+\+MAX}} = 180
+ \}
+\begin{DoxyCompactList}\small\item\em Defines the minimum and maximum values for the scale, move, and rotate controls used in the \mbox{\hyperlink{classs21_1_1View}{View}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1View_a919e8b89be42a1571f533736e112904f}{View}} (QWidget $\ast$parent=nullptr, \mbox{\hyperlink{classs21_1_1Controller}{Controller}} $\ast$controller=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classs21_1_1View}{View}} object. The \mbox{\hyperlink{classs21_1_1View}{View}} class contains all user interface elements and visualisation area for 3D scene. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1View_ad6a2a0120ecb17ef7e2572cd864120b4}{$\sim$\+View}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classs21_1_1View}{View}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classs21_1_1View}{View}} class is responsible for the GUI of the 3D viewer application and handling user interactions, such as opening and saving files, adjusting the 3D object\textquotesingle{}s scale, position, and rotation, switching between parallel and central projection modes. It also includes a \mbox{\hyperlink{classs21_1_1QtSceneDrawer}{Qt\+Scene\+Drawer}} object to render the 3D scene and a \mbox{\hyperlink{classs21_1_1SettingsWidget}{Settings\+Widget}} object to manage the application\textquotesingle{}s settings. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classs21_1_1View_a07347a8243ea59a4e1932b727839e035}\label{classs21_1_1View_a07347a8243ea59a4e1932b727839e035}} 
+\index{s21::View@{s21::View}!ControlRanges@{ControlRanges}}
+\index{ControlRanges@{ControlRanges}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{ControlRanges}{ControlRanges}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classs21_1_1View_a07347a8243ea59a4e1932b727839e035}{s21\+::\+View\+::\+Control\+Ranges}}}
+
+
+
+Defines the minimum and maximum values for the scale, move, and rotate controls used in the \mbox{\hyperlink{classs21_1_1View}{View}} class. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCALE\_MIN@{SCALE\_MIN}!s21::View@{s21::View}}\index{s21::View@{s21::View}!SCALE\_MIN@{SCALE\_MIN}}}\mbox{\Hypertarget{classs21_1_1View_a07347a8243ea59a4e1932b727839e035a260f96398039b5f4f97c271e4cd2e410}\label{classs21_1_1View_a07347a8243ea59a4e1932b727839e035a260f96398039b5f4f97c271e4cd2e410}} 
+SCALE\+\_\+\+MIN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCALE\_MAX@{SCALE\_MAX}!s21::View@{s21::View}}\index{s21::View@{s21::View}!SCALE\_MAX@{SCALE\_MAX}}}\mbox{\Hypertarget{classs21_1_1View_a07347a8243ea59a4e1932b727839e035a1dc6be1238c80c54e8c8730d60f3160c}\label{classs21_1_1View_a07347a8243ea59a4e1932b727839e035a1dc6be1238c80c54e8c8730d60f3160c}} 
+SCALE\+\_\+\+MAX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOVE\_MIN@{MOVE\_MIN}!s21::View@{s21::View}}\index{s21::View@{s21::View}!MOVE\_MIN@{MOVE\_MIN}}}\mbox{\Hypertarget{classs21_1_1View_a07347a8243ea59a4e1932b727839e035afe28acb766950086b1acc346ab05fe09}\label{classs21_1_1View_a07347a8243ea59a4e1932b727839e035afe28acb766950086b1acc346ab05fe09}} 
+MOVE\+\_\+\+MIN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOVE\_MAX@{MOVE\_MAX}!s21::View@{s21::View}}\index{s21::View@{s21::View}!MOVE\_MAX@{MOVE\_MAX}}}\mbox{\Hypertarget{classs21_1_1View_a07347a8243ea59a4e1932b727839e035ad5da6c77f5321219ce676795b8a94015}\label{classs21_1_1View_a07347a8243ea59a4e1932b727839e035ad5da6c77f5321219ce676795b8a94015}} 
+MOVE\+\_\+\+MAX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ROTATE\_MIN@{ROTATE\_MIN}!s21::View@{s21::View}}\index{s21::View@{s21::View}!ROTATE\_MIN@{ROTATE\_MIN}}}\mbox{\Hypertarget{classs21_1_1View_a07347a8243ea59a4e1932b727839e035a6d64871ec9c962ae66143b458f7138d0}\label{classs21_1_1View_a07347a8243ea59a4e1932b727839e035a6d64871ec9c962ae66143b458f7138d0}} 
+ROTATE\+\_\+\+MIN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ROTATE\_MAX@{ROTATE\_MAX}!s21::View@{s21::View}}\index{s21::View@{s21::View}!ROTATE\_MAX@{ROTATE\_MAX}}}\mbox{\Hypertarget{classs21_1_1View_a07347a8243ea59a4e1932b727839e035aefe76241e70c00640539383f5da4f2f2}\label{classs21_1_1View_a07347a8243ea59a4e1932b727839e035aefe76241e70c00640539383f5da4f2f2}} 
+ROTATE\+\_\+\+MAX&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1View_a919e8b89be42a1571f533736e112904f}\label{classs21_1_1View_a919e8b89be42a1571f533736e112904f}} 
+\index{s21::View@{s21::View}!View@{View}}
+\index{View@{View}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{View()}{View()}}
+{\footnotesize\ttfamily s21\+::\+View\+::\+View (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{classs21_1_1Controller}{Controller}} $\ast$}]{controller = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for \mbox{\hyperlink{classs21_1_1View}{View}} object. The \mbox{\hyperlink{classs21_1_1View}{View}} class contains all user interface elements and visualisation area for 3D scene. 
+
+\mbox{\Hypertarget{classs21_1_1View_ad6a2a0120ecb17ef7e2572cd864120b4}\label{classs21_1_1View_ad6a2a0120ecb17ef7e2572cd864120b4}} 
+\index{s21::View@{s21::View}!````~View@{$\sim$View}}
+\index{````~View@{$\sim$View}!s21::View@{s21::View}}
+\doxysubsubsection{\texorpdfstring{$\sim$View()}{~View()}}
+{\footnotesize\ttfamily s21\+::\+View\+::$\sim$\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \mbox{\hyperlink{classs21_1_1View}{View}} class. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/view/\mbox{\hyperlink{view_8h}{view.\+h}}\item 
+gui/view/\mbox{\hyperlink{view_8cpp}{view.\+cpp}}\end{DoxyCompactItemize}

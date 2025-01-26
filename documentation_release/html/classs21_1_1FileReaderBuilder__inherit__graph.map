@@ -1,0 +1,4 @@
+<map id="s21::FileReaderBuilder" name="s21::FileReaderBuilder">
+<area shape="rect" id="node1" title="Abstract base class for building a FileReader. Use Builder pattern." alt="" coords="5,5,173,32"/>
+<area shape="rect" id="node2" href="$classs21_1_1FigureBuilder.html" title="A concrete builder for creating Figure objects." alt="" coords="20,80,159,107"/>
+</map>

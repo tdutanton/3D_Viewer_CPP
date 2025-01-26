@@ -1,0 +1,370 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class MainWindow {
+	+MainWindow(QWidget* parent)
+	+~MainWindow()
+	-controller_ : Controller*
+	-facade_ : Facade*
+	-ui : Ui::MainWindow*
+	-view_ : View*
+}
+
+
+namespace s21 {
+	class Edge {
+		+Edge(Vertex& begin, Vertex& end)
+		+~Edge()
+		+operator=(const Edge& other) : Edge&
+		-begin_ : Vertex&
+		-end_ : Vertex&
+		+get_begin() : Vertex& {query}
+		+get_end() : Vertex& {query}
+		+operator==(const Edge& other) : bool {query}
+	}
+
+	class Facade {
+		+Facade()
+		+Facade(SceneDrawerBase* sceneDrawer)
+		+~Facade()
+		+load_figure(std::string path) : FacadeOperationResult
+		+move_figure(float x, float y, float z) : FacadeOperationResult
+		+reset_figure() : FacadeOperationResult
+		+rotate_figure(float x, float y, float z) : FacadeOperationResult
+		+scale_figure(float x, float y, float z) : FacadeOperationResult
+		-figure_ : Figure*
+		+get_figure() : Figure*
+		-fileReader_ : FileReader*
+		-sceneDrawer_ : SceneDrawerBase*
+		+get_all_edges_count() : int
+		+get_unique_edges_count() : int
+		+get_vertices_count() : int
+		+reset_figure_pos() : void
+	}
+
+	class FacadeOperationResult {
+		+FacadeOperationResult()
+		+~FacadeOperationResult()
+		+IsSuccess() : bool {query}
+		-isSuccess_ : bool
+		+GetErrorMessage() : std::string {query}
+		-errorMessage_ : std::string
+		+SetErrorMessage(std::string message) : void
+		+SetSuccess(bool status) : void
+	}
+
+	class Face {
+		+Face()
+		+Face(std::vector<unsigned> face)
+		+~Face()
+		+operator==(const Face& other) : bool {query}
+		-face_ : std::vector<unsigned>
+		+get_face() : std::vector<unsigned> {query}
+	}
+
+	class Figure {
+		+Figure()
+		+~Figure()
+		+get_name() : std::string {query}
+		-name_ : std::string
+		-edges_ : std::vector<Edge>
+		+get_edges() : std::vector<Edge> {query}
+		-faces_ : std::vector<Face>
+		+get_faces() : std::vector<Face> {query}
+		-default_vertices_ : std::vector<Vertex>
+		+get_vertices() : std::vector<Vertex> {query}
+		-vertices_ : std::vector<Vertex>
+		-all_edges_count_ : unsigned long long
+		+get_all_edges_count() : unsigned long long {query}
+		+get_default_coords() : void
+		+make_edges() : void
+		+save_default_coords() : void
+		+set_name(std::string name) : void
+		+transform(const TransformMatrix& matrix) : void
+	}
+
+	class FigureBuilder {
+		-figure_ : Figure
+		+get_result(const std::string& filename) : Figure
+		-params_ : NormalizationParameters*
+		+reset() : void
+		+set_normalization_parameters(NormalizationParameters* params) : void
+	}
+
+	class FileReader {
+		+FileReader()
+		+~FileReader()
+		+read_figure(std::string filename, NormalizationParameters* params) : Figure
+		-correct_file_ : bool
+		+get_faces(const std::string& current, Figure& figure) : bool
+		+get_name(const std::string& current, Figure& figure) : bool
+		+get_vertices(const std::string& current, Figure& figure) : bool
+		+open_file() : bool
+		+process_line(const std::string& current, Figure& figure) : bool
+		+read_successfull() : bool
+		-file_ : std::ifstream
+		-filename_ : std::string
+		+close_file() : void
+		+get_data_figure(Figure& figure) : void
+		+normalize_figure(Figure& figure) : void
+		+normalize_vertex(Vertex& vertex) : void
+		+set_file(std::string filename) : void
+		+set_min_max_for_normalization(Vertex& vertex) : void
+	}
+
+	abstract class FileReaderBuilder {
+		+~FileReaderBuilder()
+		+{abstract} reset() : void
+		+{abstract} set_normalization_parameters(NormalizationParameters* params) : void
+	}
+
+	class FileReaderDirector {
+		+construct_figure(FigureBuilder& builder, const std::string& filename, NormalizationParameters* params) : Figure
+	}
+
+	class NormalizationParameters {
+		#NormalizationParameters()
+		+~NormalizationParameters()
+		+{static} instance() : NormalizationParameters*
+		+dx_step : float
+		+dy_step : float
+		+dz_step : float
+		+max_range : float
+		+x_max : float
+		+x_min : float
+		+y_max : float
+		+y_min : float
+		+z_max : float
+		+z_min : float
+		+reset_normalization_parameters() : void
+	}
+
+	abstract class SceneDrawerBase {
+		+SceneDrawerBase()
+		+~SceneDrawerBase()
+		+{abstract} DrawFigure(Figure* figure) : void
+	}
+
+	abstract class SceneObject {
+		+~SceneObject()
+		+{abstract} transform(const TransformMatrix& matrix) : void
+	}
+
+	class TransformMatrix {
+		+TransformMatrix()
+		+~TransformMatrix()
+		+operator*(struct Point point) : Point {query}
+		+transform_point(struct Point point) : Point
+		+operator*(const TransformMatrix& other_matrix) : TransformMatrix {query}
+		+get_elem(int row, int col) : float {query}
+		-matrix_ : float[]
+		+reset() : void
+		+set_elem(int row, int col, float v) : void
+	}
+
+	class TransformMatrixBuilder {
+		+{static} create_move_matrix(float x, float y, float z) : TransformMatrix
+		+{static} create_only_x_rotation_matrix(float angle) : TransformMatrix
+		+{static} create_only_y_rotation_matrix(float angle) : TransformMatrix
+		+{static} create_only_z_rotation_matrix(float angle) : TransformMatrix
+		+{static} create_rotation_matrix(float x_degree, float y_degree, float z_degree) : TransformMatrix
+		+{static} create_scale_matrix(float x, float y, float z) : TransformMatrix
+	}
+
+	class Vertex {
+		+Vertex()
+		+Vertex(Point p)
+		+~Vertex()
+		+get_position() : Point {query}
+		-positions_ : Point
+		+operator==(const Vertex& other) : bool {query}
+		+set_position(Point point) : void
+		+transform(const TransformMatrix& matrix) : void
+	}
+
+	class Point {
+		+Point()
+		+Point(float x, float y, float z, float w)
+		+operator*(const TransformMatrix& matrix) : Point {query}
+		+operator==(const Point& other) : bool {query}
+		+get_w() : float {query}
+		+get_x() : float {query}
+		+get_y() : float {query}
+		+get_z() : float {query}
+		+w_ : float
+		+x_ : float
+		+y_ : float
+		+z_ : float
+		+print_point() : void {query}
+		+set_x(float x) : void
+		+set_y(float y) : void
+		+set_z(float z) : void
+	}
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+s21.FileReaderBuilder <|-- s21.FigureBuilder
+
+
+s21.SceneObject <|-- s21.Figure
+
+
+s21.SceneObject <|-- s21.Vertex
+
+
+
+
+
+/' Aggregation relationships '/
+
+s21.Edge "2" *-- s21.Vertex
+
+
+s21.Facade o-- s21.Figure
+
+
+s21.Facade o-- s21.FileReader
+
+
+s21.Facade o-- s21.SceneDrawerBase
+
+
+s21.Figure *-- s21.Edge
+
+
+s21.Figure *-- s21.Face
+
+
+s21.Figure "2" *-- s21.Vertex
+
+
+s21.FigureBuilder *-- s21.Figure
+
+
+s21.FigureBuilder o-- s21.NormalizationParameters
+
+
+MainWindow o-- MainWindow
+
+
+s21.Vertex *-- s21.Point
+
+
+
+
+
+
+/' Dependency relationships '/
+
+s21.Edge <.. s21.Edge
+
+
+s21.Edge <.. s21.Edge
+
+
+s21.Face <.. s21.Face
+
+
+s21.Figure <.. s21.FileReader
+
+
+s21.Figure <.. s21.FileReader
+
+
+s21.Figure <.. s21.FileReader
+
+
+s21.Figure <.. s21.FileReader
+
+
+s21.Figure <.. s21.FileReader
+
+
+s21.Figure <.. s21.FileReader
+
+
+s21.Figure <.. s21.SceneDrawerBase
+
+
+s21.FigureBuilder <.. s21.FileReaderDirector
+
+
+s21.NormalizationParameters <.. s21.FigureBuilder
+
+
+s21.NormalizationParameters <.. s21.FileReader
+
+
+s21.NormalizationParameters <.. s21.FileReaderBuilder
+
+
+s21.NormalizationParameters <.. s21.FileReaderDirector
+
+
+s21.Point <.. s21.Point
+
+
+s21.Point <.. s21.TransformMatrix
+
+
+s21.Point <.. s21.TransformMatrix
+
+
+s21.Point <.. s21.Vertex
+
+
+s21.Point <.. s21.Vertex
+
+
+s21.SceneDrawerBase <.. s21.Facade
+
+
+s21.TransformMatrix <.. s21.Figure
+
+
+s21.TransformMatrix <.. s21.Point
+
+
+s21.TransformMatrix <.. s21.SceneObject
+
+
+s21.TransformMatrix <.. s21.TransformMatrix
+
+
+s21.TransformMatrix <.. s21.Vertex
+
+
+s21.Vertex <.. s21.Edge
+
+
+s21.Vertex <.. s21.Edge
+
+
+s21.Vertex <.. s21.FileReader
+
+
+s21.Vertex <.. s21.FileReader
+
+
+s21.Vertex <.. s21.Vertex
+
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

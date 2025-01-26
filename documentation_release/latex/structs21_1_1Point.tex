@@ -1,0 +1,283 @@
+\hypertarget{structs21_1_1Point}{}\doxysection{s21\+::Point Struct Reference}
+\label{structs21_1_1Point}\index{s21::Point@{s21::Point}}
+
+
+Represents a point in 3D space with homogeneous coordinates.  
+
+
+
+
+{\ttfamily \#include $<$vertex.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structs21_1_1Point_a7e118af0268babd4479ad8af08cf89a3}{Point}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{structs21_1_1Point}{Point}} struct. Initializes the point to (0, 0, 0, 1). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structs21_1_1Point_a5c44f750c76185df9d7e5cf838b32076}{Point}} (float x, float y, float z, float w=1.\+0)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for the \mbox{\hyperlink{structs21_1_1Point}{Point}} struct. Initializes the point with the provided coordinates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structs21_1_1Point}{Point}} \mbox{\hyperlink{structs21_1_1Point_a834f0cb0bc76642fe3e35b466678b11a}{operator$\ast$}} (const \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} \&matrix) const
+\begin{DoxyCompactList}\small\item\em Multiplies the point by a transformation matrix. This method applies the transformation matrix to the point, resulting in a new point with transformed coordinates. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structs21_1_1Point_a63c694d77e6d7ef1a9b74b8097cc499e}{operator==}} (const \mbox{\hyperlink{structs21_1_1Point}{Point}} \&other) const
+\begin{DoxyCompactList}\small\item\em Compares two points for equality. Two points are considered equal if all their coordinates (x, y, z, w) are the same. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structs21_1_1Point_a525cb8d5bc07a27c4ab857a2e80fa8c1}{print\+\_\+point}} () const
+\begin{DoxyCompactList}\small\item\em Prints the point\textquotesingle{}s coordinates to the standard output. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structs21_1_1Point_ae02d6ad47ed3438c3bff6e2b787edfde}{get\+\_\+x}} () const
+\begin{DoxyCompactList}\small\item\em Gets the x-\/coordinate of the point. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structs21_1_1Point_a27f2946f8fd7611def32e642a69b73a7}{get\+\_\+y}} () const
+\begin{DoxyCompactList}\small\item\em Gets the y-\/coordinate of the point. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structs21_1_1Point_aa6aabcd68478ba48d3ed94b3c5df8f68}{get\+\_\+z}} () const
+\begin{DoxyCompactList}\small\item\em Gets the z-\/coordinate of the point. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structs21_1_1Point_afb54c0d3680a85ba6f393282e71242bf}{get\+\_\+w}} () const
+\begin{DoxyCompactList}\small\item\em Gets the homogeneous coordinate (w) of the point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structs21_1_1Point_afca07216c4d4df5e208db4df942b1232}{set\+\_\+x}} (float x)
+\begin{DoxyCompactList}\small\item\em Sets the x-\/coordinate of the point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structs21_1_1Point_af24490addd1db60954f2e7f809bfbfa3}{set\+\_\+y}} (float y)
+\begin{DoxyCompactList}\small\item\em Sets the y-\/coordinate of the point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structs21_1_1Point_ae433fa36ff3bf38d22f215233f263496}{set\+\_\+z}} (float z)
+\begin{DoxyCompactList}\small\item\em Sets the z-\/coordinate of the point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{structs21_1_1Point_a8e45cfa01807b6dccd2f85ba1d34b811}{x\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The x-\/coordinate of the point. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structs21_1_1Point_a2daca0a751ac8eefb9589fc26bc0aa07}{y\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The y-\/coordinate of the point. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structs21_1_1Point_a98942941b10d372effd230fdb7925a81}{z\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The z-\/coordinate of the point. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structs21_1_1Point_a0330e3ff277c6f0188abcd3d57e6a40a}{w\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The homogeneous coordinate (default is 1.\+0). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a point in 3D space with homogeneous coordinates. 
+
+The {\ttfamily \mbox{\hyperlink{structs21_1_1Point}{Point}}} struct defines a point with coordinates (x, y, z, w), where w is the homogeneous coordinate (default is 1.\+0). It provides methods for transformation, comparison, and printing, as well as getters and setters for the coordinates. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structs21_1_1Point_a7e118af0268babd4479ad8af08cf89a3}\label{structs21_1_1Point_a7e118af0268babd4479ad8af08cf89a3}} 
+\index{s21::Point@{s21::Point}!Point@{Point}}
+\index{Point@{Point}!s21::Point@{s21::Point}}
+\doxysubsubsection{\texorpdfstring{Point()}{Point()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily s21\+::\+Point\+::\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor for the \mbox{\hyperlink{structs21_1_1Point}{Point}} struct. Initializes the point to (0, 0, 0, 1). 
+
+\mbox{\Hypertarget{structs21_1_1Point_a5c44f750c76185df9d7e5cf838b32076}\label{structs21_1_1Point_a5c44f750c76185df9d7e5cf838b32076}} 
+\index{s21::Point@{s21::Point}!Point@{Point}}
+\index{Point@{Point}!s21::Point@{s21::Point}}
+\doxysubsubsection{\texorpdfstring{Point()}{Point()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily s21\+::\+Point\+::\+Point (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z,  }\item[{float}]{w = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parameterized constructor for the \mbox{\hyperlink{structs21_1_1Point}{Point}} struct. Initializes the point with the provided coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate. \\
+\hline
+{\em y} & The y-\/coordinate. \\
+\hline
+{\em z} & The z-\/coordinate. \\
+\hline
+{\em w} & The homogeneous coordinate (default is 1.\+0). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structs21_1_1Point_afb54c0d3680a85ba6f393282e71242bf}\label{structs21_1_1Point_afb54c0d3680a85ba6f393282e71242bf}} 
+\index{s21::Point@{s21::Point}!get\_w@{get\_w}}
+\index{get\_w@{get\_w}!s21::Point@{s21::Point}}
+\doxysubsubsection{\texorpdfstring{get\_w()}{get\_w()}}
+{\footnotesize\ttfamily float s21\+::\+Point\+::get\+\_\+w (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the homogeneous coordinate (w) of the point. 
+
+\begin{DoxyReturn}{Returns}
+The homogeneous coordinate. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structs21_1_1Point_ae02d6ad47ed3438c3bff6e2b787edfde}\label{structs21_1_1Point_ae02d6ad47ed3438c3bff6e2b787edfde}} 
+\index{s21::Point@{s21::Point}!get\_x@{get\_x}}
+\index{get\_x@{get\_x}!s21::Point@{s21::Point}}
+\doxysubsubsection{\texorpdfstring{get\_x()}{get\_x()}}
+{\footnotesize\ttfamily float s21\+::\+Point\+::get\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the x-\/coordinate of the point. 
+
+\begin{DoxyReturn}{Returns}
+The x-\/coordinate. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structs21_1_1Point_a27f2946f8fd7611def32e642a69b73a7}\label{structs21_1_1Point_a27f2946f8fd7611def32e642a69b73a7}} 
+\index{s21::Point@{s21::Point}!get\_y@{get\_y}}
+\index{get\_y@{get\_y}!s21::Point@{s21::Point}}
+\doxysubsubsection{\texorpdfstring{get\_y()}{get\_y()}}
+{\footnotesize\ttfamily float s21\+::\+Point\+::get\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the y-\/coordinate of the point. 
+
+\begin{DoxyReturn}{Returns}
+The y-\/coordinate. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structs21_1_1Point_aa6aabcd68478ba48d3ed94b3c5df8f68}\label{structs21_1_1Point_aa6aabcd68478ba48d3ed94b3c5df8f68}} 
+\index{s21::Point@{s21::Point}!get\_z@{get\_z}}
+\index{get\_z@{get\_z}!s21::Point@{s21::Point}}
+\doxysubsubsection{\texorpdfstring{get\_z()}{get\_z()}}
+{\footnotesize\ttfamily float s21\+::\+Point\+::get\+\_\+z (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the z-\/coordinate of the point. 
+
+\begin{DoxyReturn}{Returns}
+The z-\/coordinate. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structs21_1_1Point_a834f0cb0bc76642fe3e35b466678b11a}\label{structs21_1_1Point_a834f0cb0bc76642fe3e35b466678b11a}} 
+\index{s21::Point@{s21::Point}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!s21::Point@{s21::Point}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs21_1_1Point}{Point}} s21\+::\+Point\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} \&}]{matrix }\end{DoxyParamCaption}) const}
+
+
+
+Multiplies the point by a transformation matrix. This method applies the transformation matrix to the point, resulting in a new point with transformed coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & The transformation matrix to apply. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \mbox{\hyperlink{structs21_1_1Point}{Point}} representing the transformed point. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structs21_1_1Point_a63c694d77e6d7ef1a9b74b8097cc499e}\label{structs21_1_1Point_a63c694d77e6d7ef1a9b74b8097cc499e}} 
+\index{s21::Point@{s21::Point}!operator==@{operator==}}
+\index{operator==@{operator==}!s21::Point@{s21::Point}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool s21\+::\+Point\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structs21_1_1Point}{Point}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Compares two points for equality. Two points are considered equal if all their coordinates (x, y, z, w) are the same. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The point to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the points are equal, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structs21_1_1Point_a525cb8d5bc07a27c4ab857a2e80fa8c1}\label{structs21_1_1Point_a525cb8d5bc07a27c4ab857a2e80fa8c1}} 
+\index{s21::Point@{s21::Point}!print\_point@{print\_point}}
+\index{print\_point@{print\_point}!s21::Point@{s21::Point}}
+\doxysubsubsection{\texorpdfstring{print\_point()}{print\_point()}}
+{\footnotesize\ttfamily void s21\+::\+Point\+::print\+\_\+point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Prints the point\textquotesingle{}s coordinates to the standard output. 
+
+\mbox{\Hypertarget{structs21_1_1Point_afca07216c4d4df5e208db4df942b1232}\label{structs21_1_1Point_afca07216c4d4df5e208db4df942b1232}} 
+\index{s21::Point@{s21::Point}!set\_x@{set\_x}}
+\index{set\_x@{set\_x}!s21::Point@{s21::Point}}
+\doxysubsubsection{\texorpdfstring{set\_x()}{set\_x()}}
+{\footnotesize\ttfamily void s21\+::\+Point\+::set\+\_\+x (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the x-\/coordinate of the point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The new x-\/coordinate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structs21_1_1Point_af24490addd1db60954f2e7f809bfbfa3}\label{structs21_1_1Point_af24490addd1db60954f2e7f809bfbfa3}} 
+\index{s21::Point@{s21::Point}!set\_y@{set\_y}}
+\index{set\_y@{set\_y}!s21::Point@{s21::Point}}
+\doxysubsubsection{\texorpdfstring{set\_y()}{set\_y()}}
+{\footnotesize\ttfamily void s21\+::\+Point\+::set\+\_\+y (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the y-\/coordinate of the point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & The new y-\/coordinate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structs21_1_1Point_ae433fa36ff3bf38d22f215233f263496}\label{structs21_1_1Point_ae433fa36ff3bf38d22f215233f263496}} 
+\index{s21::Point@{s21::Point}!set\_z@{set\_z}}
+\index{set\_z@{set\_z}!s21::Point@{s21::Point}}
+\doxysubsubsection{\texorpdfstring{set\_z()}{set\_z()}}
+{\footnotesize\ttfamily void s21\+::\+Point\+::set\+\_\+z (\begin{DoxyParamCaption}\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the z-\/coordinate of the point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & The new z-\/coordinate. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structs21_1_1Point_a0330e3ff277c6f0188abcd3d57e6a40a}\label{structs21_1_1Point_a0330e3ff277c6f0188abcd3d57e6a40a}} 
+\index{s21::Point@{s21::Point}!w\_@{w\_}}
+\index{w\_@{w\_}!s21::Point@{s21::Point}}
+\doxysubsubsection{\texorpdfstring{w\_}{w\_}}
+{\footnotesize\ttfamily float s21\+::\+Point\+::w\+\_\+}
+
+
+
+The homogeneous coordinate (default is 1.\+0). 
+
+\mbox{\Hypertarget{structs21_1_1Point_a8e45cfa01807b6dccd2f85ba1d34b811}\label{structs21_1_1Point_a8e45cfa01807b6dccd2f85ba1d34b811}} 
+\index{s21::Point@{s21::Point}!x\_@{x\_}}
+\index{x\_@{x\_}!s21::Point@{s21::Point}}
+\doxysubsubsection{\texorpdfstring{x\_}{x\_}}
+{\footnotesize\ttfamily float s21\+::\+Point\+::x\+\_\+}
+
+
+
+The x-\/coordinate of the point. 
+
+\mbox{\Hypertarget{structs21_1_1Point_a2daca0a751ac8eefb9589fc26bc0aa07}\label{structs21_1_1Point_a2daca0a751ac8eefb9589fc26bc0aa07}} 
+\index{s21::Point@{s21::Point}!y\_@{y\_}}
+\index{y\_@{y\_}!s21::Point@{s21::Point}}
+\doxysubsubsection{\texorpdfstring{y\_}{y\_}}
+{\footnotesize\ttfamily float s21\+::\+Point\+::y\+\_\+}
+
+
+
+The y-\/coordinate of the point. 
+
+\mbox{\Hypertarget{structs21_1_1Point_a98942941b10d372effd230fdb7925a81}\label{structs21_1_1Point_a98942941b10d372effd230fdb7925a81}} 
+\index{s21::Point@{s21::Point}!z\_@{z\_}}
+\index{z\_@{z\_}!s21::Point@{s21::Point}}
+\doxysubsubsection{\texorpdfstring{z\_}{z\_}}
+{\footnotesize\ttfamily float s21\+::\+Point\+::z\+\_\+}
+
+
+
+The z-\/coordinate of the point. 
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/figure/\mbox{\hyperlink{vertex_8h}{vertex.\+h}}\item 
+model/figure/\mbox{\hyperlink{vertex_8cpp}{vertex.\+cpp}}\end{DoxyCompactItemize}

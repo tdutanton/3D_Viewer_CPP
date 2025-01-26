@@ -1,0 +1,174 @@
+\hypertarget{classs21_1_1Controller}{}\doxysection{s21\+::Controller Class Reference}
+\label{classs21_1_1Controller}\index{s21::Controller@{s21::Controller}}
+
+
+Provides an interface for interacting with Model in MVC pattern.  
+
+
+
+
+{\ttfamily \#include $<$controller.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1Controller_a8be3a195d7684301e57749104d4305b3}{Controller}} (\mbox{\hyperlink{classs21_1_1Facade}{Facade}} $\ast$facade)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classs21_1_1Controller}{Controller}} instance with the given \mbox{\hyperlink{classs21_1_1Facade}{Facade}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1Controller_a616a18e6d6b31ad62b4b18916f567416}{$\sim$\+Controller}} ()=default
+\item 
+void \mbox{\hyperlink{classs21_1_1Controller_a1946e3910c2ab5985a87322f8f353f87}{scale\+\_\+model}} (float x)
+\begin{DoxyCompactList}\small\item\em Scales the model by the given factor in all three dimensions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Controller_aaf9d50ca6c3335638a2a3334bdd28dea}{move\+\_\+model}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Moves the model by the given offsets in the x, y, and z dimensions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Controller_aaa99796574808951022fa7e2c46bb0a5}{rotate\+\_\+model}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Rotates the model by the given angles around the x, y, and z axes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Controller_ae1519c9a7ad850581f9c3aa4f8a4bc12}{read\+\_\+model}} (std\+::string file\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Loads a wireframe model from given file path and puts it in the \mbox{\hyperlink{classs21_1_1Facade}{Facade}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Controller_afb1fc183f89f17b6c8fbfe2740920a11}{reset\+\_\+model\+\_\+pos}} ()
+\begin{DoxyCompactList}\small\item\em Resets the position of the 3D model to its start position. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classs21_1_1Controller_a9e57e42e4c64c493397abebe541d5e19}{get\+\_\+model\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em Returns a vector containing the number of vertices, total edges, and unique edges in the 3D model. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1Figure}{Figure}} $\ast$ \mbox{\hyperlink{classs21_1_1Controller_a2cd4cece9e110f1cdd2e1d25381e9f2e}{get\+\_\+figure}} ()
+\begin{DoxyCompactList}\small\item\em Returns pointer to \mbox{\hyperlink{classs21_1_1Figure}{Figure}} object from \mbox{\hyperlink{classs21_1_1Facade}{Facade}} for drawing by \mbox{\hyperlink{classs21_1_1QtSceneDrawer}{Qt\+Scene\+Drawer}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides an interface for interacting with Model in MVC pattern. 
+
+The \mbox{\hyperlink{classs21_1_1Controller}{Controller}} class is responsible for managing the interaction between the GUI and the underlying 3D model. It provides methods for scaling, moving, rotating, and reading the model, as well as resetting its position and retrieving its data. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1Controller_a8be3a195d7684301e57749104d4305b3}\label{classs21_1_1Controller_a8be3a195d7684301e57749104d4305b3}} 
+\index{s21::Controller@{s21::Controller}!Controller@{Controller}}
+\index{Controller@{Controller}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{Controller()}{Controller()}}
+{\footnotesize\ttfamily s21\+::\+Controller\+::\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1Facade}{Facade}} $\ast$}]{facade }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classs21_1_1Controller}{Controller}} instance with the given \mbox{\hyperlink{classs21_1_1Facade}{Facade}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em facade} & Pointer to \mbox{\hyperlink{classs21_1_1Facade}{Facade}} object for using by \mbox{\hyperlink{classs21_1_1Controller}{Controller}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Controller_a616a18e6d6b31ad62b4b18916f567416}\label{classs21_1_1Controller_a616a18e6d6b31ad62b4b18916f567416}} 
+\index{s21::Controller@{s21::Controller}!````~Controller@{$\sim$Controller}}
+\index{````~Controller@{$\sim$Controller}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{$\sim$Controller()}{~Controller()}}
+{\footnotesize\ttfamily s21\+::\+Controller\+::$\sim$\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1Controller_a2cd4cece9e110f1cdd2e1d25381e9f2e}\label{classs21_1_1Controller_a2cd4cece9e110f1cdd2e1d25381e9f2e}} 
+\index{s21::Controller@{s21::Controller}!get\_figure@{get\_figure}}
+\index{get\_figure@{get\_figure}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{get\_figure()}{get\_figure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1Figure}{Figure}} $\ast$ s21\+::\+Controller\+::get\+\_\+figure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns pointer to \mbox{\hyperlink{classs21_1_1Figure}{Figure}} object from \mbox{\hyperlink{classs21_1_1Facade}{Facade}} for drawing by \mbox{\hyperlink{classs21_1_1QtSceneDrawer}{Qt\+Scene\+Drawer}}. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to \mbox{\hyperlink{classs21_1_1Figure}{Figure}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Controller_a9e57e42e4c64c493397abebe541d5e19}\label{classs21_1_1Controller_a9e57e42e4c64c493397abebe541d5e19}} 
+\index{s21::Controller@{s21::Controller}!get\_model\_data@{get\_model\_data}}
+\index{get\_model\_data@{get\_model\_data}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{get\_model\_data()}{get\_model\_data()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ s21\+::\+Controller\+::get\+\_\+model\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a vector containing the number of vertices, total edges, and unique edges in the 3D model. 
+
+\begin{DoxyReturn}{Returns}
+A vector of integers representing the vertex count, total edge count, and unique edge count of the 3D model. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Controller_aaf9d50ca6c3335638a2a3334bdd28dea}\label{classs21_1_1Controller_aaf9d50ca6c3335638a2a3334bdd28dea}} 
+\index{s21::Controller@{s21::Controller}!move\_model@{move\_model}}
+\index{move\_model@{move\_model}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{move\_model()}{move\_model()}}
+{\footnotesize\ttfamily void s21\+::\+Controller\+::move\+\_\+model (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Moves the model by the given offsets in the x, y, and z dimensions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The offset to apply to the model\textquotesingle{}s x-\/coordinate. \\
+\hline
+{\em y} & The offset to apply to the model\textquotesingle{}s y-\/coordinate. \\
+\hline
+{\em z} & The offset to apply to the model\textquotesingle{}s z-\/coordinate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Controller_ae1519c9a7ad850581f9c3aa4f8a4bc12}\label{classs21_1_1Controller_ae1519c9a7ad850581f9c3aa4f8a4bc12}} 
+\index{s21::Controller@{s21::Controller}!read\_model@{read\_model}}
+\index{read\_model@{read\_model}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{read\_model()}{read\_model()}}
+{\footnotesize\ttfamily void s21\+::\+Controller\+::read\+\_\+model (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Loads a wireframe model from given file path and puts it in the \mbox{\hyperlink{classs21_1_1Facade}{Facade}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path} & The file path for loading the 3d model. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Controller_afb1fc183f89f17b6c8fbfe2740920a11}\label{classs21_1_1Controller_afb1fc183f89f17b6c8fbfe2740920a11}} 
+\index{s21::Controller@{s21::Controller}!reset\_model\_pos@{reset\_model\_pos}}
+\index{reset\_model\_pos@{reset\_model\_pos}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{reset\_model\_pos()}{reset\_model\_pos()}}
+{\footnotesize\ttfamily void s21\+::\+Controller\+::reset\+\_\+model\+\_\+pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the position of the 3D model to its start position. 
+
+\mbox{\Hypertarget{classs21_1_1Controller_aaa99796574808951022fa7e2c46bb0a5}\label{classs21_1_1Controller_aaa99796574808951022fa7e2c46bb0a5}} 
+\index{s21::Controller@{s21::Controller}!rotate\_model@{rotate\_model}}
+\index{rotate\_model@{rotate\_model}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{rotate\_model()}{rotate\_model()}}
+{\footnotesize\ttfamily void s21\+::\+Controller\+::rotate\+\_\+model (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Rotates the model by the given angles around the x, y, and z axes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The angle (in degrees) to rotate the model around the x-\/axis. \\
+\hline
+{\em y} & The angle (in degrees) to rotate the model around the y-\/axis. \\
+\hline
+{\em z} & The angle (in degrees) to rotate the model around the z-\/axis. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Controller_a1946e3910c2ab5985a87322f8f353f87}\label{classs21_1_1Controller_a1946e3910c2ab5985a87322f8f353f87}} 
+\index{s21::Controller@{s21::Controller}!scale\_model@{scale\_model}}
+\index{scale\_model@{scale\_model}!s21::Controller@{s21::Controller}}
+\doxysubsubsection{\texorpdfstring{scale\_model()}{scale\_model()}}
+{\footnotesize\ttfamily void s21\+::\+Controller\+::scale\+\_\+model (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+
+
+Scales the model by the given factor in all three dimensions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The scaling factor to apply to the model. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/controller/\mbox{\hyperlink{controller_8h}{controller.\+h}}\item 
+gui/controller/\mbox{\hyperlink{controller_8cpp}{controller.\+cpp}}\end{DoxyCompactItemize}

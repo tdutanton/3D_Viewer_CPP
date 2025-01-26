@@ -1,0 +1,251 @@
+\hypertarget{classs21_1_1Figure}{}\doxysection{s21\+::Figure Class Reference}
+\label{classs21_1_1Figure}\index{s21::Figure@{s21::Figure}}
+
+
+Represents a figure in a 3D scene, derived from \mbox{\hyperlink{classs21_1_1SceneObject}{Scene\+Object}}.  
+
+
+
+
+{\ttfamily \#include $<$figure.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::Figure\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classs21_1_1Figure__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for s21\+::Figure\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classs21_1_1Figure__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1Figure_a10cec2f01825a15efb3c4d8aff8fd2fc}{Figure}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classs21_1_1Figure}{Figure}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1Figure_abe9186956684659669d9013b9007c561}{$\sim$\+Figure}} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor for the \mbox{\hyperlink{classs21_1_1Figure}{Figure}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Figure_a5454b3048b5f42f401f75a11f97561d8}{set\+\_\+name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Sets the name of the figure. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} $>$ \mbox{\hyperlink{classs21_1_1Figure_a4463f05dfa837b91819ee8adf811f7db}{get\+\_\+vertices}} () const
+\begin{DoxyCompactList}\small\item\em Gets the vertices of the figure. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classs21_1_1Figure_a646f26dd5fffa845d49ec8f1fa785725}{get\+\_\+name}} () const
+\begin{DoxyCompactList}\small\item\em Gets the name of the figure. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classs21_1_1Edge}{Edge}} $>$ \mbox{\hyperlink{classs21_1_1Figure_aeab60982ba3cfd9e5835a641237a7e8d}{get\+\_\+edges}} () const
+\begin{DoxyCompactList}\small\item\em Gets the edges of the figure. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classs21_1_1Face}{Face}} $>$ \mbox{\hyperlink{classs21_1_1Figure_ac7848139253ad8422f0ef21365430aff}{get\+\_\+faces}} () const
+\begin{DoxyCompactList}\small\item\em Gets the faces of the figure. \end{DoxyCompactList}\item 
+unsigned long long \mbox{\hyperlink{classs21_1_1Figure_a17cddac39e6a7b9080b6594f08546b9a}{get\+\_\+all\+\_\+edges\+\_\+count}} () const
+\begin{DoxyCompactList}\small\item\em Gets the total count of edges in the figure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Figure_a4fdae9a0df347ff04c73d28b362d2f14}{transform}} (const \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} \&matrix) override
+\begin{DoxyCompactList}\small\item\em Transforms the figure\textquotesingle{}s vertices using the provided transformation matrix. This method applies the transformation matrix to each vertex in the figure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Figure_ac206d53470fe493b38e49972860e7522}{make\+\_\+edges}} ()
+\begin{DoxyCompactList}\small\item\em Generates the edges of the figure based on its vertices and faces. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Figure_aa96bdc670f5f0c4d68b22d29eca49192}{save\+\_\+default\+\_\+coords}} ()
+\begin{DoxyCompactList}\small\item\em Saves the current vertices as the default (original) coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Figure_ae5b034213a262c5dc147a79153e5cdcb}{get\+\_\+default\+\_\+coords}} ()
+\begin{DoxyCompactList}\small\item\em Restores the vertices to their default (original) coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classs21_1_1Figure_adffc0f3783ef498cd7705f60f8590290}{File\+Reader}}
+\item 
+class \mbox{\hyperlink{classs21_1_1Figure_a094129b29c48b78273f19ffa41666f15}{Facade}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a figure in a 3D scene, derived from \mbox{\hyperlink{classs21_1_1SceneObject}{Scene\+Object}}. 
+
+The {\ttfamily \mbox{\hyperlink{classs21_1_1Figure}{Figure}}} class encapsulates a 3D figure, including its vertices, faces, edges, and name. It provides functionality for transforming the figure, printing its properties, and managing its geometry. The class is a friend of {\ttfamily \mbox{\hyperlink{classs21_1_1FileReader}{File\+Reader}}} and {\ttfamily \mbox{\hyperlink{classs21_1_1Facade}{Facade}}} to allow controlled access to its private members.
+
+\begin{DoxyNote}{Note}
+In test mode ({\ttfamily \#ifdef TEST}), the member variables are public for testing purposes. 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1Figure_a10cec2f01825a15efb3c4d8aff8fd2fc}\label{classs21_1_1Figure_a10cec2f01825a15efb3c4d8aff8fd2fc}} 
+\index{s21::Figure@{s21::Figure}!Figure@{Figure}}
+\index{Figure@{Figure}!s21::Figure@{s21::Figure}}
+\doxysubsubsection{\texorpdfstring{Figure()}{Figure()}}
+{\footnotesize\ttfamily s21\+::\+Figure\+::\+Figure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor for the \mbox{\hyperlink{classs21_1_1Figure}{Figure}} class. 
+
+\mbox{\Hypertarget{classs21_1_1Figure_abe9186956684659669d9013b9007c561}\label{classs21_1_1Figure_abe9186956684659669d9013b9007c561}} 
+\index{s21::Figure@{s21::Figure}!````~Figure@{$\sim$Figure}}
+\index{````~Figure@{$\sim$Figure}!s21::Figure@{s21::Figure}}
+\doxysubsubsection{\texorpdfstring{$\sim$Figure()}{~Figure()}}
+{\footnotesize\ttfamily s21\+::\+Figure\+::$\sim$\+Figure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default destructor for the \mbox{\hyperlink{classs21_1_1Figure}{Figure}} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1Figure_a17cddac39e6a7b9080b6594f08546b9a}\label{classs21_1_1Figure_a17cddac39e6a7b9080b6594f08546b9a}} 
+\index{s21::Figure@{s21::Figure}!get\_all\_edges\_count@{get\_all\_edges\_count}}
+\index{get\_all\_edges\_count@{get\_all\_edges\_count}!s21::Figure@{s21::Figure}}
+\doxysubsubsection{\texorpdfstring{get\_all\_edges\_count()}{get\_all\_edges\_count()}}
+{\footnotesize\ttfamily unsigned long long s21\+::\+Figure\+::get\+\_\+all\+\_\+edges\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the total count of edges in the figure. 
+
+\begin{DoxyReturn}{Returns}
+The total count of edges. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Figure_ae5b034213a262c5dc147a79153e5cdcb}\label{classs21_1_1Figure_ae5b034213a262c5dc147a79153e5cdcb}} 
+\index{s21::Figure@{s21::Figure}!get\_default\_coords@{get\_default\_coords}}
+\index{get\_default\_coords@{get\_default\_coords}!s21::Figure@{s21::Figure}}
+\doxysubsubsection{\texorpdfstring{get\_default\_coords()}{get\_default\_coords()}}
+{\footnotesize\ttfamily void s21\+::\+Figure\+::get\+\_\+default\+\_\+coords (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Restores the vertices to their default (original) coordinates. 
+
+\mbox{\Hypertarget{classs21_1_1Figure_aeab60982ba3cfd9e5835a641237a7e8d}\label{classs21_1_1Figure_aeab60982ba3cfd9e5835a641237a7e8d}} 
+\index{s21::Figure@{s21::Figure}!get\_edges@{get\_edges}}
+\index{get\_edges@{get\_edges}!s21::Figure@{s21::Figure}}
+\doxysubsubsection{\texorpdfstring{get\_edges()}{get\_edges()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classs21_1_1Edge}{Edge}}$>$ s21\+::\+Figure\+::get\+\_\+edges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the edges of the figure. 
+
+\begin{DoxyReturn}{Returns}
+A vector of edges defining the figure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Figure_ac7848139253ad8422f0ef21365430aff}\label{classs21_1_1Figure_ac7848139253ad8422f0ef21365430aff}} 
+\index{s21::Figure@{s21::Figure}!get\_faces@{get\_faces}}
+\index{get\_faces@{get\_faces}!s21::Figure@{s21::Figure}}
+\doxysubsubsection{\texorpdfstring{get\_faces()}{get\_faces()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classs21_1_1Face}{Face}}$>$ s21\+::\+Figure\+::get\+\_\+faces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the faces of the figure. 
+
+\begin{DoxyReturn}{Returns}
+A vector of faces defining the figure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Figure_a646f26dd5fffa845d49ec8f1fa785725}\label{classs21_1_1Figure_a646f26dd5fffa845d49ec8f1fa785725}} 
+\index{s21::Figure@{s21::Figure}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!s21::Figure@{s21::Figure}}
+\doxysubsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily std\+::string s21\+::\+Figure\+::get\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the name of the figure. 
+
+\begin{DoxyReturn}{Returns}
+The name of the figure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Figure_a4463f05dfa837b91819ee8adf811f7db}\label{classs21_1_1Figure_a4463f05dfa837b91819ee8adf811f7db}} 
+\index{s21::Figure@{s21::Figure}!get\_vertices@{get\_vertices}}
+\index{get\_vertices@{get\_vertices}!s21::Figure@{s21::Figure}}
+\doxysubsubsection{\texorpdfstring{get\_vertices()}{get\_vertices()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classs21_1_1Vertex}{Vertex}}$>$ s21\+::\+Figure\+::get\+\_\+vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the vertices of the figure. 
+
+\begin{DoxyReturn}{Returns}
+A vector of vertices defining the figure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Figure_ac206d53470fe493b38e49972860e7522}\label{classs21_1_1Figure_ac206d53470fe493b38e49972860e7522}} 
+\index{s21::Figure@{s21::Figure}!make\_edges@{make\_edges}}
+\index{make\_edges@{make\_edges}!s21::Figure@{s21::Figure}}
+\doxysubsubsection{\texorpdfstring{make\_edges()}{make\_edges()}}
+{\footnotesize\ttfamily void s21\+::\+Figure\+::make\+\_\+edges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Generates the edges of the figure based on its vertices and faces. 
+
+This method clears the existing edges and generates new edges by iterating through the faces and connecting vertices. It ensures that each edge is unique and updates the total count of edges. \mbox{\Hypertarget{classs21_1_1Figure_aa96bdc670f5f0c4d68b22d29eca49192}\label{classs21_1_1Figure_aa96bdc670f5f0c4d68b22d29eca49192}} 
+\index{s21::Figure@{s21::Figure}!save\_default\_coords@{save\_default\_coords}}
+\index{save\_default\_coords@{save\_default\_coords}!s21::Figure@{s21::Figure}}
+\doxysubsubsection{\texorpdfstring{save\_default\_coords()}{save\_default\_coords()}}
+{\footnotesize\ttfamily void s21\+::\+Figure\+::save\+\_\+default\+\_\+coords (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Saves the current vertices as the default (original) coordinates. 
+
+\mbox{\Hypertarget{classs21_1_1Figure_a5454b3048b5f42f401f75a11f97561d8}\label{classs21_1_1Figure_a5454b3048b5f42f401f75a11f97561d8}} 
+\index{s21::Figure@{s21::Figure}!set\_name@{set\_name}}
+\index{set\_name@{set\_name}!s21::Figure@{s21::Figure}}
+\doxysubsubsection{\texorpdfstring{set\_name()}{set\_name()}}
+{\footnotesize\ttfamily void s21\+::\+Figure\+::set\+\_\+name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the name of the figure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name to assign to the figure. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Figure_a4fdae9a0df347ff04c73d28b362d2f14}\label{classs21_1_1Figure_a4fdae9a0df347ff04c73d28b362d2f14}} 
+\index{s21::Figure@{s21::Figure}!transform@{transform}}
+\index{transform@{transform}!s21::Figure@{s21::Figure}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily void s21\+::\+Figure\+::transform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} \&}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Transforms the figure\textquotesingle{}s vertices using the provided transformation matrix. This method applies the transformation matrix to each vertex in the figure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & The transformation matrix to apply. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classs21_1_1SceneObject_afd05608bfd42dc993b91366cd12539e8}{s21\+::\+Scene\+Object}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classs21_1_1Figure_a094129b29c48b78273f19ffa41666f15}\label{classs21_1_1Figure_a094129b29c48b78273f19ffa41666f15}} 
+\index{s21::Figure@{s21::Figure}!Facade@{Facade}}
+\index{Facade@{Facade}!s21::Figure@{s21::Figure}}
+\doxysubsubsection{\texorpdfstring{Facade}{Facade}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classs21_1_1Facade}{Facade}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classs21_1_1Figure_adffc0f3783ef498cd7705f60f8590290}\label{classs21_1_1Figure_adffc0f3783ef498cd7705f60f8590290}} 
+\index{s21::Figure@{s21::Figure}!FileReader@{FileReader}}
+\index{FileReader@{FileReader}!s21::Figure@{s21::Figure}}
+\doxysubsubsection{\texorpdfstring{FileReader}{FileReader}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classs21_1_1FileReader}{File\+Reader}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/figure/\mbox{\hyperlink{figure_8h}{figure.\+h}}\item 
+model/figure/\mbox{\hyperlink{figure_8cpp}{figure.\+cpp}}\end{DoxyCompactItemize}

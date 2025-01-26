@@ -1,0 +1,85 @@
+\hypertarget{classs21_1_1FileReaderBuilder}{}\doxysection{s21\+::File\+Reader\+Builder Class Reference}
+\label{classs21_1_1FileReaderBuilder}\index{s21::FileReaderBuilder@{s21::FileReaderBuilder}}
+
+
+Abstract base class for building a \mbox{\hyperlink{classs21_1_1FileReader}{File\+Reader}}. Use Builder pattern.  
+
+
+
+
+{\ttfamily \#include $<$file\+\_\+reader.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::File\+Reader\+Builder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classs21_1_1FileReaderBuilder__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classs21_1_1FileReaderBuilder_a0357e7ddf593917f3b05f468ae56f3c5}{reset}} ()=0
+\begin{DoxyCompactList}\small\item\em Resets the builder. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classs21_1_1FileReaderBuilder_a12f5081d98d47720b8193fa0ef66e389}{set\+\_\+normalization\+\_\+parameters}} (\mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}} $\ast$params)=0
+\begin{DoxyCompactList}\small\item\em Sets normalization parameters. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classs21_1_1FileReaderBuilder_a34c9dcf5ae140deccd3be0397996ffae}{$\sim$\+File\+Reader\+Builder}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for building a \mbox{\hyperlink{classs21_1_1FileReader}{File\+Reader}}. Use Builder pattern. 
+
+This class defines the interface for building a \mbox{\hyperlink{classs21_1_1FileReader}{File\+Reader}} object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1FileReaderBuilder_a34c9dcf5ae140deccd3be0397996ffae}\label{classs21_1_1FileReaderBuilder_a34c9dcf5ae140deccd3be0397996ffae}} 
+\index{s21::FileReaderBuilder@{s21::FileReaderBuilder}!````~FileReaderBuilder@{$\sim$FileReaderBuilder}}
+\index{````~FileReaderBuilder@{$\sim$FileReaderBuilder}!s21::FileReaderBuilder@{s21::FileReaderBuilder}}
+\doxysubsubsection{\texorpdfstring{$\sim$FileReaderBuilder()}{~FileReaderBuilder()}}
+{\footnotesize\ttfamily virtual s21\+::\+File\+Reader\+Builder\+::$\sim$\+File\+Reader\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1FileReaderBuilder_a0357e7ddf593917f3b05f468ae56f3c5}\label{classs21_1_1FileReaderBuilder_a0357e7ddf593917f3b05f468ae56f3c5}} 
+\index{s21::FileReaderBuilder@{s21::FileReaderBuilder}!reset@{reset}}
+\index{reset@{reset}!s21::FileReaderBuilder@{s21::FileReaderBuilder}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily virtual void s21\+::\+File\+Reader\+Builder\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Resets the builder. 
+
+
+
+Implemented in \mbox{\hyperlink{classs21_1_1FigureBuilder_a08b3b11b9b73532c63c03a158c1eee18}{s21\+::\+Figure\+Builder}}.
+
+\mbox{\Hypertarget{classs21_1_1FileReaderBuilder_a12f5081d98d47720b8193fa0ef66e389}\label{classs21_1_1FileReaderBuilder_a12f5081d98d47720b8193fa0ef66e389}} 
+\index{s21::FileReaderBuilder@{s21::FileReaderBuilder}!set\_normalization\_parameters@{set\_normalization\_parameters}}
+\index{set\_normalization\_parameters@{set\_normalization\_parameters}!s21::FileReaderBuilder@{s21::FileReaderBuilder}}
+\doxysubsubsection{\texorpdfstring{set\_normalization\_parameters()}{set\_normalization\_parameters()}}
+{\footnotesize\ttfamily virtual void s21\+::\+File\+Reader\+Builder\+::set\+\_\+normalization\+\_\+parameters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}} $\ast$}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets normalization parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & Normalization parameters. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classs21_1_1FigureBuilder_a16627d759ae2c7f18f1108a18c223646}{s21\+::\+Figure\+Builder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+model/file\+\_\+reader/\mbox{\hyperlink{file__reader_8h}{file\+\_\+reader.\+h}}\end{DoxyCompactItemize}

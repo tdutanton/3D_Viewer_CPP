@@ -1,0 +1,4 @@
+<map id="s21::SceneDrawerBase" name="s21::SceneDrawerBase">
+<area shape="rect" id="node1" title="Abstract base class for scene drawers." alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node2" href="$classs21_1_1QtSceneDrawer.html" title="The QtSceneDrawer is an OpenGL&#45;based widget for rendering 3D figures." alt="" coords="13,80,168,107"/>
+</map>

@@ -1,0 +1,105 @@
+\hypertarget{classs21_1_1FigureBuilder}{}\doxysection{s21\+::Figure\+Builder Class Reference}
+\label{classs21_1_1FigureBuilder}\index{s21::FigureBuilder@{s21::FigureBuilder}}
+
+
+A concrete builder for creating \mbox{\hyperlink{classs21_1_1Figure}{Figure}} objects.  
+
+
+
+
+{\ttfamily \#include $<$file\+\_\+reader.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::Figure\+Builder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classs21_1_1FigureBuilder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for s21\+::Figure\+Builder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classs21_1_1FigureBuilder__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classs21_1_1FigureBuilder_a08b3b11b9b73532c63c03a158c1eee18}{reset}} () override
+\begin{DoxyCompactList}\small\item\em Resets the \mbox{\hyperlink{classs21_1_1FigureBuilder}{Figure\+Builder}} to its initial state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1FigureBuilder_a16627d759ae2c7f18f1108a18c223646}{set\+\_\+normalization\+\_\+parameters}} (\mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}} $\ast$params) override
+\begin{DoxyCompactList}\small\item\em Sets normalization parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1Figure}{Figure}} \mbox{\hyperlink{classs21_1_1FigureBuilder_afdee2cfca6aa5ac976130200ce74a40a}{get\+\_\+result}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Constructs and returns a figure by reading data from a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A concrete builder for creating \mbox{\hyperlink{classs21_1_1Figure}{Figure}} objects. 
+
+This class implements the \mbox{\hyperlink{classs21_1_1FileReaderBuilder}{File\+Reader\+Builder}} interface to construct \mbox{\hyperlink{classs21_1_1Figure}{Figure}} objects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1FigureBuilder_afdee2cfca6aa5ac976130200ce74a40a}\label{classs21_1_1FigureBuilder_afdee2cfca6aa5ac976130200ce74a40a}} 
+\index{s21::FigureBuilder@{s21::FigureBuilder}!get\_result@{get\_result}}
+\index{get\_result@{get\_result}!s21::FigureBuilder@{s21::FigureBuilder}}
+\doxysubsubsection{\texorpdfstring{get\_result()}{get\_result()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1Figure}{Figure}} s21\+::\+Figure\+Builder\+::get\+\_\+result (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Constructs and returns a figure by reading data from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file to read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constructed figure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1FigureBuilder_a08b3b11b9b73532c63c03a158c1eee18}\label{classs21_1_1FigureBuilder_a08b3b11b9b73532c63c03a158c1eee18}} 
+\index{s21::FigureBuilder@{s21::FigureBuilder}!reset@{reset}}
+\index{reset@{reset}!s21::FigureBuilder@{s21::FigureBuilder}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void s21\+::\+Figure\+Builder\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Resets the \mbox{\hyperlink{classs21_1_1FigureBuilder}{Figure\+Builder}} to its initial state. 
+
+
+
+Implements \mbox{\hyperlink{classs21_1_1FileReaderBuilder_a0357e7ddf593917f3b05f468ae56f3c5}{s21\+::\+File\+Reader\+Builder}}.
+
+\mbox{\Hypertarget{classs21_1_1FigureBuilder_a16627d759ae2c7f18f1108a18c223646}\label{classs21_1_1FigureBuilder_a16627d759ae2c7f18f1108a18c223646}} 
+\index{s21::FigureBuilder@{s21::FigureBuilder}!set\_normalization\_parameters@{set\_normalization\_parameters}}
+\index{set\_normalization\_parameters@{set\_normalization\_parameters}!s21::FigureBuilder@{s21::FigureBuilder}}
+\doxysubsubsection{\texorpdfstring{set\_normalization\_parameters()}{set\_normalization\_parameters()}}
+{\footnotesize\ttfamily void s21\+::\+Figure\+Builder\+::set\+\_\+normalization\+\_\+parameters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}} $\ast$}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets normalization parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em params} & Normalization parameters. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classs21_1_1FileReaderBuilder_a12f5081d98d47720b8193fa0ef66e389}{s21\+::\+File\+Reader\+Builder}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/file\+\_\+reader/\mbox{\hyperlink{file__reader_8h}{file\+\_\+reader.\+h}}\item 
+model/file\+\_\+reader/\mbox{\hyperlink{file__reader_8cpp}{file\+\_\+reader.\+cpp}}\end{DoxyCompactItemize}

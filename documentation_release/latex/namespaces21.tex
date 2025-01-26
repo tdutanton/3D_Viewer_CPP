@@ -1,0 +1,237 @@
+\hypertarget{namespaces21}{}\doxysection{s21 Namespace Reference}
+\label{namespaces21}\index{s21@{s21}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classs21_1_1FacadeOperationResult}{Facade\+Operation\+Result}}
+\begin{DoxyCompactList}\small\item\em Represents the result of an operation performed by the \mbox{\hyperlink{classs21_1_1Facade}{Facade}} class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1Facade}{Facade}}
+\begin{DoxyCompactList}\small\item\em Represents interface for interacting with \mbox{\hyperlink{classs21_1_1Controller}{Controller}} class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}}
+\begin{DoxyCompactList}\small\item\em Manages the normalization parameters for \mbox{\hyperlink{classs21_1_1Figure}{Figure}} objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1SceneDrawerBase}{Scene\+Drawer\+Base}}
+\begin{DoxyCompactList}\small\item\em Abstract base class for scene drawers. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1Edge}{Edge}}
+\begin{DoxyCompactList}\small\item\em Represents an edge in a figure, connecting two vertices. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1Face}{Face}}
+\begin{DoxyCompactList}\small\item\em Represents a face composed of a vector of unsigned integers. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structs21_1_1PairHash}{Pair\+Hash}}
+\begin{DoxyCompactList}\small\item\em Hash function for pairs of values. This struct provides a hash function for pairs of values, used to store edges in a hash set. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1Figure}{Figure}}
+\begin{DoxyCompactList}\small\item\em Represents a figure in a 3D scene, derived from \mbox{\hyperlink{classs21_1_1SceneObject}{Scene\+Object}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1SceneObject}{Scene\+Object}}
+\begin{DoxyCompactList}\small\item\em Abstract base class representing a scene object. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structs21_1_1Point}{Point}}
+\begin{DoxyCompactList}\small\item\em Represents a point in 3D space with homogeneous coordinates. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1Vertex}{Vertex}}
+\begin{DoxyCompactList}\small\item\em Represents a vertex in 3D space, derived from \mbox{\hyperlink{classs21_1_1SceneObject}{Scene\+Object}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1FileReader}{File\+Reader}}
+\begin{DoxyCompactList}\small\item\em A class for reading figure data from a file. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1FileReaderBuilder}{File\+Reader\+Builder}}
+\begin{DoxyCompactList}\small\item\em Abstract base class for building a \mbox{\hyperlink{classs21_1_1FileReader}{File\+Reader}}. Use Builder pattern. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1FigureBuilder}{Figure\+Builder}}
+\begin{DoxyCompactList}\small\item\em A concrete builder for creating \mbox{\hyperlink{classs21_1_1Figure}{Figure}} objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1FileReaderDirector}{File\+Reader\+Director}}
+\begin{DoxyCompactList}\small\item\em Constructs a figure using the provided builder. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}}
+\begin{DoxyCompactList}\small\item\em A class representing a 4x4 transformation matrix. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1TransformMatrixBuilder}{Transform\+Matrix\+Builder}}
+\begin{DoxyCompactList}\small\item\em A utility class for creating transformation matrices. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1Controller}{Controller}}
+\begin{DoxyCompactList}\small\item\em Provides an interface for interacting with Model in MVC pattern. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1MainWindow}{Main\+Window}}
+\item 
+class \mbox{\hyperlink{classs21_1_1QtSceneDrawer}{Qt\+Scene\+Drawer}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classs21_1_1QtSceneDrawer}{Qt\+Scene\+Drawer}} is an Open\+GL-\/based widget for rendering 3D figures. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1SettingsWidget}{Settings\+Widget}}
+\begin{DoxyCompactList}\small\item\em A dialog widget that allows user to customize type, color and thickness of the edges, display method, color and size of the vertices of a 3D model. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classs21_1_1View}{View}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classs21_1_1View}{View}} class is responsible for the GUI of the 3D viewer application and handling user interactions, such as opening and saving files, adjusting the 3D object\textquotesingle{}s scale, position, and rotation, switching between parallel and central projection modes. It also includes a \mbox{\hyperlink{classs21_1_1QtSceneDrawer}{Qt\+Scene\+Drawer}} object to render the 3D scene and a \mbox{\hyperlink{classs21_1_1SettingsWidget}{Settings\+Widget}} object to manage the application\textquotesingle{}s settings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structs21_1_1Point}{s21\+::\+Point}} \mbox{\hyperlink{namespaces21_a7447a39078a9f36448371d3c35f45384}{Point}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{namespaces21_aa5119286ae9d97f01311a2bf552d70fd}{setup\+\_\+button}} (QWidget $\ast$parent, const QString \&text, const QString \&icon\+\_\+path, const QSize \&icon\+\_\+size, int x, int y, int width, int height, const QFont \&font)
+\begin{DoxyCompactList}\small\item\em Creates a new QPush\+Button with the specified text, icon, geometry, and font. If an icon path is provided, the button will display the icon with the given size. \end{DoxyCompactList}\item 
+QLabel $\ast$ \mbox{\hyperlink{namespaces21_a52ddbe8682d1e6b35fc4241125462271}{setup\+\_\+label}} (QWidget $\ast$parent, const QString \&text, int x, int y, int width, int height, const QFont \&font, Qt\+::\+Alignment align)
+\begin{DoxyCompactList}\small\item\em Creates a new QLabel with the specified text, geometry, font, and alignment. \end{DoxyCompactList}\item 
+QScroll\+Bar $\ast$ \mbox{\hyperlink{namespaces21_ad321f770ecaf26801322d50e18f19196}{setup\+\_\+scrollbar}} (QWidget $\ast$parent, Qt\+::\+Orientation orient, int x, int y, int width, int height, int min, int max)
+\begin{DoxyCompactList}\small\item\em Creates a new QScroll\+Bar with the specified orientation, geometry, and range. \end{DoxyCompactList}\item 
+QSpin\+Box $\ast$ \mbox{\hyperlink{namespaces21_a58df811d7866336a48fe37ab7bd04c27}{setup\+\_\+spinbox}} (QWidget $\ast$parent, int x, int y, int width, int height, int min, int max)
+\begin{DoxyCompactList}\small\item\em Creates a new QSpin\+Box with the specified geometry and range. \end{DoxyCompactList}\item 
+QCombo\+Box $\ast$ \mbox{\hyperlink{namespaces21_a0e4bd8768fae24925db1f534ecb0a3c8}{setup\+\_\+combobox}} (QWidget $\ast$parent, const QString\+List \&options, int x, int y, int width, int height, const QFont \&font)
+\begin{DoxyCompactList}\small\item\em Creates a new QCombo\+Box with the specified parent, options, geometry, and font. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespaces21_a7447a39078a9f36448371d3c35f45384}\label{namespaces21_a7447a39078a9f36448371d3c35f45384}} 
+\index{s21@{s21}!Point@{Point}}
+\index{Point@{Point}!s21@{s21}}
+\doxysubsubsection{\texorpdfstring{Point}{Point}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structs21_1_1Point}{Point}} \mbox{\hyperlink{structs21_1_1Point}{s21\+::\+Point}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaces21_aa5119286ae9d97f01311a2bf552d70fd}\label{namespaces21_aa5119286ae9d97f01311a2bf552d70fd}} 
+\index{s21@{s21}!setup\_button@{setup\_button}}
+\index{setup\_button@{setup\_button}!s21@{s21}}
+\doxysubsubsection{\texorpdfstring{setup\_button()}{setup\_button()}}
+{\footnotesize\ttfamily QPush\+Button $\ast$ s21\+::setup\+\_\+button (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{const QString \&}]{text,  }\item[{const QString \&}]{icon\+\_\+path,  }\item[{const QSize \&}]{icon\+\_\+size,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{const QFont \&}]{font }\end{DoxyParamCaption})}
+
+
+
+Creates a new QPush\+Button with the specified text, icon, geometry, and font. If an icon path is provided, the button will display the icon with the given size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget for the button. \\
+\hline
+{\em text} & The text to be displayed on the button. \\
+\hline
+{\em icon\+\_\+path} & The path to the icon image file, or an empty string if no icon is desired. \\
+\hline
+{\em icon\+\_\+size} & The size of the icon to be displayed on the button. \\
+\hline
+{\em x} & The x-\/coordinate of the button\textquotesingle{}s position. \\
+\hline
+{\em y} & The y-\/coordinate of the button\textquotesingle{}s position. \\
+\hline
+{\em width} & The width of the button. \\
+\hline
+{\em height} & The height of the button. \\
+\hline
+{\em font} & The font to be used for the button\textquotesingle{}s text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the newly created QPush\+Button. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaces21_a0e4bd8768fae24925db1f534ecb0a3c8}\label{namespaces21_a0e4bd8768fae24925db1f534ecb0a3c8}} 
+\index{s21@{s21}!setup\_combobox@{setup\_combobox}}
+\index{setup\_combobox@{setup\_combobox}!s21@{s21}}
+\doxysubsubsection{\texorpdfstring{setup\_combobox()}{setup\_combobox()}}
+{\footnotesize\ttfamily QCombo\+Box $\ast$ s21\+::setup\+\_\+combobox (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{const QString\+List \&}]{options,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{const QFont \&}]{font }\end{DoxyParamCaption})}
+
+
+
+Creates a new QCombo\+Box with the specified parent, options, geometry, and font. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget for the combo box. \\
+\hline
+{\em options} & The list of options to populate the combo box. \\
+\hline
+{\em x} & The x-\/coordinate of the combo box\textquotesingle{}s position. \\
+\hline
+{\em y} & The y-\/coordinate of the combo box\textquotesingle{}s position. \\
+\hline
+{\em width} & The width of the combo box. \\
+\hline
+{\em height} & The height of the combo box. \\
+\hline
+{\em font} & The font to use for the combo box\textquotesingle{}s text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the newly created QCombo\+Box. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaces21_a52ddbe8682d1e6b35fc4241125462271}\label{namespaces21_a52ddbe8682d1e6b35fc4241125462271}} 
+\index{s21@{s21}!setup\_label@{setup\_label}}
+\index{setup\_label@{setup\_label}!s21@{s21}}
+\doxysubsubsection{\texorpdfstring{setup\_label()}{setup\_label()}}
+{\footnotesize\ttfamily QLabel $\ast$ s21\+::setup\+\_\+label (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{const QString \&}]{text,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{const QFont \&}]{font,  }\item[{Qt\+::\+Alignment}]{align }\end{DoxyParamCaption})}
+
+
+
+Creates a new QLabel with the specified text, geometry, font, and alignment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget for the label. \\
+\hline
+{\em text} & The text to be displayed on the label. \\
+\hline
+{\em x} & The x-\/coordinate of the label\textquotesingle{}s position. \\
+\hline
+{\em y} & The y-\/coordinate of the label\textquotesingle{}s position. \\
+\hline
+{\em width} & The width of the label. \\
+\hline
+{\em height} & The height of the label. \\
+\hline
+{\em font} & The font to be used for the label\textquotesingle{}s text. \\
+\hline
+{\em align} & The alignment of the label\textquotesingle{}s text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the newly created QLabel. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaces21_ad321f770ecaf26801322d50e18f19196}\label{namespaces21_ad321f770ecaf26801322d50e18f19196}} 
+\index{s21@{s21}!setup\_scrollbar@{setup\_scrollbar}}
+\index{setup\_scrollbar@{setup\_scrollbar}!s21@{s21}}
+\doxysubsubsection{\texorpdfstring{setup\_scrollbar()}{setup\_scrollbar()}}
+{\footnotesize\ttfamily QScroll\+Bar $\ast$ s21\+::setup\+\_\+scrollbar (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{Qt\+::\+Orientation}]{orient,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+
+
+Creates a new QScroll\+Bar with the specified orientation, geometry, and range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget for the scroll bar. \\
+\hline
+{\em orient} & The orientation of the scroll bar (Qt\+::\+Horizontal or Qt\+::\+Vertical). \\
+\hline
+{\em x} & The x-\/coordinate of the scroll bar\textquotesingle{}s position. \\
+\hline
+{\em y} & The y-\/coordinate of the scroll bar\textquotesingle{}s position. \\
+\hline
+{\em width} & The width of the scroll bar. \\
+\hline
+{\em height} & The height of the scroll bar. \\
+\hline
+{\em min} & The minimum value of the scroll bar\textquotesingle{}s range. \\
+\hline
+{\em max} & The maximum value of the scroll bar\textquotesingle{}s range. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the newly created QScroll\+Bar. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaces21_a58df811d7866336a48fe37ab7bd04c27}\label{namespaces21_a58df811d7866336a48fe37ab7bd04c27}} 
+\index{s21@{s21}!setup\_spinbox@{setup\_spinbox}}
+\index{setup\_spinbox@{setup\_spinbox}!s21@{s21}}
+\doxysubsubsection{\texorpdfstring{setup\_spinbox()}{setup\_spinbox()}}
+{\footnotesize\ttfamily QSpin\+Box $\ast$ s21\+::setup\+\_\+spinbox (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+
+
+Creates a new QSpin\+Box with the specified geometry and range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent widget for the spin box. \\
+\hline
+{\em x} & The x-\/coordinate of the spin box\textquotesingle{}s position. \\
+\hline
+{\em y} & The y-\/coordinate of the spin box\textquotesingle{}s position. \\
+\hline
+{\em width} & The width of the spin box. \\
+\hline
+{\em height} & The height of the spin box. \\
+\hline
+{\em min} & The minimum value of the spin box\textquotesingle{}s range. \\
+\hline
+{\em max} & The maximum value of the spin box\textquotesingle{}s range. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the newly created QSpin\+Box. 
+\end{DoxyReturn}

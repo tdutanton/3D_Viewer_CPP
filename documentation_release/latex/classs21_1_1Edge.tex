@@ -1,0 +1,141 @@
+\hypertarget{classs21_1_1Edge}{}\doxysection{s21\+::Edge Class Reference}
+\label{classs21_1_1Edge}\index{s21::Edge@{s21::Edge}}
+
+
+Represents an edge in a figure, connecting two vertices.  
+
+
+
+
+{\ttfamily \#include $<$edge.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1Edge_aea1d6cd29b2e25e35e99ee6f9077816c}{Edge}} (\mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} \&begin, \mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} \&end)
+\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{classs21_1_1Edge}{Edge}} object connecting two vertices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1Edge_a9fbb4e240f20572763b508bc04dea750}{$\sim$\+Edge}} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} \& \mbox{\hyperlink{classs21_1_1Edge_ac12c5ac1d1568d60ea82d0ec372875f0}{get\+\_\+begin}} () const
+\begin{DoxyCompactList}\small\item\em Gets the starting vertex of the edge. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} \& \mbox{\hyperlink{classs21_1_1Edge_ac3ed71e90ead169d396f663f0d25b012}{get\+\_\+end}} () const
+\begin{DoxyCompactList}\small\item\em Gets the ending vertex of the edge. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classs21_1_1Edge_a291370a271b8bcabec27e70221594b4c}{operator==}} (const \mbox{\hyperlink{classs21_1_1Edge}{Edge}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality comparison operator for \mbox{\hyperlink{classs21_1_1Edge}{Edge}} objects. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1Edge}{Edge}} \& \mbox{\hyperlink{classs21_1_1Edge_a52f1db23cfd0f448c5f6479fded29794}{operator=}} (const \mbox{\hyperlink{classs21_1_1Edge}{Edge}} \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator for \mbox{\hyperlink{classs21_1_1Edge}{Edge}} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an edge in a figure, connecting two vertices. 
+
+This class models a directed edge in a graph structure. Each edge has a starting vertex ({\ttfamily begin\+\_\+}) and an ending vertex ({\ttfamily end\+\_\+}).
+
+\begin{DoxyNote}{Note}
+In test mode ({\ttfamily \#ifdef TEST}), the member variables are public for testing purposes. 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1Edge_aea1d6cd29b2e25e35e99ee6f9077816c}\label{classs21_1_1Edge_aea1d6cd29b2e25e35e99ee6f9077816c}} 
+\index{s21::Edge@{s21::Edge}!Edge@{Edge}}
+\index{Edge@{Edge}!s21::Edge@{s21::Edge}}
+\doxysubsubsection{\texorpdfstring{Edge()}{Edge()}}
+{\footnotesize\ttfamily s21\+::\+Edge\+::\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} \&}]{begin,  }\item[{\mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} \&}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs an \mbox{\hyperlink{classs21_1_1Edge}{Edge}} object connecting two vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em begin} & The starting vertex of the edge. \\
+\hline
+{\em end} & The ending vertex of the edge. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Edge_a9fbb4e240f20572763b508bc04dea750}\label{classs21_1_1Edge_a9fbb4e240f20572763b508bc04dea750}} 
+\index{s21::Edge@{s21::Edge}!````~Edge@{$\sim$Edge}}
+\index{````~Edge@{$\sim$Edge}!s21::Edge@{s21::Edge}}
+\doxysubsubsection{\texorpdfstring{$\sim$Edge()}{~Edge()}}
+{\footnotesize\ttfamily s21\+::\+Edge\+::$\sim$\+Edge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1Edge_ac12c5ac1d1568d60ea82d0ec372875f0}\label{classs21_1_1Edge_ac12c5ac1d1568d60ea82d0ec372875f0}} 
+\index{s21::Edge@{s21::Edge}!get\_begin@{get\_begin}}
+\index{get\_begin@{get\_begin}!s21::Edge@{s21::Edge}}
+\doxysubsubsection{\texorpdfstring{get\_begin()}{get\_begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1Vertex}{Vertex}}\& s21\+::\+Edge\+::get\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the starting vertex of the edge. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the starting vertex. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Edge_ac3ed71e90ead169d396f663f0d25b012}\label{classs21_1_1Edge_ac3ed71e90ead169d396f663f0d25b012}} 
+\index{s21::Edge@{s21::Edge}!get\_end@{get\_end}}
+\index{get\_end@{get\_end}!s21::Edge@{s21::Edge}}
+\doxysubsubsection{\texorpdfstring{get\_end()}{get\_end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1Vertex}{Vertex}}\& s21\+::\+Edge\+::get\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the ending vertex of the edge. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the ending vertex. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Edge_a52f1db23cfd0f448c5f6479fded29794}\label{classs21_1_1Edge_a52f1db23cfd0f448c5f6479fded29794}} 
+\index{s21::Edge@{s21::Edge}!operator=@{operator=}}
+\index{operator=@{operator=}!s21::Edge@{s21::Edge}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1Edge}{Edge}} \& s21\+::\+Edge\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classs21_1_1Edge}{Edge}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Assignment operator for \mbox{\hyperlink{classs21_1_1Edge}{Edge}} objects. 
+
+This operator assigns the values of another \mbox{\hyperlink{classs21_1_1Edge}{Edge}} object to this object. It performs a self-\/assignment check to ensure that assigning an object to itself does not cause any issues.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \mbox{\hyperlink{classs21_1_1Edge}{Edge}} object to assign from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to this \mbox{\hyperlink{classs21_1_1Edge}{Edge}} object after assignment. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Edge_a291370a271b8bcabec27e70221594b4c}\label{classs21_1_1Edge_a291370a271b8bcabec27e70221594b4c}} 
+\index{s21::Edge@{s21::Edge}!operator==@{operator==}}
+\index{operator==@{operator==}!s21::Edge@{s21::Edge}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool s21\+::\+Edge\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classs21_1_1Edge}{Edge}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Equality comparison operator for \mbox{\hyperlink{classs21_1_1Edge}{Edge}} objects. 
+
+This operator checks if two \mbox{\hyperlink{classs21_1_1Edge}{Edge}} objects are equal. Two edges are considered equal if their begin and end points are the same, regardless of the order (i.\+e., an edge from A to B is considered equal to an edge from B to A).
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \mbox{\hyperlink{classs21_1_1Edge}{Edge}} object to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the edges are equal, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/figure/\mbox{\hyperlink{edge_8h}{edge.\+h}}\item 
+model/figure/\mbox{\hyperlink{edge_8cpp}{edge.\+cpp}}\end{DoxyCompactItemize}

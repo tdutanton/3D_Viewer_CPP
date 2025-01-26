@@ -1,0 +1,69 @@
+\hypertarget{view_8h}{}\doxysection{gui/view/view.h File Reference}
+\label{view_8h}\index{gui/view/view.h@{gui/view/view.h}}
+{\ttfamily \#include $<$QObject$>$}\newline
+{\ttfamily \#include $<$QPush\+Button$>$}\newline
+{\ttfamily \#include $<$QWidget$>$}\newline
+{\ttfamily \#include $<$Qt\+Widgets$>$}\newline
+{\ttfamily \#include \char`\"{}../controller/controller.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}qgifimage.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}qt\+\_\+scene\+\_\+drawer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}settings\+\_\+widget.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}widget\+\_\+utils.\+h\char`\"{}}\newline
+Include dependency graph for view.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classs21_1_1View}{s21\+::\+View}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classs21_1_1View}{View}} class is responsible for the GUI of the 3D viewer application and handling user interactions, such as opening and saving files, adjusting the 3D object\textquotesingle{}s scale, position, and rotation, switching between parallel and central projection modes. It also includes a \mbox{\hyperlink{classs21_1_1QtSceneDrawer}{Qt\+Scene\+Drawer}} object to render the 3D scene and a \mbox{\hyperlink{classs21_1_1SettingsWidget}{Settings\+Widget}} object to manage the application\textquotesingle{}s settings. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structs21_1_1View_1_1PrevPositions}{s21\+::\+View\+::\+Prev\+Positions}}
+\begin{DoxyCompactList}\small\item\em Keeps track of the previous positions of the scale, move, and rotate 3D object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaces21}{s21}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{view_8h_ac04c5b38112cb4b0f753497b4ca6153a}{START\+\_\+\+SCALE}}~100.\+0f
+\item 
+\#define \mbox{\hyperlink{view_8h_a1c3c1f625b0564c9ab1687d784ae499a}{START\+\_\+\+POS}}~0.\+0f
+\item 
+\#define \mbox{\hyperlink{view_8h_abaa5d2216f61c136e7120601c9b3fed5}{START\+\_\+\+ANGLE}}~0.\+0f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{view_8h_abaa5d2216f61c136e7120601c9b3fed5}\label{view_8h_abaa5d2216f61c136e7120601c9b3fed5}} 
+\index{view.h@{view.h}!START\_ANGLE@{START\_ANGLE}}
+\index{START\_ANGLE@{START\_ANGLE}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{START\_ANGLE}{START\_ANGLE}}
+{\footnotesize\ttfamily \#define START\+\_\+\+ANGLE~0.\+0f}
+
+\mbox{\Hypertarget{view_8h_a1c3c1f625b0564c9ab1687d784ae499a}\label{view_8h_a1c3c1f625b0564c9ab1687d784ae499a}} 
+\index{view.h@{view.h}!START\_POS@{START\_POS}}
+\index{START\_POS@{START\_POS}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{START\_POS}{START\_POS}}
+{\footnotesize\ttfamily \#define START\+\_\+\+POS~0.\+0f}
+
+\mbox{\Hypertarget{view_8h_ac04c5b38112cb4b0f753497b4ca6153a}\label{view_8h_ac04c5b38112cb4b0f753497b4ca6153a}} 
+\index{view.h@{view.h}!START\_SCALE@{START\_SCALE}}
+\index{START\_SCALE@{START\_SCALE}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{START\_SCALE}{START\_SCALE}}
+{\footnotesize\ttfamily \#define START\+\_\+\+SCALE~100.\+0f}
+

@@ -1,0 +1,292 @@
+\hypertarget{classs21_1_1FileReader}{}\doxysection{s21\+::File\+Reader Class Reference}
+\label{classs21_1_1FileReader}\index{s21::FileReader@{s21::FileReader}}
+
+
+A class for reading figure data from a file.  
+
+
+
+
+{\ttfamily \#include $<$file\+\_\+reader.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1FileReader_a5f59cae2e170c88338ccb537a2a60336}{File\+Reader}} ()=default
+\item 
+\mbox{\hyperlink{classs21_1_1FileReader_ab2834ca31670c09828d9c974be83a8e7}{$\sim$\+File\+Reader}} ()=default
+\item 
+\mbox{\hyperlink{classs21_1_1Figure}{Figure}} \mbox{\hyperlink{classs21_1_1FileReader_a2367f24ee7ac0b514e2583e5165a42e6}{read\+\_\+figure}} (std\+::string filename, \mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}} $\ast$params)
+\begin{DoxyCompactList}\small\item\em Reads a figure from a file and returns it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1FileReader_a5df27ac1abef0ac2a12a0f8bbdca48c7}{set\+\_\+file}} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Sets the file name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1FileReader_aa432aaa972c10cfc332a9469c3966ec3}{get\+\_\+data\+\_\+figure}} (\mbox{\hyperlink{classs21_1_1Figure}{Figure}} \&figure)
+\begin{DoxyCompactList}\small\item\em Reads figure data from the file and updates the figure object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classs21_1_1FileReader_a7e6a095f77816cf4f6137d9ea7e32a21}{process\+\_\+line}} (const std\+::string \&current, \mbox{\hyperlink{classs21_1_1Figure}{Figure}} \&figure)
+\begin{DoxyCompactList}\small\item\em Processes a line from the file and updates the figure. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classs21_1_1FileReader_a14cc1abb062da2ca77cc30b3f2dd0ca7}{open\+\_\+file}} ()
+\begin{DoxyCompactList}\small\item\em Opens the file for reading. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1FileReader_aa7cc9b4fa5a73a6d6218993f3966bce6}{close\+\_\+file}} ()
+\begin{DoxyCompactList}\small\item\em Closes the file if it is open. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classs21_1_1FileReader_abc0bdc46f05157d54b4291542a3c0b42}{read\+\_\+successfull}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the file was read successfully. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classs21_1_1FileReader_a3a4c0219fb6e83067139af2be9810e80}{get\+\_\+vertices}} (const std\+::string \&current, \mbox{\hyperlink{classs21_1_1Figure}{Figure}} \&figure)
+\begin{DoxyCompactList}\small\item\em Extracts vertices from a file line and adds them to the figure. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classs21_1_1FileReader_a6b5d3d4399b2b92c1f8162f7259ca592}{get\+\_\+faces}} (const std\+::string \&current, \mbox{\hyperlink{classs21_1_1Figure}{Figure}} \&figure)
+\begin{DoxyCompactList}\small\item\em Extracts faces from a file line and adds them to the figure. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classs21_1_1FileReader_ada71fad4076119939ca31d21b9f5d55b}{get\+\_\+name}} (const std\+::string \&current, \mbox{\hyperlink{classs21_1_1Figure}{Figure}} \&figure)
+\begin{DoxyCompactList}\small\item\em Extracts the figure name from a file line. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1FileReader_adf6c1871b1dd3169b6e6288536a53973}{set\+\_\+min\+\_\+max\+\_\+for\+\_\+normalization}} (\mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} \&vertex)
+\begin{DoxyCompactList}\small\item\em Updates the min and max values for vertex normalization. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1FileReader_afb5092641f3edba15e82902e3b945a96}{normalize\+\_\+vertex}} (\mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} \&vertex)
+\begin{DoxyCompactList}\small\item\em Normalizes a vertex based on the normalization parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1FileReader_aa8a2348da258d10652a788d6213cd005}{normalize\+\_\+figure}} (\mbox{\hyperlink{classs21_1_1Figure}{Figure}} \&figure)
+\begin{DoxyCompactList}\small\item\em Normalizes all vertices in the figure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for reading figure data from a file. 
+
+This class provides functionality for reading figure data from a file, processing the data, and normalizing vertex coordinates. \begin{DoxyNote}{Note}
+In test mode ({\ttfamily \#ifdef TEST}), the member variables are public for testing purposes. 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1FileReader_a5f59cae2e170c88338ccb537a2a60336}\label{classs21_1_1FileReader_a5f59cae2e170c88338ccb537a2a60336}} 
+\index{s21::FileReader@{s21::FileReader}!FileReader@{FileReader}}
+\index{FileReader@{FileReader}!s21::FileReader@{s21::FileReader}}
+\doxysubsubsection{\texorpdfstring{FileReader()}{FileReader()}}
+{\footnotesize\ttfamily s21\+::\+File\+Reader\+::\+File\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classs21_1_1FileReader_ab2834ca31670c09828d9c974be83a8e7}\label{classs21_1_1FileReader_ab2834ca31670c09828d9c974be83a8e7}} 
+\index{s21::FileReader@{s21::FileReader}!````~FileReader@{$\sim$FileReader}}
+\index{````~FileReader@{$\sim$FileReader}!s21::FileReader@{s21::FileReader}}
+\doxysubsubsection{\texorpdfstring{$\sim$FileReader()}{~FileReader()}}
+{\footnotesize\ttfamily s21\+::\+File\+Reader\+::$\sim$\+File\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1FileReader_aa7cc9b4fa5a73a6d6218993f3966bce6}\label{classs21_1_1FileReader_aa7cc9b4fa5a73a6d6218993f3966bce6}} 
+\index{s21::FileReader@{s21::FileReader}!close\_file@{close\_file}}
+\index{close\_file@{close\_file}!s21::FileReader@{s21::FileReader}}
+\doxysubsubsection{\texorpdfstring{close\_file()}{close\_file()}}
+{\footnotesize\ttfamily void s21\+::\+File\+Reader\+::close\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Closes the file if it is open. 
+
+\mbox{\Hypertarget{classs21_1_1FileReader_aa432aaa972c10cfc332a9469c3966ec3}\label{classs21_1_1FileReader_aa432aaa972c10cfc332a9469c3966ec3}} 
+\index{s21::FileReader@{s21::FileReader}!get\_data\_figure@{get\_data\_figure}}
+\index{get\_data\_figure@{get\_data\_figure}!s21::FileReader@{s21::FileReader}}
+\doxysubsubsection{\texorpdfstring{get\_data\_figure()}{get\_data\_figure()}}
+{\footnotesize\ttfamily void s21\+::\+File\+Reader\+::get\+\_\+data\+\_\+figure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1Figure}{Figure}} \&}]{figure }\end{DoxyParamCaption})}
+
+
+
+Reads figure data from the file and updates the figure object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em figure} & Reference to the figure object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1FileReader_a6b5d3d4399b2b92c1f8162f7259ca592}\label{classs21_1_1FileReader_a6b5d3d4399b2b92c1f8162f7259ca592}} 
+\index{s21::FileReader@{s21::FileReader}!get\_faces@{get\_faces}}
+\index{get\_faces@{get\_faces}!s21::FileReader@{s21::FileReader}}
+\doxysubsubsection{\texorpdfstring{get\_faces()}{get\_faces()}}
+{\footnotesize\ttfamily bool s21\+::\+File\+Reader\+::get\+\_\+faces (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{current,  }\item[{\mbox{\hyperlink{classs21_1_1Figure}{Figure}} \&}]{figure }\end{DoxyParamCaption})}
+
+
+
+Extracts faces from a file line and adds them to the figure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & The current line from the file. \\
+\hline
+{\em figure} & Reference to the figure object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if faces were extracted successfully, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1FileReader_ada71fad4076119939ca31d21b9f5d55b}\label{classs21_1_1FileReader_ada71fad4076119939ca31d21b9f5d55b}} 
+\index{s21::FileReader@{s21::FileReader}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!s21::FileReader@{s21::FileReader}}
+\doxysubsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily bool s21\+::\+File\+Reader\+::get\+\_\+name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{current,  }\item[{\mbox{\hyperlink{classs21_1_1Figure}{Figure}} \&}]{figure }\end{DoxyParamCaption})}
+
+
+
+Extracts the figure name from a file line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & The current line from the file. \\
+\hline
+{\em figure} & Reference to the figure object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the name was extracted successfully, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1FileReader_a3a4c0219fb6e83067139af2be9810e80}\label{classs21_1_1FileReader_a3a4c0219fb6e83067139af2be9810e80}} 
+\index{s21::FileReader@{s21::FileReader}!get\_vertices@{get\_vertices}}
+\index{get\_vertices@{get\_vertices}!s21::FileReader@{s21::FileReader}}
+\doxysubsubsection{\texorpdfstring{get\_vertices()}{get\_vertices()}}
+{\footnotesize\ttfamily bool s21\+::\+File\+Reader\+::get\+\_\+vertices (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{current,  }\item[{\mbox{\hyperlink{classs21_1_1Figure}{Figure}} \&}]{figure }\end{DoxyParamCaption})}
+
+
+
+Extracts vertices from a file line and adds them to the figure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & The current line from the file. \\
+\hline
+{\em figure} & Reference to the figure object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if vertices were extracted successfully, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1FileReader_aa8a2348da258d10652a788d6213cd005}\label{classs21_1_1FileReader_aa8a2348da258d10652a788d6213cd005}} 
+\index{s21::FileReader@{s21::FileReader}!normalize\_figure@{normalize\_figure}}
+\index{normalize\_figure@{normalize\_figure}!s21::FileReader@{s21::FileReader}}
+\doxysubsubsection{\texorpdfstring{normalize\_figure()}{normalize\_figure()}}
+{\footnotesize\ttfamily void s21\+::\+File\+Reader\+::normalize\+\_\+figure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1Figure}{Figure}} \&}]{figure }\end{DoxyParamCaption})}
+
+
+
+Normalizes all vertices in the figure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em figure} & Reference to the figure object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1FileReader_afb5092641f3edba15e82902e3b945a96}\label{classs21_1_1FileReader_afb5092641f3edba15e82902e3b945a96}} 
+\index{s21::FileReader@{s21::FileReader}!normalize\_vertex@{normalize\_vertex}}
+\index{normalize\_vertex@{normalize\_vertex}!s21::FileReader@{s21::FileReader}}
+\doxysubsubsection{\texorpdfstring{normalize\_vertex()}{normalize\_vertex()}}
+{\footnotesize\ttfamily void s21\+::\+File\+Reader\+::normalize\+\_\+vertex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} \&}]{vertex }\end{DoxyParamCaption})}
+
+
+
+Normalizes a vertex based on the normalization parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & The vertex to normalize. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1FileReader_a14cc1abb062da2ca77cc30b3f2dd0ca7}\label{classs21_1_1FileReader_a14cc1abb062da2ca77cc30b3f2dd0ca7}} 
+\index{s21::FileReader@{s21::FileReader}!open\_file@{open\_file}}
+\index{open\_file@{open\_file}!s21::FileReader@{s21::FileReader}}
+\doxysubsubsection{\texorpdfstring{open\_file()}{open\_file()}}
+{\footnotesize\ttfamily bool s21\+::\+File\+Reader\+::open\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Opens the file for reading. 
+
+\begin{DoxyReturn}{Returns}
+True if the file was opened successfully, otherwise false. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & if the file cannot be opened. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classs21_1_1FileReader_a7e6a095f77816cf4f6137d9ea7e32a21}\label{classs21_1_1FileReader_a7e6a095f77816cf4f6137d9ea7e32a21}} 
+\index{s21::FileReader@{s21::FileReader}!process\_line@{process\_line}}
+\index{process\_line@{process\_line}!s21::FileReader@{s21::FileReader}}
+\doxysubsubsection{\texorpdfstring{process\_line()}{process\_line()}}
+{\footnotesize\ttfamily bool s21\+::\+File\+Reader\+::process\+\_\+line (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{current,  }\item[{\mbox{\hyperlink{classs21_1_1Figure}{Figure}} \&}]{figure }\end{DoxyParamCaption})}
+
+
+
+Processes a line from the file and updates the figure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & The current line from the file. \\
+\hline
+{\em figure} & Reference to the figure object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the line was processed successfully, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1FileReader_a2367f24ee7ac0b514e2583e5165a42e6}\label{classs21_1_1FileReader_a2367f24ee7ac0b514e2583e5165a42e6}} 
+\index{s21::FileReader@{s21::FileReader}!read\_figure@{read\_figure}}
+\index{read\_figure@{read\_figure}!s21::FileReader@{s21::FileReader}}
+\doxysubsubsection{\texorpdfstring{read\_figure()}{read\_figure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1Figure}{Figure}} s21\+::\+File\+Reader\+::read\+\_\+figure (\begin{DoxyParamCaption}\item[{std\+::string}]{filename,  }\item[{\mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}} $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+Reads a figure from a file and returns it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file to read. \\
+\hline
+{\em params} & Normalization parameters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constructed figure. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1FileReader_abc0bdc46f05157d54b4291542a3c0b42}\label{classs21_1_1FileReader_abc0bdc46f05157d54b4291542a3c0b42}} 
+\index{s21::FileReader@{s21::FileReader}!read\_successfull@{read\_successfull}}
+\index{read\_successfull@{read\_successfull}!s21::FileReader@{s21::FileReader}}
+\doxysubsubsection{\texorpdfstring{read\_successfull()}{read\_successfull()}}
+{\footnotesize\ttfamily bool s21\+::\+File\+Reader\+::read\+\_\+successfull (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the file was read successfully. 
+
+\begin{DoxyReturn}{Returns}
+True if the file was read successfully, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1FileReader_a5df27ac1abef0ac2a12a0f8bbdca48c7}\label{classs21_1_1FileReader_a5df27ac1abef0ac2a12a0f8bbdca48c7}} 
+\index{s21::FileReader@{s21::FileReader}!set\_file@{set\_file}}
+\index{set\_file@{set\_file}!s21::FileReader@{s21::FileReader}}
+\doxysubsubsection{\texorpdfstring{set\_file()}{set\_file()}}
+{\footnotesize\ttfamily void s21\+::\+File\+Reader\+::set\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the file name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1FileReader_adf6c1871b1dd3169b6e6288536a53973}\label{classs21_1_1FileReader_adf6c1871b1dd3169b6e6288536a53973}} 
+\index{s21::FileReader@{s21::FileReader}!set\_min\_max\_for\_normalization@{set\_min\_max\_for\_normalization}}
+\index{set\_min\_max\_for\_normalization@{set\_min\_max\_for\_normalization}!s21::FileReader@{s21::FileReader}}
+\doxysubsubsection{\texorpdfstring{set\_min\_max\_for\_normalization()}{set\_min\_max\_for\_normalization()}}
+{\footnotesize\ttfamily void s21\+::\+File\+Reader\+::set\+\_\+min\+\_\+max\+\_\+for\+\_\+normalization (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} \&}]{vertex }\end{DoxyParamCaption})}
+
+
+
+Updates the min and max values for vertex normalization. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex} & The vertex to process. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/file\+\_\+reader/\mbox{\hyperlink{file__reader_8h}{file\+\_\+reader.\+h}}\item 
+model/file\+\_\+reader/\mbox{\hyperlink{file__reader_8cpp}{file\+\_\+reader.\+cpp}}\end{DoxyCompactItemize}

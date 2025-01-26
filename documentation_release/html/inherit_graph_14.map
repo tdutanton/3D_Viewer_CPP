@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classs21_1_1SceneObject.html" title="Abstract base class representing a scene object." alt="" coords="5,31,140,57"/>
+<area shape="rect" id="node2" href="$classs21_1_1Figure.html" title="Represents a figure in a 3D scene, derived from SceneObject." alt="" coords="189,5,282,32"/>
+<area shape="rect" id="node3" href="$classs21_1_1Vertex.html" title="Represents a vertex in 3D space, derived from SceneObject." alt="" coords="188,56,283,83"/>
+</map>

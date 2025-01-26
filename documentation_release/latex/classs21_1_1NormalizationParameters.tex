@@ -1,0 +1,177 @@
+\hypertarget{classs21_1_1NormalizationParameters}{}\doxysection{s21\+::Normalization\+Parameters Class Reference}
+\label{classs21_1_1NormalizationParameters}\index{s21::NormalizationParameters@{s21::NormalizationParameters}}
+
+
+Manages the normalization parameters for \mbox{\hyperlink{classs21_1_1Figure}{Figure}} objects.  
+
+
+
+
+{\ttfamily \#include $<$normalization\+\_\+parameters.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1NormalizationParameters_a03549cfa2a28309bb3862ade3370336f}{$\sim$\+Normalization\+Parameters}} ()=default
+\item 
+void \mbox{\hyperlink{classs21_1_1NormalizationParameters_ae38aab5ee3aa669e71fa1a0f15694aaf}{reset\+\_\+normalization\+\_\+parameters}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}} $\ast$ \mbox{\hyperlink{classs21_1_1NormalizationParameters_ab2b4dc469c9d2d8e2f45df38ab085f4a}{instance}} ()
+\begin{DoxyCompactList}\small\item\em Implementation of the singleton instance of the \mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classs21_1_1NormalizationParameters_a1857f49b9c95138cfa3267e567b56696}{x\+\_\+min}}
+\item 
+float \mbox{\hyperlink{classs21_1_1NormalizationParameters_ae9bd7c2b9cb729d49587356ad5ff0269}{x\+\_\+max}}
+\item 
+float \mbox{\hyperlink{classs21_1_1NormalizationParameters_a623644fcad0cca4c0798aea8db864059}{dx\+\_\+step}}
+\item 
+float \mbox{\hyperlink{classs21_1_1NormalizationParameters_aa11a4ba1bee0b0a01ff5749fbec3cada}{y\+\_\+min}}
+\item 
+float \mbox{\hyperlink{classs21_1_1NormalizationParameters_adaeca4de3689f4dede57c76cc8227c31}{y\+\_\+max}}
+\item 
+float \mbox{\hyperlink{classs21_1_1NormalizationParameters_aebbfc3205616d076c68316dbbeb9d01a}{dy\+\_\+step}}
+\item 
+float \mbox{\hyperlink{classs21_1_1NormalizationParameters_a2e06c6b4bca5666578af870cfe712780}{z\+\_\+min}}
+\item 
+float \mbox{\hyperlink{classs21_1_1NormalizationParameters_ae7ad377629ee24bfe611b46fd8eb6196}{z\+\_\+max}}
+\item 
+float \mbox{\hyperlink{classs21_1_1NormalizationParameters_ada45d6127ba4a891cd8203b28c822d22}{dz\+\_\+step}}
+\item 
+float \mbox{\hyperlink{classs21_1_1NormalizationParameters_afe8a2d3f93ea45a0d42fbe54bf017d71}{max\+\_\+range}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1NormalizationParameters_accb444a94edc9ad2fbf7a107f8eaf7d0}{Normalization\+Parameters}} ()
+\item 
+\mbox{\hyperlink{classs21_1_1NormalizationParameters_ab0c1207d0b7429493c91e97b0d8e963e}{Normalization\+Parameters}} (\mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}} const \&)=delete
+\item 
+\mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}} \& \mbox{\hyperlink{classs21_1_1NormalizationParameters_a57cb0d9bbc5e4cb515c7cb139d26b739}{operator=}} (\mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}} const \&)=delete
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages the normalization parameters for \mbox{\hyperlink{classs21_1_1Figure}{Figure}} objects. 
+
+This class provides a singleton instance that holds the minimum and maximum values for the x, y, and z axes, as well as the step sizes for each axis. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1NormalizationParameters_a03549cfa2a28309bb3862ade3370336f}\label{classs21_1_1NormalizationParameters_a03549cfa2a28309bb3862ade3370336f}} 
+\index{s21::NormalizationParameters@{s21::NormalizationParameters}!````~NormalizationParameters@{$\sim$NormalizationParameters}}
+\index{````~NormalizationParameters@{$\sim$NormalizationParameters}!s21::NormalizationParameters@{s21::NormalizationParameters}}
+\doxysubsubsection{\texorpdfstring{$\sim$NormalizationParameters()}{~NormalizationParameters()}}
+{\footnotesize\ttfamily s21\+::\+Normalization\+Parameters\+::$\sim$\+Normalization\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classs21_1_1NormalizationParameters_accb444a94edc9ad2fbf7a107f8eaf7d0}\label{classs21_1_1NormalizationParameters_accb444a94edc9ad2fbf7a107f8eaf7d0}} 
+\index{s21::NormalizationParameters@{s21::NormalizationParameters}!NormalizationParameters@{NormalizationParameters}}
+\index{NormalizationParameters@{NormalizationParameters}!s21::NormalizationParameters@{s21::NormalizationParameters}}
+\doxysubsubsection{\texorpdfstring{NormalizationParameters()}{NormalizationParameters()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily s21\+::\+Normalization\+Parameters\+::\+Normalization\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classs21_1_1NormalizationParameters_ab0c1207d0b7429493c91e97b0d8e963e}\label{classs21_1_1NormalizationParameters_ab0c1207d0b7429493c91e97b0d8e963e}} 
+\index{s21::NormalizationParameters@{s21::NormalizationParameters}!NormalizationParameters@{NormalizationParameters}}
+\index{NormalizationParameters@{NormalizationParameters}!s21::NormalizationParameters@{s21::NormalizationParameters}}
+\doxysubsubsection{\texorpdfstring{NormalizationParameters()}{NormalizationParameters()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily s21\+::\+Normalization\+Parameters\+::\+Normalization\+Parameters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1NormalizationParameters_ab2b4dc469c9d2d8e2f45df38ab085f4a}\label{classs21_1_1NormalizationParameters_ab2b4dc469c9d2d8e2f45df38ab085f4a}} 
+\index{s21::NormalizationParameters@{s21::NormalizationParameters}!instance@{instance}}
+\index{instance@{instance}!s21::NormalizationParameters@{s21::NormalizationParameters}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}}$\ast$ s21\+::\+Normalization\+Parameters\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Implementation of the singleton instance of the \mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}} class. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the only one \mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1NormalizationParameters_a57cb0d9bbc5e4cb515c7cb139d26b739}\label{classs21_1_1NormalizationParameters_a57cb0d9bbc5e4cb515c7cb139d26b739}} 
+\index{s21::NormalizationParameters@{s21::NormalizationParameters}!operator=@{operator=}}
+\index{operator=@{operator=}!s21::NormalizationParameters@{s21::NormalizationParameters}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}}\& s21\+::\+Normalization\+Parameters\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1NormalizationParameters}{Normalization\+Parameters}} const \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classs21_1_1NormalizationParameters_ae38aab5ee3aa669e71fa1a0f15694aaf}\label{classs21_1_1NormalizationParameters_ae38aab5ee3aa669e71fa1a0f15694aaf}} 
+\index{s21::NormalizationParameters@{s21::NormalizationParameters}!reset\_normalization\_parameters@{reset\_normalization\_parameters}}
+\index{reset\_normalization\_parameters@{reset\_normalization\_parameters}!s21::NormalizationParameters@{s21::NormalizationParameters}}
+\doxysubsubsection{\texorpdfstring{reset\_normalization\_parameters()}{reset\_normalization\_parameters()}}
+{\footnotesize\ttfamily void s21\+::\+Normalization\+Parameters\+::reset\+\_\+normalization\+\_\+parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classs21_1_1NormalizationParameters_a623644fcad0cca4c0798aea8db864059}\label{classs21_1_1NormalizationParameters_a623644fcad0cca4c0798aea8db864059}} 
+\index{s21::NormalizationParameters@{s21::NormalizationParameters}!dx\_step@{dx\_step}}
+\index{dx\_step@{dx\_step}!s21::NormalizationParameters@{s21::NormalizationParameters}}
+\doxysubsubsection{\texorpdfstring{dx\_step}{dx\_step}}
+{\footnotesize\ttfamily float s21\+::\+Normalization\+Parameters\+::dx\+\_\+step}
+
+\mbox{\Hypertarget{classs21_1_1NormalizationParameters_aebbfc3205616d076c68316dbbeb9d01a}\label{classs21_1_1NormalizationParameters_aebbfc3205616d076c68316dbbeb9d01a}} 
+\index{s21::NormalizationParameters@{s21::NormalizationParameters}!dy\_step@{dy\_step}}
+\index{dy\_step@{dy\_step}!s21::NormalizationParameters@{s21::NormalizationParameters}}
+\doxysubsubsection{\texorpdfstring{dy\_step}{dy\_step}}
+{\footnotesize\ttfamily float s21\+::\+Normalization\+Parameters\+::dy\+\_\+step}
+
+\mbox{\Hypertarget{classs21_1_1NormalizationParameters_ada45d6127ba4a891cd8203b28c822d22}\label{classs21_1_1NormalizationParameters_ada45d6127ba4a891cd8203b28c822d22}} 
+\index{s21::NormalizationParameters@{s21::NormalizationParameters}!dz\_step@{dz\_step}}
+\index{dz\_step@{dz\_step}!s21::NormalizationParameters@{s21::NormalizationParameters}}
+\doxysubsubsection{\texorpdfstring{dz\_step}{dz\_step}}
+{\footnotesize\ttfamily float s21\+::\+Normalization\+Parameters\+::dz\+\_\+step}
+
+\mbox{\Hypertarget{classs21_1_1NormalizationParameters_afe8a2d3f93ea45a0d42fbe54bf017d71}\label{classs21_1_1NormalizationParameters_afe8a2d3f93ea45a0d42fbe54bf017d71}} 
+\index{s21::NormalizationParameters@{s21::NormalizationParameters}!max\_range@{max\_range}}
+\index{max\_range@{max\_range}!s21::NormalizationParameters@{s21::NormalizationParameters}}
+\doxysubsubsection{\texorpdfstring{max\_range}{max\_range}}
+{\footnotesize\ttfamily float s21\+::\+Normalization\+Parameters\+::max\+\_\+range}
+
+\mbox{\Hypertarget{classs21_1_1NormalizationParameters_ae9bd7c2b9cb729d49587356ad5ff0269}\label{classs21_1_1NormalizationParameters_ae9bd7c2b9cb729d49587356ad5ff0269}} 
+\index{s21::NormalizationParameters@{s21::NormalizationParameters}!x\_max@{x\_max}}
+\index{x\_max@{x\_max}!s21::NormalizationParameters@{s21::NormalizationParameters}}
+\doxysubsubsection{\texorpdfstring{x\_max}{x\_max}}
+{\footnotesize\ttfamily float s21\+::\+Normalization\+Parameters\+::x\+\_\+max}
+
+\mbox{\Hypertarget{classs21_1_1NormalizationParameters_a1857f49b9c95138cfa3267e567b56696}\label{classs21_1_1NormalizationParameters_a1857f49b9c95138cfa3267e567b56696}} 
+\index{s21::NormalizationParameters@{s21::NormalizationParameters}!x\_min@{x\_min}}
+\index{x\_min@{x\_min}!s21::NormalizationParameters@{s21::NormalizationParameters}}
+\doxysubsubsection{\texorpdfstring{x\_min}{x\_min}}
+{\footnotesize\ttfamily float s21\+::\+Normalization\+Parameters\+::x\+\_\+min}
+
+\mbox{\Hypertarget{classs21_1_1NormalizationParameters_adaeca4de3689f4dede57c76cc8227c31}\label{classs21_1_1NormalizationParameters_adaeca4de3689f4dede57c76cc8227c31}} 
+\index{s21::NormalizationParameters@{s21::NormalizationParameters}!y\_max@{y\_max}}
+\index{y\_max@{y\_max}!s21::NormalizationParameters@{s21::NormalizationParameters}}
+\doxysubsubsection{\texorpdfstring{y\_max}{y\_max}}
+{\footnotesize\ttfamily float s21\+::\+Normalization\+Parameters\+::y\+\_\+max}
+
+\mbox{\Hypertarget{classs21_1_1NormalizationParameters_aa11a4ba1bee0b0a01ff5749fbec3cada}\label{classs21_1_1NormalizationParameters_aa11a4ba1bee0b0a01ff5749fbec3cada}} 
+\index{s21::NormalizationParameters@{s21::NormalizationParameters}!y\_min@{y\_min}}
+\index{y\_min@{y\_min}!s21::NormalizationParameters@{s21::NormalizationParameters}}
+\doxysubsubsection{\texorpdfstring{y\_min}{y\_min}}
+{\footnotesize\ttfamily float s21\+::\+Normalization\+Parameters\+::y\+\_\+min}
+
+\mbox{\Hypertarget{classs21_1_1NormalizationParameters_ae7ad377629ee24bfe611b46fd8eb6196}\label{classs21_1_1NormalizationParameters_ae7ad377629ee24bfe611b46fd8eb6196}} 
+\index{s21::NormalizationParameters@{s21::NormalizationParameters}!z\_max@{z\_max}}
+\index{z\_max@{z\_max}!s21::NormalizationParameters@{s21::NormalizationParameters}}
+\doxysubsubsection{\texorpdfstring{z\_max}{z\_max}}
+{\footnotesize\ttfamily float s21\+::\+Normalization\+Parameters\+::z\+\_\+max}
+
+\mbox{\Hypertarget{classs21_1_1NormalizationParameters_a2e06c6b4bca5666578af870cfe712780}\label{classs21_1_1NormalizationParameters_a2e06c6b4bca5666578af870cfe712780}} 
+\index{s21::NormalizationParameters@{s21::NormalizationParameters}!z\_min@{z\_min}}
+\index{z\_min@{z\_min}!s21::NormalizationParameters@{s21::NormalizationParameters}}
+\doxysubsubsection{\texorpdfstring{z\_min}{z\_min}}
+{\footnotesize\ttfamily float s21\+::\+Normalization\+Parameters\+::z\+\_\+min}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+model/facade/\mbox{\hyperlink{normalization__parameters_8h}{normalization\+\_\+parameters.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>images/export_gif_icon.png</file>
+        <file>images/export_image_icon.png</file>
+        <file>images/folder_icon.png</file>
+        <file>images/icon.png</file>
+        <file>images/reset_icon.png</file>
+        <file>images/settings_icon.png</file>
+        <file>images/recording_icon.png</file>
+        <file>images/3dcat.png</file>
+    </qresource>
+</RCC>

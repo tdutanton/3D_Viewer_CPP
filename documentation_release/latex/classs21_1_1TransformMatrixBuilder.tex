@@ -1,0 +1,162 @@
+\hypertarget{classs21_1_1TransformMatrixBuilder}{}\doxysection{s21\+::Transform\+Matrix\+Builder Class Reference}
+\label{classs21_1_1TransformMatrixBuilder}\index{s21::TransformMatrixBuilder@{s21::TransformMatrixBuilder}}
+
+
+A utility class for creating transformation matrices.  
+
+
+
+
+{\ttfamily \#include $<$transform\+\_\+matrix.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} \mbox{\hyperlink{classs21_1_1TransformMatrixBuilder_ace5f4bc5cdaf5085fd7ec0c4ee5fac89}{create\+\_\+only\+\_\+x\+\_\+rotation\+\_\+matrix}} (float angle)
+\begin{DoxyCompactList}\small\item\em Creates a rotation matrix for rotation around the X-\/axis. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} \mbox{\hyperlink{classs21_1_1TransformMatrixBuilder_a0f45667d5eb7e7330fe6907fff22ac2d}{create\+\_\+only\+\_\+y\+\_\+rotation\+\_\+matrix}} (float angle)
+\begin{DoxyCompactList}\small\item\em Creates a rotation matrix for rotation around the Y-\/axis. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} \mbox{\hyperlink{classs21_1_1TransformMatrixBuilder_a235a4765f92df14be38e53d5e615d01b}{create\+\_\+only\+\_\+z\+\_\+rotation\+\_\+matrix}} (float angle)
+\begin{DoxyCompactList}\small\item\em Creates a rotation matrix for rotation around the Z-\/axis. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} \mbox{\hyperlink{classs21_1_1TransformMatrixBuilder_ab71168eaba1e2e74dd2ede2c29e9c11e}{create\+\_\+rotation\+\_\+matrix}} (float x\+\_\+degree, float y\+\_\+degree, float z\+\_\+degree)
+\begin{DoxyCompactList}\small\item\em Creates a combined rotation matrix for rotations around all three axes. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} \mbox{\hyperlink{classs21_1_1TransformMatrixBuilder_adac1df86bfdb7dabcf94036f2487e0af}{create\+\_\+move\+\_\+matrix}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Creates a moving matrix for moving points in 3D space. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} \mbox{\hyperlink{classs21_1_1TransformMatrixBuilder_a6ab322cbb0fe7ef9e860ef8001d06188}{create\+\_\+scale\+\_\+matrix}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Creates a scaling matrix for scaling points in 3D space. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A utility class for creating transformation matrices. 
+
+This class provides static methods to generate specific types of transformation matrices. This class works like \char`\"{}builder\char`\"{} pattern. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1TransformMatrixBuilder_adac1df86bfdb7dabcf94036f2487e0af}\label{classs21_1_1TransformMatrixBuilder_adac1df86bfdb7dabcf94036f2487e0af}} 
+\index{s21::TransformMatrixBuilder@{s21::TransformMatrixBuilder}!create\_move\_matrix@{create\_move\_matrix}}
+\index{create\_move\_matrix@{create\_move\_matrix}!s21::TransformMatrixBuilder@{s21::TransformMatrixBuilder}}
+\doxysubsubsection{\texorpdfstring{create\_move\_matrix()}{create\_move\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} s21\+::\+Transform\+Matrix\+Builder\+::create\+\_\+move\+\_\+matrix (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a moving matrix for moving points in 3D space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The distance along the X-\/axis. \\
+\hline
+{\em y} & The distance along the Y-\/axis. \\
+\hline
+{\em z} & The distance along the Z-\/axis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} representing the moving. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1TransformMatrixBuilder_ace5f4bc5cdaf5085fd7ec0c4ee5fac89}\label{classs21_1_1TransformMatrixBuilder_ace5f4bc5cdaf5085fd7ec0c4ee5fac89}} 
+\index{s21::TransformMatrixBuilder@{s21::TransformMatrixBuilder}!create\_only\_x\_rotation\_matrix@{create\_only\_x\_rotation\_matrix}}
+\index{create\_only\_x\_rotation\_matrix@{create\_only\_x\_rotation\_matrix}!s21::TransformMatrixBuilder@{s21::TransformMatrixBuilder}}
+\doxysubsubsection{\texorpdfstring{create\_only\_x\_rotation\_matrix()}{create\_only\_x\_rotation\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} s21\+::\+Transform\+Matrix\+Builder\+::create\+\_\+only\+\_\+x\+\_\+rotation\+\_\+matrix (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a rotation matrix for rotation around the X-\/axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The rotation angle in radians. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} representing the X-\/axis rotation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1TransformMatrixBuilder_a0f45667d5eb7e7330fe6907fff22ac2d}\label{classs21_1_1TransformMatrixBuilder_a0f45667d5eb7e7330fe6907fff22ac2d}} 
+\index{s21::TransformMatrixBuilder@{s21::TransformMatrixBuilder}!create\_only\_y\_rotation\_matrix@{create\_only\_y\_rotation\_matrix}}
+\index{create\_only\_y\_rotation\_matrix@{create\_only\_y\_rotation\_matrix}!s21::TransformMatrixBuilder@{s21::TransformMatrixBuilder}}
+\doxysubsubsection{\texorpdfstring{create\_only\_y\_rotation\_matrix()}{create\_only\_y\_rotation\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} s21\+::\+Transform\+Matrix\+Builder\+::create\+\_\+only\+\_\+y\+\_\+rotation\+\_\+matrix (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a rotation matrix for rotation around the Y-\/axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The rotation angle in radians. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} representing the Y-\/axis rotation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1TransformMatrixBuilder_a235a4765f92df14be38e53d5e615d01b}\label{classs21_1_1TransformMatrixBuilder_a235a4765f92df14be38e53d5e615d01b}} 
+\index{s21::TransformMatrixBuilder@{s21::TransformMatrixBuilder}!create\_only\_z\_rotation\_matrix@{create\_only\_z\_rotation\_matrix}}
+\index{create\_only\_z\_rotation\_matrix@{create\_only\_z\_rotation\_matrix}!s21::TransformMatrixBuilder@{s21::TransformMatrixBuilder}}
+\doxysubsubsection{\texorpdfstring{create\_only\_z\_rotation\_matrix()}{create\_only\_z\_rotation\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} s21\+::\+Transform\+Matrix\+Builder\+::create\+\_\+only\+\_\+z\+\_\+rotation\+\_\+matrix (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a rotation matrix for rotation around the Z-\/axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The rotation angle in radians. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} representing the Z-\/axis rotation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1TransformMatrixBuilder_ab71168eaba1e2e74dd2ede2c29e9c11e}\label{classs21_1_1TransformMatrixBuilder_ab71168eaba1e2e74dd2ede2c29e9c11e}} 
+\index{s21::TransformMatrixBuilder@{s21::TransformMatrixBuilder}!create\_rotation\_matrix@{create\_rotation\_matrix}}
+\index{create\_rotation\_matrix@{create\_rotation\_matrix}!s21::TransformMatrixBuilder@{s21::TransformMatrixBuilder}}
+\doxysubsubsection{\texorpdfstring{create\_rotation\_matrix()}{create\_rotation\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} s21\+::\+Transform\+Matrix\+Builder\+::create\+\_\+rotation\+\_\+matrix (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+degree,  }\item[{float}]{y\+\_\+degree,  }\item[{float}]{z\+\_\+degree }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a combined rotation matrix for rotations around all three axes. 
+
+Look at the order -\/ it must be\+: x -\/$>$ y -\/$>$ z!
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+degree} & The rotation angle around the X-\/axis in degrees. \\
+\hline
+{\em y\+\_\+degree} & The rotation angle around the Y-\/axis in degrees. \\
+\hline
+{\em z\+\_\+degree} & The rotation angle around the Z-\/axis in degrees. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} representing the combined rotation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1TransformMatrixBuilder_a6ab322cbb0fe7ef9e860ef8001d06188}\label{classs21_1_1TransformMatrixBuilder_a6ab322cbb0fe7ef9e860ef8001d06188}} 
+\index{s21::TransformMatrixBuilder@{s21::TransformMatrixBuilder}!create\_scale\_matrix@{create\_scale\_matrix}}
+\index{create\_scale\_matrix@{create\_scale\_matrix}!s21::TransformMatrixBuilder@{s21::TransformMatrixBuilder}}
+\doxysubsubsection{\texorpdfstring{create\_scale\_matrix()}{create\_scale\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} s21\+::\+Transform\+Matrix\+Builder\+::create\+\_\+scale\+\_\+matrix (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a scaling matrix for scaling points in 3D space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The scaling factor along the X-\/axis. \\
+\hline
+{\em y} & The scaling factor along the Y-\/axis. \\
+\hline
+{\em z} & The scaling factor along the Z-\/axis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} representing the scaling. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/transform\+\_\+matrix/\mbox{\hyperlink{transform__matrix_8h}{transform\+\_\+matrix.\+h}}\item 
+model/transform\+\_\+matrix/\mbox{\hyperlink{transform__matrix_8cpp}{transform\+\_\+matrix.\+cpp}}\end{DoxyCompactItemize}

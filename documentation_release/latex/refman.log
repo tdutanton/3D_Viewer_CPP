@@ -1,0 +1,2107 @@
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.5.31)  26 JAN 2025 21:42
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**refman.tex
+(./refman.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base
+/book.cls
+Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count181
+\c@chapter=\count182
+\c@section=\count183
+\c@subsection=\count184
+\c@subsubsection=\count185
+\c@paragraph=\count186
+\c@subparagraph=\count187
+\c@figure=\count188
+\c@table=\count189
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Rollback for package 'array' requested -> date 2016-10-06.
+         Best approximation is the release introduced on 2016-10-06.
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array-2016-10-06.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen139
+\extrarowheight=\dimen140
+\NC@list=\toks16
+\extratabsurround=\skip49
+\backup@length=\skip50
+)) (/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+) (./doxygen.sty
+Package: doxygen 
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 2021/01/29 v2.0g defines alltt environment
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count190
+\calc@Bcount=\count191
+\calc@Adimen=\dimen141
+\calc@Bdimen=\dimen142
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count192
+\calc@Cskip=\skip53
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count193
+\float@exts=\toks17
+\float@box=\box50
+\@float@everytoks=\toks18
+\@floatcapt=\box51
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks19
+\verbatim@line=\toks20
+\verbatim@in@stream=\read2
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 227.
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
+) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks21
+\minrowclearance=\skip54
+)
+\rownum=\count194
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+) (./longtable_doxygen.sty
+Package: longtable_doxygen 2014/10/28 v4.11 Multi-page Table package (DPC) - fr
+ozen version for doxygen
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
+\LTchunksize=\count195
+\LTcapwidth=\dimen143
+\LT@head=\box52
+\LT@firsthead=\box53
+\LT@foot=\box54
+\LT@lastfoot=\box55
+\LT@cols=\count196
+\LT@rows=\count197
+\c@LT@tables=\count198
+\c@LT@chunks=\count199
+\LT@p@ftn=\toks22
+) (./tabu_doxygen.sty
+Package: tabu_doxygen 2011/02/26 v2.8 - flexible LaTeX tabulars (FC), frozen ve
+rsion for doxygen
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box56
+\sift@deathcycles=\count266
+\@vwid@loff=\dimen144
+\@vwid@roff=\dimen145
+)
+\c@taburow=\count267
+\tabu@nbcols=\count268
+\tabu@cnt=\count269
+\tabu@Xcol=\count270
+\tabu@alloc=\count271
+\tabu@nested=\count272
+\tabu@target=\dimen146
+\tabu@spreadtarget=\dimen147
+\tabu@naturalX=\dimen148
+\tabucolX=\dimen149
+\tabu@Xsum=\dimen150
+\extrarowdepth=\dimen151
+\abovetabulinesep=\dimen152
+\belowtabulinesep=\dimen153
+\tabustrutrule=\dimen154
+\tabu@thebody=\toks23
+\tabu@footnotes=\toks24
+\tabu@box=\box57
+\tabu@arstrutbox=\box58
+\tabu@hleads=\box59
+\tabu@vleads=\box60
+\tabu@cellskip=\skip59
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+\FV@CodeLineNo=\count273
+\FV@InFile=\read3
+\FV@TabBox=\box61
+\c@FancyVerbLine=\count274
+\FV@StepNumber=\count275
+\FV@OutFile=\write3
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen155
+\TX@old@table=\dimen156
+\TX@old@col=\dimen157
+\TX@target=\dimen158
+\TX@delta=\dimen159
+\TX@cols=\count276
+\TX@ftn=\toks26
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count277
+\mult@box=\box62
+\multicol@leftmargin=\dimen160
+\c@unbalance=\count278
+\c@collectmore=\count279
+\doublecol@number=\count280
+\multicoltolerance=\count281
+\multicolpretolerance=\count282
+\full@width=\dimen161
+\page@free=\dimen162
+\premulticols=\dimen163
+\postmulticols=\dimen164
+\multicolsep=\skip60
+\multicolbaselineskip=\skip61
+\partial@page=\box63
+\last@line=\box64
+\maxbalancingoverflow=\dimen165
+\mult@rightbox=\box65
+\mult@grightbox=\box66
+\mult@firstbox=\box67
+\mult@gfirstbox=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\c@minrows=\count283
+\c@columnbadness=\count284
+\c@finalcolumnbadness=\count285
+\last@try=\dimen166
+\multicolovershoot=\dimen167
+\multicolundershoot=\dimen168
+\mult@nat@firstbox=\box105
+\colbreak@box=\box106
+\mc@col@check@num=\count286
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip62
+\multirow@cntb=\count287
+\multirow@dima=\skip63
+\bigstrutjot=\dimen169
+) (/usr/share/texlive/texmf-dist/tex/latex/hanging/hanging.sty
+Package: hanging 2009/09/02 v1.2b hanging paragraphs and punctuation
+\h@ngcommawd=\skip64
+\h@ngfstopwd=\skip65
+\h@ngquotewd=\skip66
+\h@ngdquotewd=\skip67
+\h@ngquerywd=\skip68
+\h@ngexclwd=\skip69
+\h@ngcolonwd=\skip70
+\h@ngscolonwd=\skip71
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texl
+ive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks27
+\XKV@tempa@toks=\toks28
+)
+\XKV@depth=\count288
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+)
+\Gin@req@height=\dimen170
+\Gin@req@width=\dimen171
+) (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box107
+)
+\tc@llx=\dimen172
+\tc@lly=\dimen173
+\tc@urx=\dimen174
+\tc@ury=\dimen175
+Package trimclip Info: Using driver 'tc-xetex.def'.
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-xetex.def
+File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
+))
+\adjbox@Width=\dimen176
+\adjbox@Height=\dimen177
+\adjbox@Depth=\dimen178
+\adjbox@Totalheight=\dimen179
+\adjbox@pwidth=\dimen180
+\adjbox@pheight=\dimen181
+\adjbox@pdepth=\dimen182
+\adjbox@ptotalheight=\dimen183
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count289
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks29
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/stackengine/stackengine.sty
+Package: stackengine 2021/07/22 v4.11\ Stacking text and objects in convenient 
+ways
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count290
+) (/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty (/usr/
+share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex
+Invalid UTF-8 byte or sequence at line 50 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 50 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 52 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 52 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 52 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 96 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 96 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 104 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 105 replaced by U+FFFD.
+\loi_cnt_foreach_nest=\count291
+Invalid UTF-8 byte or sequence at line 139 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 146 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 192 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 209 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 209 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 222 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 222 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 223 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 223 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 224 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 226 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 226 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 238 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 243 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 243 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 260 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 284 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 310 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 310 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 324 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 337 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 337 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 339 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 350 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 350 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 350 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 354 replaced by U+FFFD.
+\loi_nestcnt=\count292
+Invalid UTF-8 byte or sequence at line 367 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 367 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 367 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 367 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 375 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 375 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 375 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 375 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 377 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 378 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 398 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 398 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 399 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 399 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 399 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 399 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 399 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 399 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 409 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 410 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 410 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 410 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 410 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 411 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 411 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 411 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 411 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 411 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 411 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 414 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 422 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 422 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 426 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 428 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 433 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 433 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 441 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 441 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 442 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 443 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 443 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 443 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 446 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 446 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 446 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 448 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 448 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 451 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 455 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 455 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 458 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 458 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 472 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 475 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 492 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 508 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 508 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 509 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 509 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 519 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 541 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 541 replaced by U+FFFD.
+)
+Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
+sep char (CT)
+)
+\c@@stackindex=\count293
+\@boxshift=\skip72
+\stack@tmplength=\skip73
+\temp@stkl=\skip74
+\@stackedboxwidth=\skip75
+\@addedbox=\box108
+\@anchorbox=\box109
+\@insetbox=\box110
+\se@backgroundbox=\box111
+\stackedbox=\box112
+\@centerbox=\box113
+\c@ROWcellindex@=\count294
+) (/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box114
+\UL@hyphenbox=\box115
+\UL@skip=\skip76
+\UL@hook=\toks30
+\UL@height=\dimen184
+\UL@pe=\count295
+\UL@pixel=\dimen185
+\ULC@box=\box116
+Package: ulem 2019/11/18
+\ULdepth=\dimen186
+)
+\xrefbox=\box117
+\xreflength=\skip77
+\CodeWidthChar=\skip78
+\CodeHeightChar=\skip79
+\DoxyCodeWidth=\skip80
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks31
+\inpenc@posthook=\toks32
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+2.
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+) (/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count296
+\Gm@cntv=\count297
+\c@Gm@tempcnt=\count298
+\Gm@bindingoffset=\dimen187
+\Gm@wd@mp=\dimen188
+\Gm@odd@mp=\dimen189
+\Gm@even@mp=\dimen190
+\Gm@layoutwidth=\dimen191
+\Gm@layoutheight=\dimen192
+\Gm@layouthoffset=\dimen193
+\Gm@layoutvoffset=\dimen194
+\Gm@dimlist=\toks33
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip81
+\f@nch@O@elh=\skip82
+\f@nch@O@erh=\skip83
+\f@nch@O@olh=\skip84
+\f@nch@O@orh=\skip85
+\f@nch@O@elf=\skip86
+\f@nch@O@erf=\skip87
+\f@nch@O@olf=\skip88
+\f@nch@O@orf=\skip89
+) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip90
+\bibsep=\skip91
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count299
+) (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip92
+\cftbeforetoctitleskip=\skip93
+\cftaftertoctitleskip=\skip94
+\cftbeforepartskip=\skip95
+\cftpartnumwidth=\skip96
+\cftpartindent=\skip97
+\cftbeforechapskip=\skip98
+\cftchapindent=\skip99
+\cftchapnumwidth=\skip100
+\cftbeforesecskip=\skip101
+\cftsecindent=\skip102
+\cftsecnumwidth=\skip103
+\cftbeforesubsecskip=\skip104
+\cftsubsecindent=\skip105
+\cftsubsecnumwidth=\skip106
+\cftbeforesubsubsecskip=\skip107
+\cftsubsubsecindent=\skip108
+\cftsubsubsecnumwidth=\skip109
+\cftbeforeparaskip=\skip110
+\cftparaindent=\skip111
+\cftparanumwidth=\skip112
+\cftbeforesubparaskip=\skip113
+\cftsubparaindent=\skip114
+\cftsubparanumwidth=\skip115
+\cftbeforeloftitleskip=\skip116
+\cftafterloftitleskip=\skip117
+\cftbeforefigskip=\skip118
+\cftfigindent=\skip119
+\cftfignumwidth=\skip120
+\c@lofdepth=\count300
+\c@lotdepth=\count301
+\cftbeforelottitleskip=\skip121
+\cftafterlottitleskip=\skip122
+\cftbeforetabskip=\skip123
+\cfttabindent=\skip124
+\cfttabnumwidth=\skip125
+)
+\@indexfile=\write4
+\openout4 = `refman.idx'.
+
+Writing index file refman.idx
+(/usr/share/texlive/texmf-dist/tex/latex/newunicodechar/newunicodechar.sty
+Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+) (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen195
+\Hy@linkcounter=\count302
+\Hy@pagecounter=\count303
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count304
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing ON on input line 4210.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2021/02/04 v1.41 Bibliographical back referencing
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+) (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+))
+\c@Hy@tempcnt=\count305
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen196
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+)
+\Fld@menulength=\count306
+\Field@Width=\dimen197
+\Fld@charsize=\dimen198
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing ON on input line 6089.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count307
+\c@Item=\count308
+\c@Hfootnote=\count309
+
+LaTeX Warning: Command \LT@p@ftntext  has changed.
+               Check if current package is valid.
+
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2021-06-07 v7.00m Hyperref driver for XeTeX
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box118
+\c@Hy@AnnotLevel=\count310
+\HyField@AnnotCount=\count311
+\Fld@listcount=\count312
+\c@bookmark@seq@number=\count313
+\Hy@SectionHShift=\skip126
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 134.
+Package hyperref Info: Option `unicode' set `true' on input line 134.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen199
+\captionmargin@=\dimen256
+\captionwidth=\dimen257
+\caption@tempdima=\dimen258
+\caption@indent=\dimen259
+\caption@parindent=\dimen260
+\caption@hangindent=\dimen261
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count314
+\c@continuedfloat=\count315
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)) (/usr/share/texlive/texmf-dist/tex/latex/etoc/etoc.sty
+Package: etoc 2021/09/23 v1.09e Completely customisable TOCs (JFB)
+\Etoc@toctoks=\toks34
+\c@etoc@tocid=\count316
+\c@etoc@tocdepth=\count317
+\etoc@framed@titlebox=\box119
+\etoc@framed@contentsbox=\box120
+)
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 14
+9.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 149.
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2022-01-12 L3 backend support: XeTeX
+(|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count318
+\l__color_backend_stack_int=\count319
+\g__color_backend_stack_int=\count320
+\g__graphics_track_int=\count321
+\l__pdf_internal_box=\box121
+\g__pdf_backend_object_int=\count322
+\g__pdf_backend_annotation_int=\count323
+\g__pdf_backend_link_int=\count324
+)
+No file refman.aux.
+\openout1 = `refman.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 149.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+49.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-31.2056pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring ON on input line 149.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count325
+)
+LaTeX Info: Redefining \ref on input line 149.
+LaTeX Info: Redefining \pageref on input line 149.
+LaTeX Info: Redefining \nameref on input line 149.
+\@outlinefile=\write5
+\openout5 = `refman.out'.
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+Package backref Info: ** backref set up for natbib ** on input line 149.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+No file refman.toc.
+Package hyperref Info: Option `pageanchor' set `false' on input line 156.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 156.
+
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 161.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 163.
+[1
+
+
+] [2
+
+]
+\tf@toc=\write6
+\openout6 = `refman.toc'.
+
+Package hyperref Info: Option `pageanchor' set `true' on input line 171.
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 18.66588pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 18.66588pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 22.39185pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 22.39185pt on input line 174.
+(./index.tex
+File: main_screen.png Graphic file (type bmp)
+<main_screen.png>
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 7.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10
+.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
+3.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 13.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 21.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 21.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 21
+.
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 21.
+[1
+
+
+]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 42.
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+
+ []
+
+) [3] [4
+
+]
+Chapter 2.
+(./namespaces.tex
+
+LaTeX Warning: Reference `namespaces21' on page 5 undefined on input line 3.
+
+
+LaTeX Warning: Reference `namespaceUi' on page 5 undefined on input line 4.
+
+) [5] [6
+
+]
+Chapter 3.
+(./hierarchy.tex
+
+LaTeX Warning: Reference `classs21_1_1Controller' on page 7 undefined on input 
+line 3.
+
+
+LaTeX Warning: Reference `classs21_1_1Edge' on page 7 undefined on input line 4
+.
+
+
+LaTeX Warning: Reference `classs21_1_1Facade' on page 7 undefined on input line
+ 5.
+
+
+LaTeX Warning: Reference `classs21_1_1FacadeOperationResult' on page 7 undefine
+d on input line 6.
+
+
+LaTeX Warning: Reference `classs21_1_1Face' on page 7 undefined on input line 7
+.
+
+
+LaTeX Warning: Reference `classs21_1_1FileReader' on page 7 undefined on input 
+line 8.
+
+
+LaTeX Warning: Reference `classs21_1_1FileReaderBuilder' on page 7 undefined on
+ input line 9.
+
+
+LaTeX Warning: Reference `classs21_1_1FigureBuilder' on page 7 undefined on inp
+ut line 11.
+
+
+LaTeX Warning: Reference `classs21_1_1FileReaderDirector' on page 7 undefined o
+n input line 13.
+
+
+LaTeX Warning: Reference `classs21_1_1NormalizationParameters' on page 7 undefi
+ned on input line 14.
+
+
+LaTeX Warning: Reference `structs21_1_1PairHash' on page 7 undefined on input l
+ine 15.
+
+
+LaTeX Warning: Reference `structs21_1_1Point' on page 7 undefined on input line
+ 16.
+
+
+LaTeX Warning: Reference `structs21_1_1View_1_1PrevPositions' on page 7 undefin
+ed on input line 17.
+
+
+LaTeX Warning: Reference `classs21_1_1SettingsWidget' on page 7 undefined on in
+put line 19.
+
+
+LaTeX Warning: Reference `classs21_1_1MainWindow' on page 7 undefined on input 
+line 22.
+
+
+LaTeX Warning: Reference `classs21_1_1QtSceneDrawer' on page 7 undefined on inp
+ut line 25.
+
+
+LaTeX Warning: Reference `classs21_1_1QtSceneDrawer' on page 7 undefined on inp
+ut line 28.
+
+
+LaTeX Warning: Reference `classs21_1_1View' on page 7 undefined on input line 3
+1.
+
+
+LaTeX Warning: Reference `structs21_1_1QtSceneDrawer_1_1RendParams' on page 7 u
+ndefined on input line 33.
+
+
+LaTeX Warning: Reference `classs21_1_1SceneDrawerBase' on page 7 undefined on i
+nput line 34.
+
+
+LaTeX Warning: Reference `classs21_1_1QtSceneDrawer' on page 7 undefined on inp
+ut line 36.
+
+
+LaTeX Warning: Reference `classs21_1_1SceneObject' on page 7 undefined on input
+ line 38.
+
+
+LaTeX Warning: Reference `classs21_1_1Figure' on page 7 undefined on input line
+ 40.
+
+
+LaTeX Warning: Reference `classs21_1_1Vertex' on page 7 undefined on input line
+ 41.
+
+
+LaTeX Warning: Reference `classs21_1_1TransformMatrix' on page 7 undefined on i
+nput line 43.
+
+
+LaTeX Warning: Reference `classs21_1_1TransformMatrixBuilder' on page 7 undefin
+ed on input line 44.
+
+) [7] [8
+
+]
+Chapter 4.
+(./annotated.tex
+
+LaTeX Warning: Reference `classs21_1_1Controller' on page 9 undefined on input 
+line 3.
+
+
+LaTeX Warning: Reference `classs21_1_1Edge' on page 9 undefined on input line 4
+.
+
+
+LaTeX Warning: Reference `classs21_1_1Facade' on page 9 undefined on input line
+ 5.
+
+
+LaTeX Warning: Reference `classs21_1_1FacadeOperationResult' on page 9 undefine
+d on input line 6.
+
+
+LaTeX Warning: Reference `classs21_1_1Face' on page 9 undefined on input line 7
+.
+
+
+LaTeX Warning: Reference `classs21_1_1Figure' on page 9 undefined on input line
+ 8.
+
+
+LaTeX Warning: Reference `classs21_1_1FigureBuilder' on page 9 undefined on inp
+ut line 9.
+
+
+LaTeX Warning: Reference `classs21_1_1FileReader' on page 9 undefined on input 
+line 10.
+
+
+LaTeX Warning: Reference `classs21_1_1FileReaderBuilder' on page 9 undefined on
+ input line 11.
+
+
+LaTeX Warning: Reference `classs21_1_1FileReaderDirector' on page 9 undefined o
+n input line 12.
+
+
+LaTeX Warning: Reference `classs21_1_1MainWindow' on page 9 undefined on input 
+line 13.
+
+
+LaTeX Warning: Reference `classs21_1_1NormalizationParameters' on page 9 undefi
+ned on input line 14.
+
+
+LaTeX Warning: Reference `structs21_1_1PairHash' on page 9 undefined on input l
+ine 15.
+
+
+LaTeX Warning: Reference `structs21_1_1Point' on page 9 undefined on input line
+ 16.
+
+
+LaTeX Warning: Reference `structs21_1_1View_1_1PrevPositions' on page 9 undefin
+ed on input line 17.
+
+
+LaTeX Warning: Reference `classs21_1_1QtSceneDrawer' on page 9 undefined on inp
+ut line 18.
+
+
+LaTeX Warning: Reference `structs21_1_1QtSceneDrawer_1_1RendParams' on page 9 u
+ndefined on input line 19.
+
+
+LaTeX Warning: Reference `classs21_1_1SceneDrawerBase' on page 9 undefined on i
+nput line 20.
+
+
+LaTeX Warning: Reference `classs21_1_1SceneObject' on page 9 undefined on input
+ line 21.
+
+[9]
+
+LaTeX Warning: Reference `classs21_1_1SettingsWidget' on page 10 undefined on i
+nput line 22.
+
+
+LaTeX Warning: Reference `classs21_1_1TransformMatrix' on page 10 undefined on 
+input line 23.
+
+
+LaTeX Warning: Reference `classs21_1_1TransformMatrixBuilder' on page 10 undefi
+ned on input line 24.
+
+
+LaTeX Warning: Reference `classs21_1_1Vertex' on page 10 undefined on input lin
+e 25.
+
+
+LaTeX Warning: Reference `classs21_1_1View' on page 10 undefined on input line 
+26.
+
+) [10]
+Chapter 5.
+(./files.tex
+
+LaTeX Warning: Reference `main_8cpp' on page 11 undefined on input line 3.
+
+
+LaTeX Warning: Reference `mainwindow_8cpp' on page 11 undefined on input line 4
+.
+
+
+LaTeX Warning: Reference `mainwindow_8h' on page 11 undefined on input line 5.
+
+
+LaTeX Warning: Reference `controller_8cpp' on page 11 undefined on input line 6
+.
+
+
+LaTeX Warning: Reference `controller_8h' on page 11 undefined on input line 7.
+
+
+LaTeX Warning: Reference `qt__scene__drawer_8cpp' on page 11 undefined on input
+ line 8.
+
+
+LaTeX Warning: Reference `qt__scene__drawer_8h' on page 11 undefined on input l
+ine 9.
+
+
+LaTeX Warning: Reference `settings__widget_8cpp' on page 11 undefined on input 
+line 10.
+
+
+LaTeX Warning: Reference `settings__widget_8h' on page 11 undefined on input li
+ne 11.
+
+
+LaTeX Warning: Reference `view_8cpp' on page 11 undefined on input line 12.
+
+
+LaTeX Warning: Reference `view_8h' on page 11 undefined on input line 13.
+
+
+LaTeX Warning: Reference `widget__utils_8cpp' on page 11 undefined on input lin
+e 14.
+
+
+LaTeX Warning: Reference `widget__utils_8h' on page 11 undefined on input line 
+15.
+
+
+LaTeX Warning: Reference `facade_8cpp' on page 11 undefined on input line 16.
+
+
+LaTeX Warning: Reference `facade_8h' on page 11 undefined on input line 17.
+
+
+LaTeX Warning: Reference `normalization__parameters_8h' on page 11 undefined on
+ input line 18.
+
+
+LaTeX Warning: Reference `scene__drawer__base_8h' on page 11 undefined on input
+ line 19.
+
+
+LaTeX Warning: Reference `edge_8cpp' on page 11 undefined on input line 20.
+
+
+LaTeX Warning: Reference `edge_8h' on page 11 undefined on input line 21.
+
+
+LaTeX Warning: Reference `face_8h' on page 11 undefined on input line 22.
+
+
+LaTeX Warning: Reference `figure_8cpp' on page 11 undefined on input line 23.
+
+
+LaTeX Warning: Reference `figure_8h' on page 11 undefined on input line 24.
+
+
+LaTeX Warning: Reference `scene__object_8h' on page 11 undefined on input line 
+25.
+
+
+LaTeX Warning: Reference `vertex_8cpp' on page 11 undefined on input line 26.
+
+
+LaTeX Warning: Reference `vertex_8h' on page 11 undefined on input line 27.
+
+
+LaTeX Warning: Reference `file__reader_8cpp' on page 11 undefined on input line
+ 28.
+
+
+LaTeX Warning: Reference `file__reader_8h' on page 11 undefined on input line 2
+9.
+
+
+LaTeX Warning: Reference `transform__matrix_8cpp' on page 11 undefined on input
+ line 30.
+
+
+LaTeX Warning: Reference `transform__matrix_8h' on page 11 undefined on input l
+ine 31.
+
+) [11
+
+] [12
+
+]
+Chapter 6.
+(./namespaces21.tex
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 7.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 7.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 7.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 21.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 21.
+[13]
+LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 49.
+LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 49.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 75.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 84.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 84.
+[14]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 6.1 on input line 110.
+
+
+Underfull \hbox (badness 10000) detected at line 111
+[][][]
+ []
+
+[15]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 6.2 on input line 140.
+
+
+Underfull \hbox (badness 10000) detected at line 141
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 6.3 on input line 172.
+
+
+Underfull \hbox (badness 10000) detected at line 173
+[][][]
+ []
+
+[16]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 6.4 on input line 204.
+
+
+Underfull \hbox (badness 10000) detected at line 205
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 6.5 on input line 234.
+
+[17]
+Underfull \hbox (badness 10000) detected at line 235
+[][][]
+ []
+
+) (./namespaceUi.tex) [18]
+Chapter 7.
+(./classs21_1_1Controller.tex [19
+
+]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.1 on input line 55.
+
+
+Underfull \hbox (badness 10000) detected at line 75
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 88
+[][][]
+ []
+
+[20] [21]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.2 on input line 109.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.3 on input line 124.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.4 on input line 153.
+
+[22]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.5 on input line 168.
+
+) (./classs21_1_1Edge.tex
+Underfull \hbox (badness 10000) detected at line 34
+[][][]
+ []
+
+[23]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.6 on input line 56.
+
+
+Underfull \hbox (badness 10000) detected at line 80
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 93
+[][][]
+ []
+
+[24]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.7 on input line 112.
+
+
+Underfull \hbox (badness 10000) detected at line 113
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.8 on input line 132.
+
+
+Underfull \hbox (badness 10000) detected at line 133
+[][][]
+ []
+
+) (./classs21_1_1Facade.tex [25]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 7.19995pt on input line 52.
+[26]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.9 on input line 108.
+
+
+Underfull \hbox (badness 10000) detected at line 109
+[][][]
+ []
+
+[27]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.10 on input line 130.
+
+
+Underfull \hbox (badness 10000) detected at line 131
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 144
+[][][]
+ []
+
+[28]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.11 on input line 171.
+
+
+Underfull \hbox (badness 10000) detected at line 172
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.12 on input line 193.
+
+
+Underfull \hbox (badness 10000) detected at line 194
+[][][]
+ []
+
+) (./classs21_1_1FacadeOperationResult.tex [29]) (./classs21_1_1Face.tex [30]
+Underfull \hbox (badness 10000) detected at line 32
+[][][]
+ []
+
+[31]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.13 on input line 62.
+
+
+Underfull \hbox (badness 10000) detected at line 86
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.14 on input line 103.
+
+
+Underfull \hbox (badness 10000) detected at line 104
+[][][]
+ []
+
+) (./classs21_1_1Figure.tex [32]
+File: classs21_1_1Figure__inherit__graph.pdf Graphic file (type pdf)
+<use classs21_1_1Figure__inherit__graph.pdf>
+File: classs21_1_1Figure__coll__graph.pdf Graphic file (type pdf)
+<use classs21_1_1Figure__coll__graph.pdf>
+[33]
+Underfull \hbox (badness 10000) detected at line 73
+[][][]
+ []
+
+[34]
+Underfull \hbox (badness 10000) detected at line 112
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 135
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 148
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 161
+[][][]
+ []
+
+[35]
+Underfull \hbox (badness 10000) detected at line 174
+[][][]
+ []
+
+[36]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.15 on input line 211.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.16 on input line 226.
+
+) (./classs21_1_1FigureBuilder.tex
+File: classs21_1_1FigureBuilder__inherit__graph.pdf Graphic file (type pdf)
+<use classs21_1_1FigureBuilder__inherit__graph.pdf>
+[37]
+File: classs21_1_1FigureBuilder__coll__graph.pdf Graphic file (type pdf)
+<use classs21_1_1FigureBuilder__coll__graph.pdf>
+[38]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.17 on input line 63.
+
+
+Underfull \hbox (badness 10000) detected at line 64
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.18 on input line 95.
+
+) (./classs21_1_1FileReader.tex [39]
+Underfull \hbox (badness 10000) detected at line 50
+[][][]
+ []
+
+[40]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.19 on input line 95.
+
+[41]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.20 on input line 112.
+
+
+Underfull \hbox (badness 10000) detected at line 113
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.21 on input line 132.
+
+
+Underfull \hbox (badness 10000) detected at line 133
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.22 on input line 152.
+
+
+Underfull \hbox (badness 10000) detected at line 153
+[][][]
+ []
+
+[42]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.23 on input line 170.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.24 on input line 185.
+
+
+Underfull \hbox (badness 10000) detected at line 196
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.25 on input line 203.
+
+[43] [44]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.26 on input line 220.
+
+
+Underfull \hbox (badness 10000) detected at line 221
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.27 on input line 240.
+
+
+Underfull \hbox (badness 10000) detected at line 241
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 254
+[][][]
+ []
+
+[45]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.28 on input line 271.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.29 on input line 286.
+
+) (./classs21_1_1FileReaderBuilder.tex
+File: classs21_1_1FileReaderBuilder__inherit__graph.pdf Graphic file (type pdf)
+
+<use classs21_1_1FileReaderBuilder__inherit__graph.pdf>
+[46]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.30 on input line 76.
+
+) (./classs21_1_1FileReaderDirector.tex [47]
+Underfull \hbox (badness 1448) in paragraph at lines 15--16
+[][] [] \T1/phv/m/n/10 ([] &builder, const std[]::string &file-name, []
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.31 on input line 30.
+
+
+Underfull \hbox (badness 10000) detected at line 31
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.32 on input line 55.
+
+[48]
+Underfull \hbox (badness 10000) detected at line 56
+[][][]
+ []
+
+) (./classs21_1_1MainWindow.tex
+File: classs21_1_1MainWindow__inherit__graph.pdf Graphic file (type pdf)
+<use classs21_1_1MainWindow__inherit__graph.pdf>
+File: classs21_1_1MainWindow__coll__graph.pdf Graphic file (type pdf)
+<use classs21_1_1MainWindow__coll__graph.pdf>
+[49]) (./classs21_1_1NormalizationParameters.tex [50]
+Underfull \hbox (badness 10000) detected at line 95
+[][][]
+ []
+
+[51] [52]) (./structs21_1_1PairHash.tex [53]) (./structs21_1_1Point.tex [54]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.33 on input line 88.
+
+[55]
+Underfull \hbox (badness 10000) detected at line 102
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 115
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 128
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 141
+[][][]
+ []
+
+[56]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.34 on input line 158.
+
+
+Underfull \hbox (badness 10000) detected at line 159
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.35 on input line 176.
+
+
+Underfull \hbox (badness 10000) detected at line 177
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.36 on input line 204.
+
+[57]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.37 on input line 219.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.38 on input line 234.
+
+[58]) (./structs21_1_1View_1_1PrevPositions.tex [59]) (./classs21_1_1QtSceneDra
+wer.tex
+File: classs21_1_1QtSceneDrawer__inherit__graph.pdf Graphic file (type pdf)
+<use classs21_1_1QtSceneDrawer__inherit__graph.pdf>
+[60]
+File: classs21_1_1QtSceneDrawer__coll__graph.pdf Graphic file (type pdf)
+<use classs21_1_1QtSceneDrawer__coll__graph.pdf>
+[61]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.39 on input line 89.
+
+[62]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.40 on input line 119.
+
+
+Underfull \hbox (badness 10000) detected at line 136
+[][][]
+ []
+
+[63]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.41 on input line 185.
+
+[64]) (./structs21_1_1QtSceneDrawer_1_1RendParams.tex [65]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.42 on input line 77.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.43 on input line 97.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.44 on input line 121.
+
+[66]) (./classs21_1_1SceneDrawerBase.tex
+File: classs21_1_1SceneDrawerBase__inherit__graph.pdf Graphic file (type pdf)
+<use classs21_1_1SceneDrawerBase__inherit__graph.pdf>
+[67] [68]) (./classs21_1_1SceneObject.tex
+File: classs21_1_1SceneObject__inherit__graph.pdf Graphic file (type pdf)
+<use classs21_1_1SceneObject__inherit__graph.pdf>
+[69]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.45 on input line 64.
+
+) (./classs21_1_1SettingsWidget.tex
+File: classs21_1_1SettingsWidget__inherit__graph.pdf Graphic file (type pdf)
+<use classs21_1_1SettingsWidget__inherit__graph.pdf>
+[70]
+File: classs21_1_1SettingsWidget__coll__graph.pdf Graphic file (type pdf)
+<use classs21_1_1SettingsWidget__coll__graph.pdf>
+[71]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.46 on input line 61.
+
+) (./classs21_1_1TransformMatrix.tex [72]
+Underfull \hbox (badness 10000) detected at line 38
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.47 on input line 83.
+
+[73]
+Underfull \hbox (badness 10000) detected at line 84
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.48 on input line 103.
+
+
+Underfull \hbox (badness 10000) detected at line 104
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.49 on input line 121.
+
+
+Underfull \hbox (badness 10000) detected at line 122
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.50 on input line 131.
+
+[74]
+Underfull \hbox (badness 10000) detected at line 132
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.51 on input line 163.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.52 on input line 168.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.53 on input line 183.
+
+[75]
+Underfull \hbox (badness 10000) detected at line 184
+[][][]
+ []
+
+) (./classs21_1_1TransformMatrixBuilder.tex [76]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.54 on input line 53.
+
+
+Underfull \hbox (badness 10000) detected at line 54
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.55 on input line 71.
+
+
+Underfull \hbox (badness 10000) detected at line 72
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.56 on input line 89.
+
+
+Underfull \hbox (badness 10000) detected at line 90
+[][][]
+ []
+
+[77]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.57 on input line 107.
+
+
+Underfull \hbox (badness 10000) detected at line 108
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.58 on input line 131.
+
+
+Underfull \hbox (badness 10000) detected at line 132
+[][][]
+ []
+
+[78]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.59 on input line 153.
+
+
+Underfull \hbox (badness 10000) detected at line 154
+[][][]
+ []
+
+) (./classs21_1_1Vertex.tex
+File: classs21_1_1Vertex__inherit__graph.pdf Graphic file (type pdf)
+<use classs21_1_1Vertex__inherit__graph.pdf>
+File: classs21_1_1Vertex__coll__graph.pdf Graphic file (type pdf)
+<use classs21_1_1Vertex__coll__graph.pdf>
+[79]
+Underfull \hbox (badness 10000) detected at line 54
+[][][]
+ []
+
+[80]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.60 on input line 84.
+
+
+Underfull \hbox (badness 10000) detected at line 108
+[][][]
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.61 on input line 125.
+
+
+Underfull \hbox (badness 10000) detected at line 126
+[][][]
+ []
+
+[81]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.62 on input line 143.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.63 on input line 158.
+
+) (./classs21_1_1View.tex
+File: classs21_1_1View__inherit__graph.pdf Graphic file (type pdf)
+<use classs21_1_1View__inherit__graph.pdf>
+[82]
+File: classs21_1_1View__coll__graph.pdf Graphic file (type pdf)
+<use classs21_1_1View__coll__graph.pdf>
+[83]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.64 on input line 98.
+
+) [84]
+Chapter 8.
+(./controller_8cpp.tex
+File: controller_8cpp__incl.pdf Graphic file (type pdf)
+<use controller_8cpp__incl.pdf>
+) (./controller_8h.tex
+File: controller_8h__incl.pdf Graphic file (type pdf)
+<use controller_8h__incl.pdf>
+[85
+
+]
+File: controller_8h__dep__incl.pdf Graphic file (type pdf)
+<use controller_8h__dep__incl.pdf>
+[86]) (./main_8cpp.tex
+File: main_8cpp__incl.pdf Graphic file (type pdf)
+<use main_8cpp__incl.pdf>
+) (./mainwindow_8cpp.tex
+File: mainwindow_8cpp__incl.pdf Graphic file (type pdf)
+<use mainwindow_8cpp__incl.pdf>
+[87]) (./mainwindow_8h.tex
+File: mainwindow_8h__incl.pdf Graphic file (type pdf)
+<use mainwindow_8h__incl.pdf>
+File: mainwindow_8h__dep__incl.pdf Graphic file (type pdf)
+<use mainwindow_8h__dep__incl.pdf>
+[88]) (./qt__scene__drawer_8cpp.tex
+File: qt__scene__drawer_8cpp__incl.pdf Graphic file (type pdf)
+<use qt__scene__drawer_8cpp__incl.pdf>
+[89]) (./qt__scene__drawer_8h.tex
+File: qt__scene__drawer_8h__incl.pdf Graphic file (type pdf)
+<use qt__scene__drawer_8h__incl.pdf>
+File: qt__scene__drawer_8h__dep__incl.pdf Graphic file (type pdf)
+<use qt__scene__drawer_8h__dep__incl.pdf>
+[90]) (./settings__widget_8cpp.tex [91]
+File: settings__widget_8cpp__incl.pdf Graphic file (type pdf)
+<use settings__widget_8cpp__incl.pdf>
+) (./settings__widget_8h.tex
+File: settings__widget_8h__incl.pdf Graphic file (type pdf)
+<use settings__widget_8h__incl.pdf>
+[92]
+File: settings__widget_8h__dep__incl.pdf Graphic file (type pdf)
+<use settings__widget_8h__dep__incl.pdf>
+) (./view_8cpp.tex
+File: view_8cpp__incl.pdf Graphic file (type pdf)
+<use view_8cpp__incl.pdf>
+[93]) (./view_8h.tex
+File: view_8h__incl.pdf Graphic file (type pdf)
+<use view_8h__incl.pdf>
+File: view_8h__dep__incl.pdf Graphic file (type pdf)
+<use view_8h__dep__incl.pdf>
+[94]) (./widget__utils_8cpp.tex [95]
+File: widget__utils_8cpp__incl.pdf Graphic file (type pdf)
+<use widget__utils_8cpp__incl.pdf>
+) (./widget__utils_8h.tex
+File: widget__utils_8h__incl.pdf Graphic file (type pdf)
+<use widget__utils_8h__incl.pdf>
+[96]
+File: widget__utils_8h__dep__incl.pdf Graphic file (type pdf)
+<use widget__utils_8h__dep__incl.pdf>
+[97]) (./facade_8cpp.tex
+File: facade_8cpp__incl.pdf Graphic file (type pdf)
+<use facade_8cpp__incl.pdf>
+) (./facade_8h.tex
+File: facade_8h__incl.pdf Graphic file (type pdf)
+<use facade_8h__incl.pdf>
+[98]
+File: facade_8h__dep__incl.pdf Graphic file (type pdf)
+<use facade_8h__dep__incl.pdf>
+[99]) (./normalization__parameters_8h.tex
+File: normalization__parameters_8h__dep__incl.pdf Graphic file (type pdf)
+<use normalization__parameters_8h__dep__incl.pdf>
+) (./scene__drawer__base_8h.tex
+File: scene__drawer__base_8h__dep__incl.pdf Graphic file (type pdf)
+<use scene__drawer__base_8h__dep__incl.pdf>
+[100]) (./edge_8cpp.tex
+File: edge_8cpp__incl.pdf Graphic file (type pdf)
+<use edge_8cpp__incl.pdf>
+[101]) (./edge_8h.tex
+File: edge_8h__incl.pdf Graphic file (type pdf)
+<use edge_8h__incl.pdf>
+File: edge_8h__dep__incl.pdf Graphic file (type pdf)
+<use edge_8h__dep__incl.pdf>
+) (./face_8h.tex
+File: face_8h__incl.pdf Graphic file (type pdf)
+<use face_8h__incl.pdf>
+[102]
+File: face_8h__dep__incl.pdf Graphic file (type pdf)
+<use face_8h__dep__incl.pdf>
+) (./figure_8cpp.tex
+File: figure_8cpp__incl.pdf Graphic file (type pdf)
+<use figure_8cpp__incl.pdf>
+[103]) (./figure_8h.tex
+File: figure_8h__incl.pdf Graphic file (type pdf)
+<use figure_8h__incl.pdf>
+[104]
+File: figure_8h__dep__incl.pdf Graphic file (type pdf)
+<use figure_8h__dep__incl.pdf>
+) (./scene__object_8h.tex
+File: scene__object_8h__incl.pdf Graphic file (type pdf)
+<use scene__object_8h__incl.pdf>
+[105]
+File: scene__object_8h__dep__incl.pdf Graphic file (type pdf)
+<use scene__object_8h__dep__incl.pdf>
+) (./vertex_8cpp.tex
+File: vertex_8cpp__incl.pdf Graphic file (type pdf)
+<use vertex_8cpp__incl.pdf>
+[106]) (./vertex_8h.tex
+File: vertex_8h__incl.pdf Graphic file (type pdf)
+<use vertex_8h__incl.pdf>
+File: vertex_8h__dep__incl.pdf Graphic file (type pdf)
+<use vertex_8h__dep__incl.pdf>
+[107]) (./file__reader_8cpp.tex
+File: file__reader_8cpp__incl.pdf Graphic file (type pdf)
+<use file__reader_8cpp__incl.pdf>
+[108]) (./file__reader_8h.tex
+File: file__reader_8h__incl.pdf Graphic file (type pdf)
+<use file__reader_8h__incl.pdf>
+[109]
+File: file__reader_8h__dep__incl.pdf Graphic file (type pdf)
+<use file__reader_8h__dep__incl.pdf>
+[110]) (./transform__matrix_8cpp.tex
+File: transform__matrix_8cpp__incl.pdf Graphic file (type pdf)
+<use transform__matrix_8cpp__incl.pdf>
+) (./transform__matrix_8h.tex
+File: transform__matrix_8h__incl.pdf Graphic file (type pdf)
+<use transform__matrix_8h__incl.pdf>
+[111]
+File: transform__matrix_8h__dep__incl.pdf Graphic file (type pdf)
+<use transform__matrix_8h__dep__incl.pdf>
+[112]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 8.1 on input line 57.
+
+
+Underfull \hbox (badness 10000) detected at line 58
+[][][]
+ []
+
+) (./dvi__readme_8md.tex) [113] [114
+
+]
+No file refman.ind.
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
+(./refman.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `refman.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `refman.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  A4C08E08A028AB50465B64D49417CAC1;73290.
+ ) 
+Here is how much of TeX's memory you used:
+ 18293 strings out of 477444
+ 317182 string characters out of 5846098
+ 587813 words of memory out of 5000000
+ 38426 multiletter control sequences out of 15000+600000
+ 518702 words of font info for 93 fonts, out of 8000000 for 9000
+ 682 hyphenation exceptions out of 8191
+ 99i,16n,117p,865b,633s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on refman.pdf (116 pages).

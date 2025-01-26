@@ -1,0 +1,7 @@
+<map id="s21::QtSceneDrawer" name="s21::QtSceneDrawer">
+<area shape="rect" id="node1" title="The QtSceneDrawer is an OpenGL&#45;based widget for rendering 3D figures." alt="" coords="244,109,399,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,13,133,39"/>
+<area shape="rect" id="node3" title=" " alt="" coords="158,13,303,39"/>
+<area shape="rect" id="node4" href="$classs21_1_1SceneDrawerBase.html" title="Abstract base class for scene drawers." alt="" coords="328,13,499,39"/>
+<area shape="rect" id="node5" href="$structs21_1_1QtSceneDrawer_1_1RendParams.html" title="Struct contains rendering parameters for the 3D scene (projection type, background color,..." alt="" coords="523,5,677,47"/>
+</map>

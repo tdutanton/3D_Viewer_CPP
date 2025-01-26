@@ -1,0 +1,168 @@
+\hypertarget{classs21_1_1Vertex}{}\doxysection{s21\+::Vertex Class Reference}
+\label{classs21_1_1Vertex}\index{s21::Vertex@{s21::Vertex}}
+
+
+Represents a vertex in 3D space, derived from \mbox{\hyperlink{classs21_1_1SceneObject}{Scene\+Object}}.  
+
+
+
+
+{\ttfamily \#include $<$vertex.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::Vertex\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classs21_1_1Vertex__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for s21\+::Vertex\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classs21_1_1Vertex__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1Vertex_ae242ce6c4358b5a1e748cca849728354}{Vertex}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} class. Initializes the vertex with a default point (0, 0, 0, 1). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1Vertex_a70af4c16226ff4c015f8f13338d15e45}{Vertex}} (\mbox{\hyperlink{structs21_1_1Point}{Point}} p)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for the \mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} class. Initializes the vertex with the provided point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1Vertex_a2b4c780239232d4e6477f5515498365b}{$\sim$\+Vertex}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structs21_1_1Point}{Point}} \mbox{\hyperlink{classs21_1_1Vertex_a08ab1d2af97609682d4fb5c584d6baa7}{get\+\_\+position}} () const
+\begin{DoxyCompactList}\small\item\em Gets the position of the vertex. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Vertex_aa15a02d6dab6c960368b5b2072dd0a62}{set\+\_\+position}} (\mbox{\hyperlink{structs21_1_1Point}{Point}} point)
+\begin{DoxyCompactList}\small\item\em Sets the position of the vertex. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1Vertex_ae5b3dd0c5816054155689979880b787d}{transform}} (const \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} \&matrix) override
+\begin{DoxyCompactList}\small\item\em Transforms the vertex by multiplying its position with the transformation matrix. This method applies the transformation matrix to the vertex\textquotesingle{}s position, updating its coordinates. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classs21_1_1Vertex_a2cba11bb72a330a5da87e33cb0152d6c}{operator==}} (const \mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} \&other) const
+\begin{DoxyCompactList}\small\item\em Compares two vertices for equality. Two vertices are considered equal if their positions are the same. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a vertex in 3D space, derived from \mbox{\hyperlink{classs21_1_1SceneObject}{Scene\+Object}}. 
+
+The {\ttfamily \mbox{\hyperlink{classs21_1_1Vertex}{Vertex}}} class encapsulates a point in 3D space and provides functionality for transforming the vertex and comparing it with other vertices. \begin{DoxyNote}{Note}
+In test mode ({\ttfamily \#ifdef TEST}), the member variables are public for testing purposes. 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1Vertex_ae242ce6c4358b5a1e748cca849728354}\label{classs21_1_1Vertex_ae242ce6c4358b5a1e748cca849728354}} 
+\index{s21::Vertex@{s21::Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!s21::Vertex@{s21::Vertex}}
+\doxysubsubsection{\texorpdfstring{Vertex()}{Vertex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily s21\+::\+Vertex\+::\+Vertex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor for the \mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} class. Initializes the vertex with a default point (0, 0, 0, 1). 
+
+\mbox{\Hypertarget{classs21_1_1Vertex_a70af4c16226ff4c015f8f13338d15e45}\label{classs21_1_1Vertex_a70af4c16226ff4c015f8f13338d15e45}} 
+\index{s21::Vertex@{s21::Vertex}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!s21::Vertex@{s21::Vertex}}
+\doxysubsubsection{\texorpdfstring{Vertex()}{Vertex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily s21\+::\+Vertex\+::\+Vertex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21_1_1Point}{Point}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Parameterized constructor for the \mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} class. Initializes the vertex with the provided point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The point representing the vertex\textquotesingle{}s position. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Vertex_a2b4c780239232d4e6477f5515498365b}\label{classs21_1_1Vertex_a2b4c780239232d4e6477f5515498365b}} 
+\index{s21::Vertex@{s21::Vertex}!````~Vertex@{$\sim$Vertex}}
+\index{````~Vertex@{$\sim$Vertex}!s21::Vertex@{s21::Vertex}}
+\doxysubsubsection{\texorpdfstring{$\sim$Vertex()}{~Vertex()}}
+{\footnotesize\ttfamily s21\+::\+Vertex\+::$\sim$\+Vertex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Destructor for the \mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1Vertex_a08ab1d2af97609682d4fb5c584d6baa7}\label{classs21_1_1Vertex_a08ab1d2af97609682d4fb5c584d6baa7}} 
+\index{s21::Vertex@{s21::Vertex}!get\_position@{get\_position}}
+\index{get\_position@{get\_position}!s21::Vertex@{s21::Vertex}}
+\doxysubsubsection{\texorpdfstring{get\_position()}{get\_position()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs21_1_1Point}{Point}} s21\+::\+Vertex\+::get\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the position of the vertex. 
+
+\begin{DoxyReturn}{Returns}
+The point representing the vertex\textquotesingle{}s position. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Vertex_a2cba11bb72a330a5da87e33cb0152d6c}\label{classs21_1_1Vertex_a2cba11bb72a330a5da87e33cb0152d6c}} 
+\index{s21::Vertex@{s21::Vertex}!operator==@{operator==}}
+\index{operator==@{operator==}!s21::Vertex@{s21::Vertex}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool s21\+::\+Vertex\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Compares two vertices for equality. Two vertices are considered equal if their positions are the same. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The vertex to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the vertices are equal, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Vertex_aa15a02d6dab6c960368b5b2072dd0a62}\label{classs21_1_1Vertex_aa15a02d6dab6c960368b5b2072dd0a62}} 
+\index{s21::Vertex@{s21::Vertex}!set\_position@{set\_position}}
+\index{set\_position@{set\_position}!s21::Vertex@{s21::Vertex}}
+\doxysubsubsection{\texorpdfstring{set\_position()}{set\_position()}}
+{\footnotesize\ttfamily void s21\+::\+Vertex\+::set\+\_\+position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21_1_1Point}{Point}}}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the position of the vertex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & The new position of the vertex. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Vertex_ae5b3dd0c5816054155689979880b787d}\label{classs21_1_1Vertex_ae5b3dd0c5816054155689979880b787d}} 
+\index{s21::Vertex@{s21::Vertex}!transform@{transform}}
+\index{transform@{transform}!s21::Vertex@{s21::Vertex}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily void s21\+::\+Vertex\+::transform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} \&}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Transforms the vertex by multiplying its position with the transformation matrix. This method applies the transformation matrix to the vertex\textquotesingle{}s position, updating its coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & The transformation matrix to apply. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classs21_1_1SceneObject_afd05608bfd42dc993b91366cd12539e8}{s21\+::\+Scene\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/figure/\mbox{\hyperlink{vertex_8h}{vertex.\+h}}\item 
+model/figure/\mbox{\hyperlink{vertex_8cpp}{vertex.\+cpp}}\end{DoxyCompactItemize}

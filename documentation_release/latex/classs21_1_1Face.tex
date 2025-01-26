@@ -1,0 +1,111 @@
+\hypertarget{classs21_1_1Face}{}\doxysection{s21\+::Face Class Reference}
+\label{classs21_1_1Face}\index{s21::Face@{s21::Face}}
+
+
+Represents a face composed of a vector of unsigned integers.  
+
+
+
+
+{\ttfamily \#include $<$face.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1Face_aa94af89a28e19235f43cb20c3cd1b317}{Face}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classs21_1_1Face}{Face}} class. Initializes an empty face. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1Face_a27e24561c2b35170d27cac531fd7eabf}{Face}} (std\+::vector$<$ unsigned $>$ face)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for the \mbox{\hyperlink{classs21_1_1Face}{Face}} class. Initializes the face with the provided vector of unsigned integers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1Face_a026bbb21771cc6f01b5a5452aab75e8c}{$\sim$\+Face}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classs21_1_1Face}{Face}} class. Default destructor. \end{DoxyCompactList}\item 
+std\+::vector$<$ unsigned $>$ \mbox{\hyperlink{classs21_1_1Face_af132b7af769fef5146ad6320ee8511f3}{get\+\_\+face}} () const
+\begin{DoxyCompactList}\small\item\em Getter for the face vector. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classs21_1_1Face_a035564672939848a4702ed08a8b1fce7}{operator==}} (const \mbox{\hyperlink{classs21_1_1Face}{Face}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality comparison operator for \mbox{\hyperlink{classs21_1_1Face}{Face}} objects. Compares two \mbox{\hyperlink{classs21_1_1Face}{Face}} objects for equality based on their internal face vectors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a face composed of a vector of unsigned integers. 
+
+The {\ttfamily \mbox{\hyperlink{classs21_1_1Face}{Face}}} class encapsulates a face, which is represented as a vector of unsigned integers.
+
+\begin{DoxyNote}{Note}
+In test mode ({\ttfamily \#ifdef TEST}), the member variables are public for testing purposes. 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1Face_aa94af89a28e19235f43cb20c3cd1b317}\label{classs21_1_1Face_aa94af89a28e19235f43cb20c3cd1b317}} 
+\index{s21::Face@{s21::Face}!Face@{Face}}
+\index{Face@{Face}!s21::Face@{s21::Face}}
+\doxysubsubsection{\texorpdfstring{Face()}{Face()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily s21\+::\+Face\+::\+Face (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor for the \mbox{\hyperlink{classs21_1_1Face}{Face}} class. Initializes an empty face. 
+
+\mbox{\Hypertarget{classs21_1_1Face_a27e24561c2b35170d27cac531fd7eabf}\label{classs21_1_1Face_a27e24561c2b35170d27cac531fd7eabf}} 
+\index{s21::Face@{s21::Face}!Face@{Face}}
+\index{Face@{Face}!s21::Face@{s21::Face}}
+\doxysubsubsection{\texorpdfstring{Face()}{Face()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily s21\+::\+Face\+::\+Face (\begin{DoxyParamCaption}\item[{std\+::vector$<$ unsigned $>$}]{face }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parameterized constructor for the \mbox{\hyperlink{classs21_1_1Face}{Face}} class. Initializes the face with the provided vector of unsigned integers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em face} & A vector of unsigned integers representing the face. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1Face_a026bbb21771cc6f01b5a5452aab75e8c}\label{classs21_1_1Face_a026bbb21771cc6f01b5a5452aab75e8c}} 
+\index{s21::Face@{s21::Face}!````~Face@{$\sim$Face}}
+\index{````~Face@{$\sim$Face}!s21::Face@{s21::Face}}
+\doxysubsubsection{\texorpdfstring{$\sim$Face()}{~Face()}}
+{\footnotesize\ttfamily s21\+::\+Face\+::$\sim$\+Face (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Destructor for the \mbox{\hyperlink{classs21_1_1Face}{Face}} class. Default destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1Face_af132b7af769fef5146ad6320ee8511f3}\label{classs21_1_1Face_af132b7af769fef5146ad6320ee8511f3}} 
+\index{s21::Face@{s21::Face}!get\_face@{get\_face}}
+\index{get\_face@{get\_face}!s21::Face@{s21::Face}}
+\doxysubsubsection{\texorpdfstring{get\_face()}{get\_face()}}
+{\footnotesize\ttfamily std\+::vector$<$unsigned$>$ s21\+::\+Face\+::get\+\_\+face (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for the face vector. 
+
+\begin{DoxyReturn}{Returns}
+A copy of the vector representing the face. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Face_a035564672939848a4702ed08a8b1fce7}\label{classs21_1_1Face_a035564672939848a4702ed08a8b1fce7}} 
+\index{s21::Face@{s21::Face}!operator==@{operator==}}
+\index{operator==@{operator==}!s21::Face@{s21::Face}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool s21\+::\+Face\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classs21_1_1Face}{Face}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Equality comparison operator for \mbox{\hyperlink{classs21_1_1Face}{Face}} objects. Compares two \mbox{\hyperlink{classs21_1_1Face}{Face}} objects for equality based on their internal face vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \mbox{\hyperlink{classs21_1_1Face}{Face}} object to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the face vectors are equal, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+model/figure/\mbox{\hyperlink{face_8h}{face.\+h}}\end{DoxyCompactItemize}

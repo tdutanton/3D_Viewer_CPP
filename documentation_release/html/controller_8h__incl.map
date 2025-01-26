@@ -1,0 +1,21 @@
+<map id="gui/controller/controller.h" name="gui/controller/controller.h">
+<area shape="rect" id="node1" title=" " alt="" coords="343,5,529,32"/>
+<area shape="rect" id="node2" href="$facade_8h.html" title=" " alt="" coords="369,80,503,121"/>
+<area shape="rect" id="node3" href="$figure_8h.html" title=" " alt="" coords="258,266,382,293"/>
+<area shape="rect" id="node8" href="$transform__matrix_8h.html" title=" " alt="" coords="233,572,385,613"/>
+<area shape="rect" id="node15" href="$file__reader_8h.html" title=" " alt="" coords="373,169,499,211"/>
+<area shape="rect" id="node18" href="$normalization__parameters_8h.html" title=" " alt="" coords="587,259,759,300"/>
+<area shape="rect" id="node19" href="$scene__drawer__base_8h.html" title=" " alt="" coords="575,177,737,203"/>
+<area shape="rect" id="node4" title=" " alt="" coords="512,348,597,375"/>
+<area shape="rect" id="node5" title=" " alt="" coords="43,348,157,375"/>
+<area shape="rect" id="node6" href="$edge_8h.html" title=" " alt="" coords="181,348,248,375"/>
+<area shape="rect" id="node7" href="$vertex_8h.html" title=" " alt="" coords="223,423,299,449"/>
+<area shape="rect" id="node12" href="$scene__object_8h.html" title=" " alt="" coords="299,497,418,524"/>
+<area shape="rect" id="node13" href="$face_8h.html" title=" " alt="" coords="323,348,386,375"/>
+<area shape="rect" id="node9" title=" " alt="" coords="182,661,245,688"/>
+<area shape="rect" id="node10" title=" " alt="" coords="269,661,349,688"/>
+<area shape="rect" id="node11" title=" " alt="" coords="374,661,461,688"/>
+<area shape="rect" id="node14" title=" " alt="" coords="323,423,386,449"/>
+<area shape="rect" id="node16" title=" " alt="" coords="490,266,563,293"/>
+<area shape="rect" id="node17" title=" " alt="" coords="407,266,465,293"/>
+</map>

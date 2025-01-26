@@ -1,0 +1,73 @@
+\hypertarget{classs21_1_1SceneObject}{}\doxysection{s21\+::Scene\+Object Class Reference}
+\label{classs21_1_1SceneObject}\index{s21::SceneObject@{s21::SceneObject}}
+
+
+Abstract base class representing a scene object.  
+
+
+
+
+{\ttfamily \#include $<$scene\+\_\+object.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::Scene\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classs21_1_1SceneObject__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classs21_1_1SceneObject_a1ea0e76d3844d3c89b3cd80af62112cb}{$\sim$\+Scene\+Object}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \mbox{\hyperlink{classs21_1_1SceneObject}{Scene\+Object}} class. Ensures proper cleanup of derived class objects when deleted through a base class pointer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classs21_1_1SceneObject_afd05608bfd42dc993b91366cd12539e8}{transform}} (const \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} \&matrix)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to transform the scene object. This method must be implemented by derived classes to apply a transformation matrix to the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class representing a scene object. 
+
+The {\ttfamily \mbox{\hyperlink{classs21_1_1SceneObject}{Scene\+Object}}} class serves as a base class for all objects in a 3D scene. It defines an interface for transforming objects using a transformation matrix. Classes derived from {\ttfamily \mbox{\hyperlink{classs21_1_1SceneObject}{Scene\+Object}}} must implement the {\ttfamily transform} method. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1SceneObject_a1ea0e76d3844d3c89b3cd80af62112cb}\label{classs21_1_1SceneObject_a1ea0e76d3844d3c89b3cd80af62112cb}} 
+\index{s21::SceneObject@{s21::SceneObject}!````~SceneObject@{$\sim$SceneObject}}
+\index{````~SceneObject@{$\sim$SceneObject}!s21::SceneObject@{s21::SceneObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$SceneObject()}{~SceneObject()}}
+{\footnotesize\ttfamily virtual s21\+::\+Scene\+Object\+::$\sim$\+Scene\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Virtual destructor for the \mbox{\hyperlink{classs21_1_1SceneObject}{Scene\+Object}} class. Ensures proper cleanup of derived class objects when deleted through a base class pointer. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1SceneObject_afd05608bfd42dc993b91366cd12539e8}\label{classs21_1_1SceneObject_afd05608bfd42dc993b91366cd12539e8}} 
+\index{s21::SceneObject@{s21::SceneObject}!transform@{transform}}
+\index{transform@{transform}!s21::SceneObject@{s21::SceneObject}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily virtual void s21\+::\+Scene\+Object\+::transform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} \&}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to transform the scene object. This method must be implemented by derived classes to apply a transformation matrix to the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & The transformation matrix to apply. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classs21_1_1Vertex_ae5b3dd0c5816054155689979880b787d}{s21\+::\+Vertex}}, and \mbox{\hyperlink{classs21_1_1Figure_a4fdae9a0df347ff04c73d28b362d2f14}{s21\+::\+Figure}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+model/figure/\mbox{\hyperlink{scene__object_8h}{scene\+\_\+object.\+h}}\end{DoxyCompactItemize}

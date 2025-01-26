@@ -1,0 +1,202 @@
+\hypertarget{classs21_1_1Facade}{}\doxysection{s21\+::Facade Class Reference}
+\label{classs21_1_1Facade}\index{s21::Facade@{s21::Facade}}
+
+
+Represents interface for interacting with \mbox{\hyperlink{classs21_1_1Controller}{Controller}} class.  
+
+
+
+
+{\ttfamily \#include $<$facade.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1Facade_a38c277383974dd2be31157e2a4731546}{Facade}} ()
+\item 
+\mbox{\hyperlink{classs21_1_1Facade_a1ed9af4032823efc84962ba8ba6eb5d5}{Facade}} (\mbox{\hyperlink{classs21_1_1SceneDrawerBase}{Scene\+Drawer\+Base}} $\ast$scene\+Drawer)
+\item 
+\mbox{\hyperlink{classs21_1_1Facade_a1ad072e39ade1964d752430a60a2b57e}{$\sim$\+Facade}} ()=default
+\item 
+\mbox{\hyperlink{classs21_1_1FacadeOperationResult}{Facade\+Operation\+Result}} \mbox{\hyperlink{classs21_1_1Facade_afabd4261d89a803fcc3c6bf1c826e368}{load\+\_\+figure}} (std\+::string path)
+\begin{DoxyCompactList}\small\item\em Loads a wireframe model from the specified file path. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1FacadeOperationResult}{Facade\+Operation\+Result}} \mbox{\hyperlink{classs21_1_1Facade_a80cc8bd613dcbf48e688ad638abb1028}{reset\+\_\+figure}} ()
+\begin{DoxyCompactList}\small\item\em Deletes old figure object and creates new one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1FacadeOperationResult}{Facade\+Operation\+Result}} \mbox{\hyperlink{classs21_1_1Facade_a83afe63dc076614d368d726cf6ae82d1}{move\+\_\+figure}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Moves the figure by the specified x, y, and z coordinates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1FacadeOperationResult}{Facade\+Operation\+Result}} \mbox{\hyperlink{classs21_1_1Facade_a8cb9586ebeb5a7db966d50a65e6e6c3b}{rotate\+\_\+figure}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Rotates the figure by the specified x, y, and z angles. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1FacadeOperationResult}{Facade\+Operation\+Result}} \mbox{\hyperlink{classs21_1_1Facade_af149a5e305c282c7e8b8a90575ac8bf6}{scale\+\_\+figure}} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Scales the figure by the specified x, y, and z factors. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classs21_1_1Facade_a2b7267e497e2079a5ddcd1ccd2a097f7}{get\+\_\+vertices\+\_\+count}} ()
+\item 
+int \mbox{\hyperlink{classs21_1_1Facade_a4bd846e1388434018e5b403a4b59bd9a}{get\+\_\+unique\+\_\+edges\+\_\+count}} ()
+\item 
+int \mbox{\hyperlink{classs21_1_1Facade_a14d4fbb93e2c8dee2e4d1b0d687f0dd7}{get\+\_\+all\+\_\+edges\+\_\+count}} ()
+\item 
+\mbox{\hyperlink{classs21_1_1Figure}{Figure}} $\ast$ \mbox{\hyperlink{classs21_1_1Facade_a2f9c27ff31467f7c169fcf6aee1efde4}{get\+\_\+figure}} ()
+\item 
+void \mbox{\hyperlink{classs21_1_1Facade_a8fdad176e83e5047cec4c2aaa8e5154b}{reset\+\_\+figure\+\_\+pos}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents interface for interacting with \mbox{\hyperlink{classs21_1_1Controller}{Controller}} class. 
+
+The \mbox{\hyperlink{classs21_1_1Facade}{Facade}} class is central point of access to model part of MVC pattern. Contains \mbox{\hyperlink{classs21_1_1FileReader}{File\+Reader}}, \mbox{\hyperlink{classs21_1_1Figure}{Figure}} and \mbox{\hyperlink{classs21_1_1SceneDrawerBase}{Scene\+Drawer\+Base}}. It provides API for operations like loading, moving, rotating, and scaling a 3D figure. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1Facade_a38c277383974dd2be31157e2a4731546}\label{classs21_1_1Facade_a38c277383974dd2be31157e2a4731546}} 
+\index{s21::Facade@{s21::Facade}!Facade@{Facade}}
+\index{Facade@{Facade}!s21::Facade@{s21::Facade}}
+\doxysubsubsection{\texorpdfstring{Facade()}{Facade()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily s21\+::\+Facade\+::\+Facade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classs21_1_1Facade_a1ed9af4032823efc84962ba8ba6eb5d5}\label{classs21_1_1Facade_a1ed9af4032823efc84962ba8ba6eb5d5}} 
+\index{s21::Facade@{s21::Facade}!Facade@{Facade}}
+\index{Facade@{Facade}!s21::Facade@{s21::Facade}}
+\doxysubsubsection{\texorpdfstring{Facade()}{Facade()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily s21\+::\+Facade\+::\+Facade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1SceneDrawerBase}{Scene\+Drawer\+Base}} $\ast$}]{scene\+Drawer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classs21_1_1Facade_a1ad072e39ade1964d752430a60a2b57e}\label{classs21_1_1Facade_a1ad072e39ade1964d752430a60a2b57e}} 
+\index{s21::Facade@{s21::Facade}!````~Facade@{$\sim$Facade}}
+\index{````~Facade@{$\sim$Facade}!s21::Facade@{s21::Facade}}
+\doxysubsubsection{\texorpdfstring{$\sim$Facade()}{~Facade()}}
+{\footnotesize\ttfamily s21\+::\+Facade\+::$\sim$\+Facade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1Facade_a14d4fbb93e2c8dee2e4d1b0d687f0dd7}\label{classs21_1_1Facade_a14d4fbb93e2c8dee2e4d1b0d687f0dd7}} 
+\index{s21::Facade@{s21::Facade}!get\_all\_edges\_count@{get\_all\_edges\_count}}
+\index{get\_all\_edges\_count@{get\_all\_edges\_count}!s21::Facade@{s21::Facade}}
+\doxysubsubsection{\texorpdfstring{get\_all\_edges\_count()}{get\_all\_edges\_count()}}
+{\footnotesize\ttfamily int s21\+::\+Facade\+::get\+\_\+all\+\_\+edges\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classs21_1_1Facade_a2f9c27ff31467f7c169fcf6aee1efde4}\label{classs21_1_1Facade_a2f9c27ff31467f7c169fcf6aee1efde4}} 
+\index{s21::Facade@{s21::Facade}!get\_figure@{get\_figure}}
+\index{get\_figure@{get\_figure}!s21::Facade@{s21::Facade}}
+\doxysubsubsection{\texorpdfstring{get\_figure()}{get\_figure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1Figure}{Figure}}$\ast$ s21\+::\+Facade\+::get\+\_\+figure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classs21_1_1Facade_a4bd846e1388434018e5b403a4b59bd9a}\label{classs21_1_1Facade_a4bd846e1388434018e5b403a4b59bd9a}} 
+\index{s21::Facade@{s21::Facade}!get\_unique\_edges\_count@{get\_unique\_edges\_count}}
+\index{get\_unique\_edges\_count@{get\_unique\_edges\_count}!s21::Facade@{s21::Facade}}
+\doxysubsubsection{\texorpdfstring{get\_unique\_edges\_count()}{get\_unique\_edges\_count()}}
+{\footnotesize\ttfamily int s21\+::\+Facade\+::get\+\_\+unique\+\_\+edges\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classs21_1_1Facade_a2b7267e497e2079a5ddcd1ccd2a097f7}\label{classs21_1_1Facade_a2b7267e497e2079a5ddcd1ccd2a097f7}} 
+\index{s21::Facade@{s21::Facade}!get\_vertices\_count@{get\_vertices\_count}}
+\index{get\_vertices\_count@{get\_vertices\_count}!s21::Facade@{s21::Facade}}
+\doxysubsubsection{\texorpdfstring{get\_vertices\_count()}{get\_vertices\_count()}}
+{\footnotesize\ttfamily int s21\+::\+Facade\+::get\+\_\+vertices\+\_\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classs21_1_1Facade_afabd4261d89a803fcc3c6bf1c826e368}\label{classs21_1_1Facade_afabd4261d89a803fcc3c6bf1c826e368}} 
+\index{s21::Facade@{s21::Facade}!load\_figure@{load\_figure}}
+\index{load\_figure@{load\_figure}!s21::Facade@{s21::Facade}}
+\doxysubsubsection{\texorpdfstring{load\_figure()}{load\_figure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1FacadeOperationResult}{Facade\+Operation\+Result}} s21\+::\+Facade\+::load\+\_\+figure (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+Loads a wireframe model from the specified file path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The file path of figure to load. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classs21_1_1FacadeOperationResult}{Facade\+Operation\+Result}} object containing the result of the operation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Facade_a83afe63dc076614d368d726cf6ae82d1}\label{classs21_1_1Facade_a83afe63dc076614d368d726cf6ae82d1}} 
+\index{s21::Facade@{s21::Facade}!move\_figure@{move\_figure}}
+\index{move\_figure@{move\_figure}!s21::Facade@{s21::Facade}}
+\doxysubsubsection{\texorpdfstring{move\_figure()}{move\_figure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1FacadeOperationResult}{Facade\+Operation\+Result}} s21\+::\+Facade\+::move\+\_\+figure (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Moves the figure by the specified x, y, and z coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate to move the figure by. \\
+\hline
+{\em y} & The y-\/coordinate to move the figure by. \\
+\hline
+{\em z} & The z-\/coordinate to move the figure by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classs21_1_1FacadeOperationResult}{Facade\+Operation\+Result}} object containing the result of the operation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Facade_a80cc8bd613dcbf48e688ad638abb1028}\label{classs21_1_1Facade_a80cc8bd613dcbf48e688ad638abb1028}} 
+\index{s21::Facade@{s21::Facade}!reset\_figure@{reset\_figure}}
+\index{reset\_figure@{reset\_figure}!s21::Facade@{s21::Facade}}
+\doxysubsubsection{\texorpdfstring{reset\_figure()}{reset\_figure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1FacadeOperationResult}{Facade\+Operation\+Result}} s21\+::\+Facade\+::reset\+\_\+figure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deletes old figure object and creates new one. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classs21_1_1FacadeOperationResult}{Facade\+Operation\+Result}} object containing the result of the operation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Facade_a8fdad176e83e5047cec4c2aaa8e5154b}\label{classs21_1_1Facade_a8fdad176e83e5047cec4c2aaa8e5154b}} 
+\index{s21::Facade@{s21::Facade}!reset\_figure\_pos@{reset\_figure\_pos}}
+\index{reset\_figure\_pos@{reset\_figure\_pos}!s21::Facade@{s21::Facade}}
+\doxysubsubsection{\texorpdfstring{reset\_figure\_pos()}{reset\_figure\_pos()}}
+{\footnotesize\ttfamily void s21\+::\+Facade\+::reset\+\_\+figure\+\_\+pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classs21_1_1Facade_a8cb9586ebeb5a7db966d50a65e6e6c3b}\label{classs21_1_1Facade_a8cb9586ebeb5a7db966d50a65e6e6c3b}} 
+\index{s21::Facade@{s21::Facade}!rotate\_figure@{rotate\_figure}}
+\index{rotate\_figure@{rotate\_figure}!s21::Facade@{s21::Facade}}
+\doxysubsubsection{\texorpdfstring{rotate\_figure()}{rotate\_figure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1FacadeOperationResult}{Facade\+Operation\+Result}} s21\+::\+Facade\+::rotate\+\_\+figure (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Rotates the figure by the specified x, y, and z angles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The angle to rotate the figure around the x-\/axis. \\
+\hline
+{\em y} & The angle to rotate the figure around the y-\/axis. \\
+\hline
+{\em z} & The angle to rotate the figure around the z-\/axis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classs21_1_1FacadeOperationResult}{Facade\+Operation\+Result}} object containing the result of the operation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1Facade_af149a5e305c282c7e8b8a90575ac8bf6}\label{classs21_1_1Facade_af149a5e305c282c7e8b8a90575ac8bf6}} 
+\index{s21::Facade@{s21::Facade}!scale\_figure@{scale\_figure}}
+\index{scale\_figure@{scale\_figure}!s21::Facade@{s21::Facade}}
+\doxysubsubsection{\texorpdfstring{scale\_figure()}{scale\_figure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1FacadeOperationResult}{Facade\+Operation\+Result}} s21\+::\+Facade\+::scale\+\_\+figure (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Scales the figure by the specified x, y, and z factors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The scaling factor for the x-\/axis. \\
+\hline
+{\em y} & The scaling factor for the y-\/axis. \\
+\hline
+{\em z} & The scaling factor for the z-\/axis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classs21_1_1FacadeOperationResult}{Facade\+Operation\+Result}} object containing the result of the operation. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/facade/\mbox{\hyperlink{facade_8h}{facade.\+h}}\item 
+model/facade/\mbox{\hyperlink{facade_8cpp}{facade.\+cpp}}\end{DoxyCompactItemize}

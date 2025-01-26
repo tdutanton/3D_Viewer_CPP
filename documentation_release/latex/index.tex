@@ -1,0 +1,141 @@
+\label{index_md_readme_src_dvi_readme}%
+\Hypertarget{index_md_readme_src_dvi_readme}%
+ 
+\begin{DoxyInlineImage}
+\includegraphics[height=\baselineskip,keepaspectratio=true]{main_screen.png}%Screenshot
+\end{DoxyInlineImage}
+\hypertarget{index_autotoc_md1}{}\doxysection{Table of Contents}\label{index_autotoc_md1}
+
+\begin{DoxyEnumerate}
+\item \href{\#project-description}{\texttt{ Project Description}}
+\item \href{\#features}{\texttt{ Features}}
+\begin{DoxyItemize}
+\item \href{\#settings}{\texttt{ Settings}}
+\item \href{\#recording}{\texttt{ Recording}}
+\end{DoxyItemize}
+\item \href{\#technical-requirements}{\texttt{ Technical Requirements}}
+\item \href{\#installation}{\texttt{ Installation}}
+\item \href{\#other-functions}{\texttt{ Other functions}}
+\item \href{\#authors}{\texttt{ Authors}}
+\end{DoxyEnumerate}\hypertarget{index_autotoc_md2}{}\doxysection{Project Description}\label{index_autotoc_md2}
+{\bfseries{3DViewer v2.\+0}} is an application for visualizing 3D wireframe models, developed in C++ following object-\/oriented programming principles. This project is an improved version of the previous application (3DViewer v1.\+0) and includes new features, support for large datasets, and flexible interface settings.\hypertarget{index_autotoc_md3}{}\doxysection{Features}\label{index_autotoc_md3}
+
+\begin{DoxyItemize}
+\item Load 3D models in {\ttfamily .obj} format (vertices and face lists only).
+\item Perform the following affine transformations on the model\+:
+\begin{DoxyItemize}
+\item Translate along the X, Y, Z axes.
+\item Rotate around the X, Y, Z axes.
+\item Scale the model.
+\end{DoxyItemize}
+\item Graphical User Interface (GUI) that includes\+:
+\begin{DoxyItemize}
+\item A button to select the model file and a field to display its name.
+\item A visualization area for the wireframe model.
+\item Control elements for translating, rotating, and scaling the model.
+\item Information about the uploaded model (file name, number of vertices and faces).
+\end{DoxyItemize}
+\item Support for models with vertex counts ranging from to 1,000,000 and more without noticeable delays (interface freeze does not exceed 0.\+5 seconds).
+\item Implementation based on the MVC architectural pattern.
+\item Use of three different design patterns (Facade, Builder, Singleton).
+\end{DoxyItemize}\hypertarget{index_autotoc_md4}{}\doxysection{Additional Features}\label{index_autotoc_md4}
+\hypertarget{index_autotoc_md5}{}\doxysubsection{Settings}\label{index_autotoc_md5}
+
+\begin{DoxyItemize}
+\item Choose the type of projection (parallel or central).
+\item Configure the type (solid, dashed), color, and thickness of edges, as well as the shape, color, and size of vertices.
+\item Change the background color.
+\item Save user settings between program runs.
+\end{DoxyItemize}\hypertarget{index_autotoc_md6}{}\doxysubsection{Recording}\label{index_autotoc_md6}
+
+\begin{DoxyItemize}
+\item Save rendered model images in {\ttfamily .bmp} and {\ttfamily .jpeg} formats.
+\item Record model transformation animations as GIF files (10 FPS, 5 seconds).
+\end{DoxyItemize}\hypertarget{index_autotoc_md7}{}\doxysection{Technical Requirements}\label{index_autotoc_md7}
+
+\begin{DoxyItemize}
+\item Language standard\+: C++17.
+\item Build with {\ttfamily Makefile} containing standard targets ({\ttfamily all}, {\ttfamily install}, {\ttfamily uninstall}, {\ttfamily clean}, {\ttfamily tests}, etc.).
+\item Code follows Google Style guidelines.
+\item Supported GUI librarie -\/ Qt.
+\end{DoxyItemize}\hypertarget{index_autotoc_md8}{}\doxysection{Installation}\label{index_autotoc_md8}
+
+\begin{DoxyEnumerate}
+\item Clone the repository\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git clone <repository-\/link>}
+\DoxyCodeLine{cd <repository-\/link>}
+
+\end{DoxyCode}
+
+\item Install\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd src}
+\DoxyCodeLine{make install}
+
+\end{DoxyCode}
+
+\item Run\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make run}
+
+\end{DoxyCode}
+
+\item Uninstall\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make uninstall}
+
+\end{DoxyCode}
+
+\end{DoxyEnumerate}\hypertarget{index_autotoc_md9}{}\doxysection{Other functions}\label{index_autotoc_md9}
+Also there\textquotesingle{}s some other functions which You can use. You should be in the src folder.
+
+
+\begin{DoxyEnumerate}
+\item Testing\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make tests}
+
+\end{DoxyCode}
+
+\item Valgrind testing\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make valgrind\_test}
+
+\end{DoxyCode}
+
+\item Make archive with program\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make dist}
+
+\end{DoxyCode}
+
+\item Make documentation with html and pdf versions (making new folder -\/ documentation)\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make dvi}
+
+\end{DoxyCode}
+
+\item Make gcov report with coverage report (making new folder -\/ report)\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make gcov\_report}
+
+\end{DoxyCode}
+
+\item Make UML-\/diagram\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make uml\_diagram}
+
+\end{DoxyCode}
+
+\end{DoxyEnumerate}\hypertarget{index_autotoc_md10}{}\doxysection{Authors}\label{index_autotoc_md10}
+School 21 students\+:
+
+
+\begin{DoxyItemize}
+\item \href{https://t.me/a_a_sorokina}{\texttt{ Buggkell}}
+\item \href{https://t.me/tdutanton}{\texttt{ Montoyay}}
+\end{DoxyItemize}
+
+2025 ~\newline
+ 

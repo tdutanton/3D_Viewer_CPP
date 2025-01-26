@@ -1,0 +1,192 @@
+\hypertarget{classs21_1_1TransformMatrix}{}\doxysection{s21\+::Transform\+Matrix Class Reference}
+\label{classs21_1_1TransformMatrix}\index{s21::TransformMatrix@{s21::TransformMatrix}}
+
+
+A class representing a 4x4 transformation matrix.  
+
+
+
+
+{\ttfamily \#include $<$transform\+\_\+matrix.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1TransformMatrix_a247b5ea214a3ed2758ce63d7e8ddd36f}{Transform\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1TransformMatrix_a2d26d7fc762eba1d175ff7f1adbbf1b0}{$\sim$\+Transform\+Matrix}} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1TransformMatrix_aa8692b7c34186f5f2aa4d7f247fe573d}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Resets the matrix to a zero matrix. All elements of the matrix are set to 0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} \mbox{\hyperlink{classs21_1_1TransformMatrix_aeec94696ec0083e327cee7726100c3c5}{operator$\ast$}} (const \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} \&other\+\_\+matrix) const
+\begin{DoxyCompactList}\small\item\em Overloads the multiplication operator for matrix multiplication. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structs21_1_1Point}{Point}} \mbox{\hyperlink{classs21_1_1TransformMatrix_a0a4c6f87d25b2ae64f6b8a9955e93723}{operator$\ast$}} (const \mbox{\hyperlink{structs21_1_1Point}{Point}} \&point) const
+\begin{DoxyCompactList}\small\item\em Overloads the multiplication operator for transforming a point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structs21_1_1Point}{Point}} \mbox{\hyperlink{classs21_1_1TransformMatrix_a5c8ba8c8ea85e91b1252ef1b3c942777}{transform\+\_\+point}} (\mbox{\hyperlink{structs21_1_1Point}{Point}} \&point)
+\begin{DoxyCompactList}\small\item\em Transforms a point using the transformation matrix. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classs21_1_1TransformMatrix_ae2bbc118dd1907983ca7e50caabfc239}{get\+\_\+elem}} (int row, int col) const
+\begin{DoxyCompactList}\small\item\em Gets the value of a matrix element at the specified row and column. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1TransformMatrix_aad2de8cd012af80aea670acd7155cdbd}{set\+\_\+elem}} (int row, int col, float v)
+\begin{DoxyCompactList}\small\item\em Sets the value of a matrix element at the specified row and column. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a 4x4 transformation matrix. 
+
+This class provides functionality to manage and manipulate a 4x4 transformation matrix.
+
+\begin{DoxyNote}{Note}
+In test mode ({\ttfamily \#ifdef TEST}), the member variables are public for testing purposes. 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1TransformMatrix_a247b5ea214a3ed2758ce63d7e8ddd36f}\label{classs21_1_1TransformMatrix_a247b5ea214a3ed2758ce63d7e8ddd36f}} 
+\index{s21::TransformMatrix@{s21::TransformMatrix}!TransformMatrix@{TransformMatrix}}
+\index{TransformMatrix@{TransformMatrix}!s21::TransformMatrix@{s21::TransformMatrix}}
+\doxysubsubsection{\texorpdfstring{TransformMatrix()}{TransformMatrix()}}
+{\footnotesize\ttfamily s21\+::\+Transform\+Matrix\+::\+Transform\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}}. 
+
+\mbox{\Hypertarget{classs21_1_1TransformMatrix_a2d26d7fc762eba1d175ff7f1adbbf1b0}\label{classs21_1_1TransformMatrix_a2d26d7fc762eba1d175ff7f1adbbf1b0}} 
+\index{s21::TransformMatrix@{s21::TransformMatrix}!````~TransformMatrix@{$\sim$TransformMatrix}}
+\index{````~TransformMatrix@{$\sim$TransformMatrix}!s21::TransformMatrix@{s21::TransformMatrix}}
+\doxysubsubsection{\texorpdfstring{$\sim$TransformMatrix()}{~TransformMatrix()}}
+{\footnotesize\ttfamily s21\+::\+Transform\+Matrix\+::$\sim$\+Transform\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1TransformMatrix_ae2bbc118dd1907983ca7e50caabfc239}\label{classs21_1_1TransformMatrix_ae2bbc118dd1907983ca7e50caabfc239}} 
+\index{s21::TransformMatrix@{s21::TransformMatrix}!get\_elem@{get\_elem}}
+\index{get\_elem@{get\_elem}!s21::TransformMatrix@{s21::TransformMatrix}}
+\doxysubsubsection{\texorpdfstring{get\_elem()}{get\_elem()}}
+{\footnotesize\ttfamily float s21\+::\+Transform\+Matrix\+::get\+\_\+elem (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the value of a matrix element at the specified row and column. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The row index (starts from 0). \\
+\hline
+{\em col} & The column index (starts from 0). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the matrix element at the specified position. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1TransformMatrix_a0a4c6f87d25b2ae64f6b8a9955e93723}\label{classs21_1_1TransformMatrix_a0a4c6f87d25b2ae64f6b8a9955e93723}} 
+\index{s21::TransformMatrix@{s21::TransformMatrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!s21::TransformMatrix@{s21::TransformMatrix}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs21_1_1Point}{Point}} s21\+::\+Transform\+Matrix\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structs21_1_1Point}{Point}} \&}]{point }\end{DoxyParamCaption}) const}
+
+
+
+Overloads the multiplication operator for transforming a point. 
+
+Applies the transformation matrix to a point and returns the transformed point.
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & The point to transform. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \mbox{\hyperlink{structs21_1_1Point}{Point}} representing the transformed point. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1TransformMatrix_aeec94696ec0083e327cee7726100c3c5}\label{classs21_1_1TransformMatrix_aeec94696ec0083e327cee7726100c3c5}} 
+\index{s21::TransformMatrix@{s21::TransformMatrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!s21::TransformMatrix@{s21::TransformMatrix}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} s21\+::\+Transform\+Matrix\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} \&}]{other\+\_\+matrix }\end{DoxyParamCaption}) const}
+
+
+
+Overloads the multiplication operator for matrix multiplication. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+\_\+matrix} & The matrix to multiply with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} representing the result of the multiplication.
+\end{DoxyReturn}
+Multiplies this matrix with another matrix and returns the result.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+\_\+matrix} & The matrix to multiply with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \mbox{\hyperlink{classs21_1_1TransformMatrix}{Transform\+Matrix}} representing the result of the multiplication. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1TransformMatrix_aa8692b7c34186f5f2aa4d7f247fe573d}\label{classs21_1_1TransformMatrix_aa8692b7c34186f5f2aa4d7f247fe573d}} 
+\index{s21::TransformMatrix@{s21::TransformMatrix}!reset@{reset}}
+\index{reset@{reset}!s21::TransformMatrix@{s21::TransformMatrix}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void s21\+::\+Transform\+Matrix\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the matrix to a zero matrix. All elements of the matrix are set to 0. 
+
+\mbox{\Hypertarget{classs21_1_1TransformMatrix_aad2de8cd012af80aea670acd7155cdbd}\label{classs21_1_1TransformMatrix_aad2de8cd012af80aea670acd7155cdbd}} 
+\index{s21::TransformMatrix@{s21::TransformMatrix}!set\_elem@{set\_elem}}
+\index{set\_elem@{set\_elem}!s21::TransformMatrix@{s21::TransformMatrix}}
+\doxysubsubsection{\texorpdfstring{set\_elem()}{set\_elem()}}
+{\footnotesize\ttfamily void s21\+::\+Transform\+Matrix\+::set\+\_\+elem (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col,  }\item[{float}]{v }\end{DoxyParamCaption})}
+
+
+
+Sets the value of a matrix element at the specified row and column. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The row index (starts from 0). \\
+\hline
+{\em col} & The column index (starts from 0). \\
+\hline
+{\em v} & The value to set. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & If the row or column index is out of bounds. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classs21_1_1TransformMatrix_a5c8ba8c8ea85e91b1252ef1b3c942777}\label{classs21_1_1TransformMatrix_a5c8ba8c8ea85e91b1252ef1b3c942777}} 
+\index{s21::TransformMatrix@{s21::TransformMatrix}!transform\_point@{transform\_point}}
+\index{transform\_point@{transform\_point}!s21::TransformMatrix@{s21::TransformMatrix}}
+\doxysubsubsection{\texorpdfstring{transform\_point()}{transform\_point()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs21_1_1Point}{Point}} s21\+::\+Transform\+Matrix\+::transform\+\_\+point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structs21_1_1Point}{Point}} \&}]{point }\end{DoxyParamCaption})}
+
+
+
+Transforms a point using the transformation matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & The point to transform. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \mbox{\hyperlink{structs21_1_1Point}{Point}} representing the transformed point. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/transform\+\_\+matrix/\mbox{\hyperlink{transform__matrix_8h}{transform\+\_\+matrix.\+h}}\item 
+model/transform\+\_\+matrix/\mbox{\hyperlink{transform__matrix_8cpp}{transform\+\_\+matrix.\+cpp}}\end{DoxyCompactItemize}

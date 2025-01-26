@@ -1,0 +1,177 @@
+\hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams}{}\doxysection{s21\+::Qt\+Scene\+Drawer\+::Rend\+Params Struct Reference}
+\label{structs21_1_1QtSceneDrawer_1_1RendParams}\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}
+
+
+Struct contains rendering parameters for the 3D scene (projection type, background color, edge and vertex rendering styles and colors).  
+
+
+
+
+{\ttfamily \#include $<$qt\+\_\+scene\+\_\+drawer.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a3c2157c9c58847dbcb1183f7bce74218}{Projection}} \{ \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a3c2157c9c58847dbcb1183f7bce74218ae469e0af845c81b7ed6f9f162d2f1f4b}{PARALLEL}} = 0
+, \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a3c2157c9c58847dbcb1183f7bce74218af9aa478b8eb8618cda56de1623585886}{CENTRAL}}
+ \}
+\begin{DoxyCompactList}\small\item\em Projection type. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a99578eeac1149400c7271bb45dcd7648}{Edges\+Type}} \{ \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a99578eeac1149400c7271bb45dcd7648abc215ab68b5681023f44e50c93e9aa00}{NO\+\_\+\+EDGES}} = 0
+, \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a99578eeac1149400c7271bb45dcd7648aa0c789c434033214fff2c5060b326c77}{SOLID}}
+, \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a99578eeac1149400c7271bb45dcd7648a52c1f14064ceeb2f24e15d6f58d0653b}{DASHED}}
+ \}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classs21_1_1Edge}{Edge}} rendering style. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_ac13fe6ad4fd2ece7dd8c8934883853c9}{Vertices\+Type}} \{ \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_ac13fe6ad4fd2ece7dd8c8934883853c9a762630f26c7fccf6c9350ced9333cb41}{NO\+\_\+\+VERTICES}} = 0
+, \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_ac13fe6ad4fd2ece7dd8c8934883853c9a07b85374e54efcb4c7fe50d6f40a1f26}{CIRCLE}}
+, \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_ac13fe6ad4fd2ece7dd8c8934883853c9a5a7e54409dfad08d832de5b84621ba4f}{SQUARE}}
+ \}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} rendering style. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a259da2a16df4f5000faa90ddbb534699}{projection}} = \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a3c2157c9c58847dbcb1183f7bce74218ae469e0af845c81b7ed6f9f162d2f1f4b}{PARALLEL}}
+\item 
+QColor \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a0bdb106bd7c802cb2e130588502ef24e}{bg\+\_\+color}} = \{184, 213, 238\}
+\item 
+\mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a99578eeac1149400c7271bb45dcd7648}{Edges\+Type}} \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a0fc9fb25492de31c4ff65601248cf716}{edge\+\_\+type}} = \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a99578eeac1149400c7271bb45dcd7648aa0c789c434033214fff2c5060b326c77}{SOLID}}
+\item 
+int \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a5d7f20df78072e694739b7b8137267fa}{edge\+\_\+thickness}} = 1
+\item 
+QColor \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a24af1212a8ed13adce0a73c28056c8de}{edge\+\_\+color}} = \{0, 0, 255\}
+\item 
+\mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_ac13fe6ad4fd2ece7dd8c8934883853c9}{Vertices\+Type}} \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_ae00b1346d401bc25f7d15787d9874cae}{vertex\+\_\+type}} = \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_ac13fe6ad4fd2ece7dd8c8934883853c9a762630f26c7fccf6c9350ced9333cb41}{NO\+\_\+\+VERTICES}}
+\item 
+int \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a52f4626bc14d629c1828939b06fa6611}{vertex\+\_\+size}} = 3
+\item 
+QColor \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a66a344584447b484d272c9ef5ea77b23}{vertex\+\_\+color}} = \{0, 0, 0\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct contains rendering parameters for the 3D scene (projection type, background color, edge and vertex rendering styles and colors). 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_a99578eeac1149400c7271bb45dcd7648}\label{structs21_1_1QtSceneDrawer_1_1RendParams_a99578eeac1149400c7271bb45dcd7648}} 
+\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!EdgesType@{EdgesType}}
+\index{EdgesType@{EdgesType}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}
+\doxysubsubsection{\texorpdfstring{EdgesType}{EdgesType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a99578eeac1149400c7271bb45dcd7648}{s21\+::\+Qt\+Scene\+Drawer\+::\+Rend\+Params\+::\+Edges\+Type}}}
+
+
+
+\mbox{\hyperlink{classs21_1_1Edge}{Edge}} rendering style. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_EDGES@{NO\_EDGES}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!NO\_EDGES@{NO\_EDGES}}}\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_a99578eeac1149400c7271bb45dcd7648abc215ab68b5681023f44e50c93e9aa00}\label{structs21_1_1QtSceneDrawer_1_1RendParams_a99578eeac1149400c7271bb45dcd7648abc215ab68b5681023f44e50c93e9aa00}} 
+NO\+\_\+\+EDGES&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SOLID@{SOLID}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!SOLID@{SOLID}}}\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_a99578eeac1149400c7271bb45dcd7648aa0c789c434033214fff2c5060b326c77}\label{structs21_1_1QtSceneDrawer_1_1RendParams_a99578eeac1149400c7271bb45dcd7648aa0c789c434033214fff2c5060b326c77}} 
+SOLID&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DASHED@{DASHED}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!DASHED@{DASHED}}}\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_a99578eeac1149400c7271bb45dcd7648a52c1f14064ceeb2f24e15d6f58d0653b}\label{structs21_1_1QtSceneDrawer_1_1RendParams_a99578eeac1149400c7271bb45dcd7648a52c1f14064ceeb2f24e15d6f58d0653b}} 
+DASHED&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_a3c2157c9c58847dbcb1183f7bce74218}\label{structs21_1_1QtSceneDrawer_1_1RendParams_a3c2157c9c58847dbcb1183f7bce74218}} 
+\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!Projection@{Projection}}
+\index{Projection@{Projection}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}
+\doxysubsubsection{\texorpdfstring{Projection}{Projection}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a3c2157c9c58847dbcb1183f7bce74218}{s21\+::\+Qt\+Scene\+Drawer\+::\+Rend\+Params\+::\+Projection}}}
+
+
+
+Projection type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PARALLEL@{PARALLEL}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!PARALLEL@{PARALLEL}}}\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_a3c2157c9c58847dbcb1183f7bce74218ae469e0af845c81b7ed6f9f162d2f1f4b}\label{structs21_1_1QtSceneDrawer_1_1RendParams_a3c2157c9c58847dbcb1183f7bce74218ae469e0af845c81b7ed6f9f162d2f1f4b}} 
+PARALLEL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CENTRAL@{CENTRAL}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!CENTRAL@{CENTRAL}}}\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_a3c2157c9c58847dbcb1183f7bce74218af9aa478b8eb8618cda56de1623585886}\label{structs21_1_1QtSceneDrawer_1_1RendParams_a3c2157c9c58847dbcb1183f7bce74218af9aa478b8eb8618cda56de1623585886}} 
+CENTRAL&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_ac13fe6ad4fd2ece7dd8c8934883853c9}\label{structs21_1_1QtSceneDrawer_1_1RendParams_ac13fe6ad4fd2ece7dd8c8934883853c9}} 
+\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!VerticesType@{VerticesType}}
+\index{VerticesType@{VerticesType}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}
+\doxysubsubsection{\texorpdfstring{VerticesType}{VerticesType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_ac13fe6ad4fd2ece7dd8c8934883853c9}{s21\+::\+Qt\+Scene\+Drawer\+::\+Rend\+Params\+::\+Vertices\+Type}}}
+
+
+
+\mbox{\hyperlink{classs21_1_1Vertex}{Vertex}} rendering style. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_VERTICES@{NO\_VERTICES}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!NO\_VERTICES@{NO\_VERTICES}}}\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_ac13fe6ad4fd2ece7dd8c8934883853c9a762630f26c7fccf6c9350ced9333cb41}\label{structs21_1_1QtSceneDrawer_1_1RendParams_ac13fe6ad4fd2ece7dd8c8934883853c9a762630f26c7fccf6c9350ced9333cb41}} 
+NO\+\_\+\+VERTICES&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CIRCLE@{CIRCLE}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!CIRCLE@{CIRCLE}}}\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_ac13fe6ad4fd2ece7dd8c8934883853c9a07b85374e54efcb4c7fe50d6f40a1f26}\label{structs21_1_1QtSceneDrawer_1_1RendParams_ac13fe6ad4fd2ece7dd8c8934883853c9a07b85374e54efcb4c7fe50d6f40a1f26}} 
+CIRCLE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SQUARE@{SQUARE}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!SQUARE@{SQUARE}}}\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_ac13fe6ad4fd2ece7dd8c8934883853c9a5a7e54409dfad08d832de5b84621ba4f}\label{structs21_1_1QtSceneDrawer_1_1RendParams_ac13fe6ad4fd2ece7dd8c8934883853c9a5a7e54409dfad08d832de5b84621ba4f}} 
+SQUARE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_a0bdb106bd7c802cb2e130588502ef24e}\label{structs21_1_1QtSceneDrawer_1_1RendParams_a0bdb106bd7c802cb2e130588502ef24e}} 
+\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!bg\_color@{bg\_color}}
+\index{bg\_color@{bg\_color}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}
+\doxysubsubsection{\texorpdfstring{bg\_color}{bg\_color}}
+{\footnotesize\ttfamily QColor s21\+::\+Qt\+Scene\+Drawer\+::\+Rend\+Params\+::bg\+\_\+color = \{184, 213, 238\}}
+
+\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_a24af1212a8ed13adce0a73c28056c8de}\label{structs21_1_1QtSceneDrawer_1_1RendParams_a24af1212a8ed13adce0a73c28056c8de}} 
+\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!edge\_color@{edge\_color}}
+\index{edge\_color@{edge\_color}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}
+\doxysubsubsection{\texorpdfstring{edge\_color}{edge\_color}}
+{\footnotesize\ttfamily QColor s21\+::\+Qt\+Scene\+Drawer\+::\+Rend\+Params\+::edge\+\_\+color = \{0, 0, 255\}}
+
+\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_a5d7f20df78072e694739b7b8137267fa}\label{structs21_1_1QtSceneDrawer_1_1RendParams_a5d7f20df78072e694739b7b8137267fa}} 
+\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!edge\_thickness@{edge\_thickness}}
+\index{edge\_thickness@{edge\_thickness}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}
+\doxysubsubsection{\texorpdfstring{edge\_thickness}{edge\_thickness}}
+{\footnotesize\ttfamily int s21\+::\+Qt\+Scene\+Drawer\+::\+Rend\+Params\+::edge\+\_\+thickness = 1}
+
+\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_a0fc9fb25492de31c4ff65601248cf716}\label{structs21_1_1QtSceneDrawer_1_1RendParams_a0fc9fb25492de31c4ff65601248cf716}} 
+\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!edge\_type@{edge\_type}}
+\index{edge\_type@{edge\_type}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}
+\doxysubsubsection{\texorpdfstring{edge\_type}{edge\_type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a99578eeac1149400c7271bb45dcd7648}{Edges\+Type}} s21\+::\+Qt\+Scene\+Drawer\+::\+Rend\+Params\+::edge\+\_\+type = \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a99578eeac1149400c7271bb45dcd7648aa0c789c434033214fff2c5060b326c77}{SOLID}}}
+
+\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_a259da2a16df4f5000faa90ddbb534699}\label{structs21_1_1QtSceneDrawer_1_1RendParams_a259da2a16df4f5000faa90ddbb534699}} 
+\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!projection@{projection}}
+\index{projection@{projection}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}
+\doxysubsubsection{\texorpdfstring{projection}{projection}}
+{\footnotesize\ttfamily int s21\+::\+Qt\+Scene\+Drawer\+::\+Rend\+Params\+::projection = \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_a3c2157c9c58847dbcb1183f7bce74218ae469e0af845c81b7ed6f9f162d2f1f4b}{PARALLEL}}}
+
+\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_a66a344584447b484d272c9ef5ea77b23}\label{structs21_1_1QtSceneDrawer_1_1RendParams_a66a344584447b484d272c9ef5ea77b23}} 
+\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!vertex\_color@{vertex\_color}}
+\index{vertex\_color@{vertex\_color}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}
+\doxysubsubsection{\texorpdfstring{vertex\_color}{vertex\_color}}
+{\footnotesize\ttfamily QColor s21\+::\+Qt\+Scene\+Drawer\+::\+Rend\+Params\+::vertex\+\_\+color = \{0, 0, 0\}}
+
+\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_a52f4626bc14d629c1828939b06fa6611}\label{structs21_1_1QtSceneDrawer_1_1RendParams_a52f4626bc14d629c1828939b06fa6611}} 
+\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!vertex\_size@{vertex\_size}}
+\index{vertex\_size@{vertex\_size}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}
+\doxysubsubsection{\texorpdfstring{vertex\_size}{vertex\_size}}
+{\footnotesize\ttfamily int s21\+::\+Qt\+Scene\+Drawer\+::\+Rend\+Params\+::vertex\+\_\+size = 3}
+
+\mbox{\Hypertarget{structs21_1_1QtSceneDrawer_1_1RendParams_ae00b1346d401bc25f7d15787d9874cae}\label{structs21_1_1QtSceneDrawer_1_1RendParams_ae00b1346d401bc25f7d15787d9874cae}} 
+\index{s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}!vertex\_type@{vertex\_type}}
+\index{vertex\_type@{vertex\_type}!s21::QtSceneDrawer::RendParams@{s21::QtSceneDrawer::RendParams}}
+\doxysubsubsection{\texorpdfstring{vertex\_type}{vertex\_type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_ac13fe6ad4fd2ece7dd8c8934883853c9}{Vertices\+Type}} s21\+::\+Qt\+Scene\+Drawer\+::\+Rend\+Params\+::vertex\+\_\+type = \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams_ac13fe6ad4fd2ece7dd8c8934883853c9a762630f26c7fccf6c9350ced9333cb41}{NO\+\_\+\+VERTICES}}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+gui/view/\mbox{\hyperlink{qt__scene__drawer_8h}{qt\+\_\+scene\+\_\+drawer.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,228 @@
+\hypertarget{classs21_1_1QtSceneDrawer}{}\doxysection{s21\+::Qt\+Scene\+Drawer Class Reference}
+\label{classs21_1_1QtSceneDrawer}\index{s21::QtSceneDrawer@{s21::QtSceneDrawer}}
+
+
+The \mbox{\hyperlink{classs21_1_1QtSceneDrawer}{Qt\+Scene\+Drawer}} is an Open\+GL-\/based widget for rendering 3D figures.  
+
+
+
+
+{\ttfamily \#include $<$qt\+\_\+scene\+\_\+drawer.\+h$>$}
+
+
+
+Inheritance diagram for s21\+::Qt\+Scene\+Drawer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classs21_1_1QtSceneDrawer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for s21\+::Qt\+Scene\+Drawer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classs21_1_1QtSceneDrawer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams}{Rend\+Params}}
+\begin{DoxyCompactList}\small\item\em Struct contains rendering parameters for the 3D scene (projection type, background color, edge and vertex rendering styles and colors). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classs21_1_1QtSceneDrawer_a40bbf2316895a910681cd1a148aa96c7}{Qt\+Scene\+Drawer}} (QWidget $\ast$parent=Q\+\_\+\+NULLPTR)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classs21_1_1QtSceneDrawer}{Qt\+Scene\+Drawer}} object. $\ast$. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classs21_1_1QtSceneDrawer_ae82f0a2b5db304784d53050175515574}{$\sim$\+Qt\+Scene\+Drawer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classs21_1_1QtSceneDrawer}{Qt\+Scene\+Drawer}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1QtSceneDrawer_af9c83fa6419e6b24c92d833024871190}{initialize\+GL}} () override
+\begin{DoxyCompactList}\small\item\em Initializes the Open\+GL functions. This function called automatically when the Open\+GL context is created. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1QtSceneDrawer_a9d97db0f13e617f0fa5a78d35d297de5}{resize\+GL}} (int w, int h) override
+\begin{DoxyCompactList}\small\item\em Resizes the Open\+GL area to the specified width and height. Called automatically when widget is resized. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1QtSceneDrawer_ac7f21cfa84c4cae6c712a88966f1a906}{paint\+GL}} () override
+\begin{DoxyCompactList}\small\item\em Renders the 3D model using the current rendering parameters. This function is called automatically when widget is updated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1QtSceneDrawer_a7f65502dcec1fbeb0d80241d295e4dad}{Draw\+Figure}} (\mbox{\hyperlink{classs21_1_1Figure}{Figure}} $\ast$figure) override
+\begin{DoxyCompactList}\small\item\em Fills array of points for drawing 3D model from \mbox{\hyperlink{classs21_1_1Figure}{Figure}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams}{Rend\+Params}} $\ast$ \mbox{\hyperlink{classs21_1_1QtSceneDrawer_a9bb15856ff40b87b583ed77e11aff049}{get\+\_\+rend\+\_\+params}} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams}{Rend\+Params}} object used by the \mbox{\hyperlink{classs21_1_1QtSceneDrawer}{Qt\+Scene\+Drawer}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1QtSceneDrawer_a45d5b6c79d63361e3be2298ea988683d}{load\+\_\+view\+\_\+settings}} ()
+\begin{DoxyCompactList}\small\item\em Loads the current model view settings. If there are no saved settings, the default settings are used. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classs21_1_1QtSceneDrawer_a3fab4d0387cd24825489f8955aef8e41}{save\+\_\+view\+\_\+settings}} ()
+\begin{DoxyCompactList}\small\item\em Saves the current model view settings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float $\ast$ \mbox{\hyperlink{classs21_1_1QtSceneDrawer_aa94068c445fe22ddb3cab2542d81356a}{edges\+\_\+array\+\_\+}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classs21_1_1QtSceneDrawer_a505bd02af29f8bb3979a7b2ccaa77f32}{array\+\_\+size\+\_\+}}
+\item 
+\mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams}{Rend\+Params}} $\ast$ \mbox{\hyperlink{classs21_1_1QtSceneDrawer_ad2b538cee03d4ccb9974c9040228f473}{rend\+\_\+params\+\_\+}}
+\item 
+QSettings \mbox{\hyperlink{classs21_1_1QtSceneDrawer_ad49255d52ce6b4b6e30586fa0e151807}{view\+\_\+settings\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classs21_1_1QtSceneDrawer}{Qt\+Scene\+Drawer}} is an Open\+GL-\/based widget for rendering 3D figures. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classs21_1_1QtSceneDrawer_a40bbf2316895a910681cd1a148aa96c7}\label{classs21_1_1QtSceneDrawer_a40bbf2316895a910681cd1a148aa96c7}} 
+\index{s21::QtSceneDrawer@{s21::QtSceneDrawer}!QtSceneDrawer@{QtSceneDrawer}}
+\index{QtSceneDrawer@{QtSceneDrawer}!s21::QtSceneDrawer@{s21::QtSceneDrawer}}
+\doxysubsubsection{\texorpdfstring{QtSceneDrawer()}{QtSceneDrawer()}}
+{\footnotesize\ttfamily s21\+::\+Qt\+Scene\+Drawer\+::\+Qt\+Scene\+Drawer (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily Q\+\_\+NULLPTR} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for \mbox{\hyperlink{classs21_1_1QtSceneDrawer}{Qt\+Scene\+Drawer}} object. $\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent QWidget for this \mbox{\hyperlink{classs21_1_1QtSceneDrawer}{Qt\+Scene\+Drawer}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1QtSceneDrawer_ae82f0a2b5db304784d53050175515574}\label{classs21_1_1QtSceneDrawer_ae82f0a2b5db304784d53050175515574}} 
+\index{s21::QtSceneDrawer@{s21::QtSceneDrawer}!````~QtSceneDrawer@{$\sim$QtSceneDrawer}}
+\index{````~QtSceneDrawer@{$\sim$QtSceneDrawer}!s21::QtSceneDrawer@{s21::QtSceneDrawer}}
+\doxysubsubsection{\texorpdfstring{$\sim$QtSceneDrawer()}{~QtSceneDrawer()}}
+{\footnotesize\ttfamily s21\+::\+Qt\+Scene\+Drawer\+::$\sim$\+Qt\+Scene\+Drawer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \mbox{\hyperlink{classs21_1_1QtSceneDrawer}{Qt\+Scene\+Drawer}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classs21_1_1QtSceneDrawer_a7f65502dcec1fbeb0d80241d295e4dad}\label{classs21_1_1QtSceneDrawer_a7f65502dcec1fbeb0d80241d295e4dad}} 
+\index{s21::QtSceneDrawer@{s21::QtSceneDrawer}!DrawFigure@{DrawFigure}}
+\index{DrawFigure@{DrawFigure}!s21::QtSceneDrawer@{s21::QtSceneDrawer}}
+\doxysubsubsection{\texorpdfstring{DrawFigure()}{DrawFigure()}}
+{\footnotesize\ttfamily void s21\+::\+Qt\+Scene\+Drawer\+::\+Draw\+Figure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classs21_1_1Figure}{Figure}} $\ast$}]{figure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Fills array of points for drawing 3D model from \mbox{\hyperlink{classs21_1_1Figure}{Figure}} object. 
+
+If the figure has edges, the function generates an array of 6 floats per edge. If the figure has no edges, the function generates an array of 3 floats per vertex.
+
+
+\begin{DoxyParams}{Parameters}
+{\em figure} & The \mbox{\hyperlink{classs21_1_1Figure}{Figure}} object to be drawn. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classs21_1_1SceneDrawerBase_a21782cf90776813eae7ef8ff9a391fbb}{s21\+::\+Scene\+Drawer\+Base}}.
+
+\mbox{\Hypertarget{classs21_1_1QtSceneDrawer_a9bb15856ff40b87b583ed77e11aff049}\label{classs21_1_1QtSceneDrawer_a9bb15856ff40b87b583ed77e11aff049}} 
+\index{s21::QtSceneDrawer@{s21::QtSceneDrawer}!get\_rend\_params@{get\_rend\_params}}
+\index{get\_rend\_params@{get\_rend\_params}!s21::QtSceneDrawer@{s21::QtSceneDrawer}}
+\doxysubsubsection{\texorpdfstring{get\_rend\_params()}{get\_rend\_params()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams}{Qt\+Scene\+Drawer\+::\+Rend\+Params}} $\ast$ s21\+::\+Qt\+Scene\+Drawer\+::get\+\_\+rend\+\_\+params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a pointer to the \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams}{Rend\+Params}} object used by the \mbox{\hyperlink{classs21_1_1QtSceneDrawer}{Qt\+Scene\+Drawer}}. 
+
+Simple getter function for delivering render parameters to \mbox{\hyperlink{classs21_1_1View}{View}} and \mbox{\hyperlink{classs21_1_1SettingsWidget}{Settings\+Widget}} objects.
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams}{Qt\+Scene\+Drawer\+::\+Rend\+Params}}$\ast$ A pointer to the \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams}{Rend\+Params}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classs21_1_1QtSceneDrawer_af9c83fa6419e6b24c92d833024871190}\label{classs21_1_1QtSceneDrawer_af9c83fa6419e6b24c92d833024871190}} 
+\index{s21::QtSceneDrawer@{s21::QtSceneDrawer}!initializeGL@{initializeGL}}
+\index{initializeGL@{initializeGL}!s21::QtSceneDrawer@{s21::QtSceneDrawer}}
+\doxysubsubsection{\texorpdfstring{initializeGL()}{initializeGL()}}
+{\footnotesize\ttfamily void s21\+::\+Qt\+Scene\+Drawer\+::initialize\+GL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Initializes the Open\+GL functions. This function called automatically when the Open\+GL context is created. 
+
+\mbox{\Hypertarget{classs21_1_1QtSceneDrawer_a45d5b6c79d63361e3be2298ea988683d}\label{classs21_1_1QtSceneDrawer_a45d5b6c79d63361e3be2298ea988683d}} 
+\index{s21::QtSceneDrawer@{s21::QtSceneDrawer}!load\_view\_settings@{load\_view\_settings}}
+\index{load\_view\_settings@{load\_view\_settings}!s21::QtSceneDrawer@{s21::QtSceneDrawer}}
+\doxysubsubsection{\texorpdfstring{load\_view\_settings()}{load\_view\_settings()}}
+{\footnotesize\ttfamily void s21\+::\+Qt\+Scene\+Drawer\+::load\+\_\+view\+\_\+settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads the current model view settings. If there are no saved settings, the default settings are used. 
+
+\mbox{\Hypertarget{classs21_1_1QtSceneDrawer_ac7f21cfa84c4cae6c712a88966f1a906}\label{classs21_1_1QtSceneDrawer_ac7f21cfa84c4cae6c712a88966f1a906}} 
+\index{s21::QtSceneDrawer@{s21::QtSceneDrawer}!paintGL@{paintGL}}
+\index{paintGL@{paintGL}!s21::QtSceneDrawer@{s21::QtSceneDrawer}}
+\doxysubsubsection{\texorpdfstring{paintGL()}{paintGL()}}
+{\footnotesize\ttfamily void s21\+::\+Qt\+Scene\+Drawer\+::paint\+GL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Renders the 3D model using the current rendering parameters. This function is called automatically when widget is updated. 
+
+\mbox{\Hypertarget{classs21_1_1QtSceneDrawer_a9d97db0f13e617f0fa5a78d35d297de5}\label{classs21_1_1QtSceneDrawer_a9d97db0f13e617f0fa5a78d35d297de5}} 
+\index{s21::QtSceneDrawer@{s21::QtSceneDrawer}!resizeGL@{resizeGL}}
+\index{resizeGL@{resizeGL}!s21::QtSceneDrawer@{s21::QtSceneDrawer}}
+\doxysubsubsection{\texorpdfstring{resizeGL()}{resizeGL()}}
+{\footnotesize\ttfamily void s21\+::\+Qt\+Scene\+Drawer\+::resize\+GL (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Resizes the Open\+GL area to the specified width and height. Called automatically when widget is resized. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & The new width of widget. \\
+\hline
+{\em h} & The new height of widget. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classs21_1_1QtSceneDrawer_a3fab4d0387cd24825489f8955aef8e41}\label{classs21_1_1QtSceneDrawer_a3fab4d0387cd24825489f8955aef8e41}} 
+\index{s21::QtSceneDrawer@{s21::QtSceneDrawer}!save\_view\_settings@{save\_view\_settings}}
+\index{save\_view\_settings@{save\_view\_settings}!s21::QtSceneDrawer@{s21::QtSceneDrawer}}
+\doxysubsubsection{\texorpdfstring{save\_view\_settings()}{save\_view\_settings()}}
+{\footnotesize\ttfamily void s21\+::\+Qt\+Scene\+Drawer\+::save\+\_\+view\+\_\+settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Saves the current model view settings. 
+
+By default the settings are saved in /home/user/.config/company\+\_\+name/project\+\_\+name.\+conf in Ubuntu 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classs21_1_1QtSceneDrawer_a505bd02af29f8bb3979a7b2ccaa77f32}\label{classs21_1_1QtSceneDrawer_a505bd02af29f8bb3979a7b2ccaa77f32}} 
+\index{s21::QtSceneDrawer@{s21::QtSceneDrawer}!array\_size\_@{array\_size\_}}
+\index{array\_size\_@{array\_size\_}!s21::QtSceneDrawer@{s21::QtSceneDrawer}}
+\doxysubsubsection{\texorpdfstring{array\_size\_}{array\_size\_}}
+{\footnotesize\ttfamily size\+\_\+t s21\+::\+Qt\+Scene\+Drawer\+::array\+\_\+size\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classs21_1_1QtSceneDrawer_aa94068c445fe22ddb3cab2542d81356a}\label{classs21_1_1QtSceneDrawer_aa94068c445fe22ddb3cab2542d81356a}} 
+\index{s21::QtSceneDrawer@{s21::QtSceneDrawer}!edges\_array\_@{edges\_array\_}}
+\index{edges\_array\_@{edges\_array\_}!s21::QtSceneDrawer@{s21::QtSceneDrawer}}
+\doxysubsubsection{\texorpdfstring{edges\_array\_}{edges\_array\_}}
+{\footnotesize\ttfamily float$\ast$ s21\+::\+Qt\+Scene\+Drawer\+::edges\+\_\+array\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classs21_1_1QtSceneDrawer_ad2b538cee03d4ccb9974c9040228f473}\label{classs21_1_1QtSceneDrawer_ad2b538cee03d4ccb9974c9040228f473}} 
+\index{s21::QtSceneDrawer@{s21::QtSceneDrawer}!rend\_params\_@{rend\_params\_}}
+\index{rend\_params\_@{rend\_params\_}!s21::QtSceneDrawer@{s21::QtSceneDrawer}}
+\doxysubsubsection{\texorpdfstring{rend\_params\_}{rend\_params\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs21_1_1QtSceneDrawer_1_1RendParams}{Rend\+Params}}$\ast$ s21\+::\+Qt\+Scene\+Drawer\+::rend\+\_\+params\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classs21_1_1QtSceneDrawer_ad49255d52ce6b4b6e30586fa0e151807}\label{classs21_1_1QtSceneDrawer_ad49255d52ce6b4b6e30586fa0e151807}} 
+\index{s21::QtSceneDrawer@{s21::QtSceneDrawer}!view\_settings\_@{view\_settings\_}}
+\index{view\_settings\_@{view\_settings\_}!s21::QtSceneDrawer@{s21::QtSceneDrawer}}
+\doxysubsubsection{\texorpdfstring{view\_settings\_}{view\_settings\_}}
+{\footnotesize\ttfamily QSettings s21\+::\+Qt\+Scene\+Drawer\+::view\+\_\+settings\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/view/\mbox{\hyperlink{qt__scene__drawer_8h}{qt\+\_\+scene\+\_\+drawer.\+h}}\item 
+gui/view/\mbox{\hyperlink{qt__scene__drawer_8cpp}{qt\+\_\+scene\+\_\+drawer.\+cpp}}\end{DoxyCompactItemize}

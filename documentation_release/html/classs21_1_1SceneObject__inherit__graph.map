@@ -1,0 +1,5 @@
+<map id="s21::SceneObject" name="s21::SceneObject">
+<area shape="rect" id="node1" title="Abstract base class representing a scene object." alt="" coords="43,5,178,32"/>
+<area shape="rect" id="node2" href="$classs21_1_1Figure.html" title="Represents a figure in a 3D scene, derived from SceneObject." alt="" coords="5,80,99,107"/>
+<area shape="rect" id="node3" href="$classs21_1_1Vertex.html" title="Represents a vertex in 3D space, derived from SceneObject." alt="" coords="123,80,218,107"/>
+</map>
