@@ -113,7 +113,7 @@ Also there's some other functions which You can use. You should be in the src fo
 ## Documentation  
 
 You can read documentation in html or pdf format which builded with Doxygen:  
-- [HTML version](documentation_release/docs_html.lnk)
+- [HTML version](documentation_release/html/index.html)
 - [PDF version](documentation_release/latex/refman.pdf)
 
 Also there's the UML-diagram which builded with hpp2puml:
