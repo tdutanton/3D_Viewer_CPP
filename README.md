@@ -31,7 +31,9 @@
   - Information about the uploaded model (file name, number of vertices and faces).
 - Support for models with vertex counts ranging from to 1,000,000 and more without noticeable delays (interface freeze does not exceed 0.5 seconds).
 - Implementation based on the MVC architectural pattern.
-- Use of three different design patterns (Facade, Builder, Singleton).
+- Use of three different design patterns (Facade, Builder, Singleton).  
+
+![PNG diagram](viewer_uml_diagram.png)
 
 ## Additional Features
 
@@ -118,7 +120,8 @@ You can read documentation in html or pdf format which builded with Doxygen:
 
 Also there's the UML-diagram which builded with hpp2puml:
 - [PNG diagram](viewer_uml_diagram.png)
-- [PUML version](viewer_uml_diagram.puml)
+- [PUML version](viewer_uml_diagram.puml)  
+
 
 
 ## Authors
