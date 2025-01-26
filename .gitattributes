@@ -5,7 +5,7 @@
 *.js linguist-documentation
 *.css linguist-documentation
 *.html linguist-documentation
-documentation_release linguist-documentation
+documentation_release/** linguist-documentation
 
 *.png linguist-documentation
 *.jpg linguist-documentation
