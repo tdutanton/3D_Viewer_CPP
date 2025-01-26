@@ -1,5 +1,4 @@
-# 3DViewer v2.0
-![Logo](readme_src/viewer_logo.png)
+# 3DViewer v2.0 ![Logo](readme_src/viewer_logo.png)
 
 ![Screenshot](readme_src/main_screen.png)
 
