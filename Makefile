@@ -123,7 +123,7 @@ gcov_report:
 
 .PHONY: clean
 clean:
-	@rm -f $(TEST_FILE_NAME) *.o .clang-format
+	@rm -f $(TEST_FILE_NAME) *.o
 	@rm -rf $(LIB_O) ./tests/*.o *.gcno *.gcda ./report
 	@rm -rf $(TEST_FILE_NAME)
 	@rm -rf $(GCOV_NAME)
